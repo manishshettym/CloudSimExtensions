@@ -14,9 +14,11 @@ import java.util.Scanner;
 
 import org.cloudbus.cloudsim.Cloudlet;
 import org.cloudbus.cloudsim.CloudletSchedulerDynamicWorkload;
-import org.cloudbus.cloudsim.Datacenter;
+
 import org.cloudbus.cloudsim.DatacenterBroker;
 import org.cloudbus.cloudsim.DatacenterCharacteristics;
+
+
 import org.cloudbus.cloudsim.Host;
 import org.cloudbus.cloudsim.HostDynamicWorkload;
 import org.cloudbus.cloudsim.HostStateHistoryEntry;
@@ -29,6 +31,7 @@ import org.cloudbus.cloudsim.VmSchedulerTimeSharedOverSubscription;
 import org.cloudbus.cloudsim.VmStateHistoryEntry;
 import org.cloudbus.cloudsim.power.PowerDatacenter;
 import org.cloudbus.cloudsim.power.PowerDatacenterBroker;
+
 import org.cloudbus.cloudsim.power.PowerHost;
 import org.cloudbus.cloudsim.power.PowerHostUtilizationHistory;
 import org.cloudbus.cloudsim.power.PowerVm;
@@ -51,7 +54,7 @@ import org.cloudbus.cloudsim.util.MathUtil;
  * 
  * @author Anton Beloglazov
  */
-public class Helper {
+public class Helper{
 
 	/**
 	 * Creates the vm list.
@@ -88,6 +91,7 @@ public class Helper {
 	 * 
 	 * @return the list< power host>
 	 */
+	
 	public static List<PowerHost> createHostList(int hostsNumber) {
 		List<PowerHost> hostList = new ArrayList<PowerHost>();
 		for (int i = 0; i < hostsNumber; i++) {
@@ -109,6 +113,31 @@ public class Helper {
 		}
 		return hostList;
 	}
+	
+	/*
+	public static List<EnhancedHost> createHostList(int hostsNumber) {
+		List<EnhancedHost> hostList = new ArrayList<EnhancedHost>();
+		for (int i = 0; i < hostsNumber; i++) {
+			int hostType = i % Constants.HOST_TYPES;
+
+			List<Pe> peList = new ArrayList<Pe>();
+			for (int j = 0; j < Constants.HOST_PES[hostType]; j++) {
+				peList.add(new Pe(j, new PeProvisionerSimple(Constants.HOST_MIPS[hostType])));
+			}
+
+			hostList.add(new EnhancedHost(
+					i,
+					new RamProvisionerSimple(Constants.HOST_RAM[hostType]),
+					new BwProvisionerSimple(Constants.HOST_BW),
+					Constants.HOST_STORAGE,
+					peList,
+					new VmSchedulerTimeSharedOverSubscription(peList),
+					Constants.HOST_POWER[hostType]));
+		}
+		return hostList;
+	}
+	*/
+
 
 	/**
 	 * Creates the broker.
@@ -130,7 +159,7 @@ public class Helper {
 	 * Creates the datacenter.
 	 * 
 	 * @param name the name
-	 * @param datacenterClass the datacenter class
+	 * @param class1 the datacenter class
 	 * @param hostList the host list
 	 * @param vmAllocationPolicy the vm allocation policy
 	 * @param simulationLength
@@ -139,9 +168,9 @@ public class Helper {
 	 * 
 	 * @throws Exception the exception
 	 */
-	public static Datacenter createDatacenter(
+	public static PowerDatacenter createDatacenter(
 			String name,
-			Class<? extends Datacenter> datacenterClass,
+			Class<PowerDatacenter> class1,
 			List<PowerHost> hostList,
 			VmAllocationPolicy vmAllocationPolicy) throws Exception {
 		String arch = "x86"; // system architecture
@@ -164,9 +193,9 @@ public class Helper {
 				costPerStorage,
 				costPerBw);
 
-		Datacenter datacenter = null;
+		PowerDatacenter datacenter = null;
 		try {
-			datacenter = datacenterClass.getConstructor(
+			datacenter = (PowerDatacenter) class1.getConstructor(
 					String.class,
 					DatacenterCharacteristics.class,
 					VmAllocationPolicy.class,
@@ -490,7 +519,7 @@ public class Helper {
 	 * @param hosts the hosts
 	 * @return the sla time per active host
 	 */
-	protected static double getSlaTimePerActiveHost(List<Host> hosts) {
+	protected static double getSlaTimePerActiveHost(List<? extends Host> hosts) {
 		double slaViolationTimePerHost = 0;
 		double totalTime = 0;
 
@@ -526,7 +555,7 @@ public class Helper {
 	 * @param hosts the hosts
 	 * @return the sla time per host
 	 */
-	protected static double getSlaTimePerHost(List<Host> hosts) {
+	protected static double getSlaTimePerHost(List<? extends Host> hosts) {
 		double slaViolationTimePerHost = 0;
 		double totalTime = 0;
 

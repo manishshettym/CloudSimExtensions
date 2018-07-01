@@ -127,6 +127,30 @@ public class Vm {
 		setCurrentAllocatedRam(0);
 		setCurrentAllocatedSize(0);
 	}
+	
+	//Creates a clone of the Vm provided with id shifted
+	public Vm(Vm vm, int idshift) {
+		setId(vm.id + idshift);
+		setUserId(vm.userId);
+		setUid(getUid(vm.userId, id));
+		setMips(vm.mips);
+		setNumberOfPes(vm.numberOfPes);
+		setRam(vm.ram);
+		setBw(vm.bw);
+		setSize(vm.size);
+		setVmm(vm.vmm);
+		setCloudletScheduler(vm.cloudletScheduler);
+
+		setInMigration(false);
+		setBeingInstantiated(true);
+
+		setCurrentAllocatedBw(0);
+		setCurrentAllocatedMips(null);
+		setCurrentAllocatedRam(0);
+		setCurrentAllocatedSize(0);
+	}
+	
+	
 
 	/**
 	 * Updates the processing of cloudlets running on this VM.

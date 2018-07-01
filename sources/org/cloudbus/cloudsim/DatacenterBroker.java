@@ -30,9 +30,15 @@ import org.cloudbus.cloudsim.lists.VmList;
  * @since CloudSim Toolkit 1.0
  */
 public class DatacenterBroker extends SimEntity {
+	
+	
+	public static List< List<Cloudlet> > cloudletcopies;
+	public static List< List<Vm> > vmcopies;
+	
+	public int [] failurezones;
 
 	/** The vm list. */
-	protected List<? extends Vm> vmList;
+	protected static List<? extends Vm> vmList;
 
 	/** The vms created list. */
 	protected List<? extends Vm> vmsCreatedList;
@@ -108,8 +114,10 @@ public class DatacenterBroker extends SimEntity {
 	 * @post $none
 	 */
 	public void submitVmList(List<? extends Vm> list) {
-		getVmList().addAll(list);
+		getVmList().addAll(list); 
 	}
+	
+	
 
 	/**
 	 * This method is used to send to the broker the list of cloudlets.
@@ -121,7 +129,8 @@ public class DatacenterBroker extends SimEntity {
 	public void submitCloudletList(List<? extends Cloudlet> list) {
 		getCloudletList().addAll(list);
 	}
-
+	
+	
 	/**
 	 * Specifies that a given cloudlet must run in a specific virtual machine.
 	 * 
@@ -183,9 +192,133 @@ public class DatacenterBroker extends SimEntity {
 		DatacenterCharacteristics characteristics = (DatacenterCharacteristics) ev.getData();
 		getDatacenterCharacteristicsList().put(characteristics.getId(), characteristics);
 
-		if (getDatacenterCharacteristicsList().size() == getDatacenterIdsList().size()) {
+		if (getDatacenterCharacteristicsList().size() == getDatacenterIdsList().size()) 
+		{
 			setDatacenterRequestedIdsList(new ArrayList<Integer>());
-			createVmsInDatacenter(getDatacenterIdsList().get(0));
+			
+			
+			Log.printLine("Datacenters available" + getDatacenterIdsList());
+			
+		if(failurezones!=null)	
+		{
+			if(failurezones[1]==1 && getDatacenterIdsList().size()- getDatacenterRequestedIdsList().size()>=(failurezones[0]-1)*getDatacenterRequestedIdsList().size())
+		
+			{
+				createVmsInDatacenter(getDatacenterIdsList().get(0));
+				Log.printLine("Datacenters requested" + getDatacenterRequestedIdsList());
+				
+				Log.printLine("Entered copying area1");
+				
+				vmcopies = (List) new ArrayList< ArrayList<Vm> > ();
+				
+				for(int i=0; i<failurezones[0]-1;i++)
+				{
+					ArrayList<Vm> temp = new ArrayList<Vm>();
+					for(Vm vm : getVmList())
+					{
+						temp.add(new Vm(vm,(i+1)*getVmList().size())); // first copy : 100,101.. next: 200,201..
+					}
+					
+					vmcopies.add(temp);
+					
+				}
+				
+				
+				int j=0;
+				int start= getDatacenterRequestedIdsList().get(getDatacenterRequestedIdsList().size()-1); 
+				for(int i=start+1;j<failurezones[0]-1;i++)
+				{
+					createVmsCopyInDatacenter(i,vmcopies.get(j));
+					j++;
+				}
+				
+				
+				cloudletcopies = (List) new ArrayList< ArrayList<Cloudlet> > ();
+				
+				
+					for(int i=0; i<failurezones[0]-1;i++)
+					{
+						ArrayList<Cloudlet> temp = new ArrayList<Cloudlet>();
+						for(Cloudlet cl : getCloudletList())
+						{
+							Cloudlet cloud = new Cloudlet(cl,(i+1)*100);
+							cloud.setUserId(cl.getUserId());
+							temp.add(cloud); 
+						}
+						
+						cloudletcopies.add(temp);
+						getCloudletList().addAll(temp);
+						
+					}
+				
+			}
+			
+			
+			if(failurezones[2]==1)
+			{
+				vmcopies = (List) new ArrayList< ArrayList<Vm> > ();
+				
+				for(int i=0; i<failurezones[0]-1;i++)
+				{
+					ArrayList<Vm> temp = new ArrayList<Vm>();
+					for(Vm vm : getVmList())
+					{
+						temp.add(new Vm(vm,(i+1)*getVmList().size())); // first copy : 100,101.. next: 200,201..
+					}
+					
+					vmcopies.add(temp);
+					
+				}
+				
+				
+				
+				for(int i=0;i<failurezones[0]-1;i++)
+				{
+					getVmList().addAll(vmcopies.get(i));
+				}
+				
+				
+				Log.printLine("Entered copying area2");
+				createVmsInDatacenter(getDatacenterIdsList().get(0));
+				
+				
+				cloudletcopies = (List) new ArrayList< ArrayList<Cloudlet> > ();
+				
+				
+				
+				ArrayList <Cloudlet> templist = new ArrayList<Cloudlet>();
+				templist.addAll(getCloudletList());
+				
+				for(int i=0; i<failurezones[0]-1;i++)
+				{
+					ArrayList<Cloudlet> temp = new ArrayList<Cloudlet>();
+					for(Cloudlet cl : templist)
+					{
+						Cloudlet cloud = new Cloudlet(cl,(i+1)*templist.size());
+						cloud.setUserId(cl.getUserId());
+						temp.add(cloud); 
+					}
+					
+					cloudletcopies.add(temp);
+					getCloudletList().addAll(temp);
+					//Log.printLine(templist.size());
+					
+				}
+				
+				
+				
+			}
+		}
+			
+			else
+			{
+				createVmsInDatacenter(getDatacenterIdsList().get(0));
+			}
+			
+			
+			
+			
+			
 		}
 	}
 
@@ -219,6 +352,7 @@ public class DatacenterBroker extends SimEntity {
 		int[] data = (int[]) ev.getData();
 		int datacenterId = data[0];
 		int vmId = data[1];
+		
 		int result = data[2];
 
 		if (result == CloudSimTags.TRUE) {
@@ -235,7 +369,8 @@ public class DatacenterBroker extends SimEntity {
 		incrementVmsAcks();
 
 		// all the requested VMs have been created
-		if (getVmsCreatedList().size() == getVmList().size() - getVmsDestroyed()) {
+		if (getVmsCreatedList().size() == getVmList().size() - getVmsDestroyed()) 
+		{
 			submitCloudlets();
 		} else {
 			// all the acks received, but some VMs were not created
@@ -279,7 +414,7 @@ public class DatacenterBroker extends SimEntity {
 			finishExecution();
 		} else { // some cloudlets haven't finished yet
 			if (getCloudletList().size() > 0 && cloudletsSubmitted == 0) {
-				// all the cloudlets sent finished. It means that some bount
+				// all the cloudlets sent finished. It means that some bound
 				// cloudlet is waiting its VM be created
 				clearDatacenters();
 				createVmsInDatacenter(0);
@@ -314,7 +449,7 @@ public class DatacenterBroker extends SimEntity {
 	 * @post $none
 	 */
 	protected void createVmsInDatacenter(int datacenterId) {
-		// send as much vms as possible for this datacenter before trying the next one
+		// send as many vms as possible for this datacenter before trying the next one
 		int requestedVms = 0;
 		String datacenterName = CloudSim.getEntityName(datacenterId);
 		for (Vm vm : getVmList()) {
@@ -331,6 +466,33 @@ public class DatacenterBroker extends SimEntity {
 		setVmsRequested(requestedVms);
 		setVmsAcks(0);
 	}
+	
+	protected void createVmsCopyInDatacenter(int datacenterId , List<Vm> vcopy) 
+	{	
+		// send as many vms as possible for this datacenter before trying the next one
+		int requestedVms = getVmsRequested();
+		String datacenterName = CloudSim.getEntityName(datacenterId);
+		
+		Log.printLine(datacenterName + " has been initiated");
+		
+		for (Vm vm : vcopy ) {
+			
+			if (!getVmsToDatacentersMap().containsKey(vm.getId())) {
+				
+				Log.printLine(CloudSim.clock() + ": " + getName() + ": Trying to Create VM #" + vm.getId()
+						+ " in " + datacenterName);
+				sendNow(datacenterId, CloudSimTags.VM_CREATE_ACK, vm);
+				requestedVms++;
+			}
+		}
+		
+		getVmList().addAll(vcopy); //adding it finally to the same list of Vms
+
+		getDatacenterRequestedIdsList().add(datacenterId);
+
+		setVmsRequested(requestedVms);
+		setVmsAcks(0);
+	}
 
 	/**
 	 * Submit cloudlets to the created VMs.
@@ -339,15 +501,21 @@ public class DatacenterBroker extends SimEntity {
 	 * @post $none
 	 */
 	protected void submitCloudlets() {
+		System.out.println("Time of submit: "+CloudSim.clock());
 		int vmIndex = 0;
-		for (Cloudlet cloudlet : getCloudletList()) {
+		for (Cloudlet cloudlet : getCloudletList()) 
+		{
 			Vm vm;
 			// if user didn't bind this cloudlet and it has not been executed yet
-			if (cloudlet.getVmId() == -1) {
+			if (cloudlet.getVmId() == -1) 
+			{
 				vm = getVmsCreatedList().get(vmIndex);
-			} else { // submit to the specific vm
+			} 
+			else 
+			{ // submit to the specific vm
 				vm = VmList.getById(getVmsCreatedList(), cloudlet.getVmId());
-				if (vm == null) { // vm was not created
+				if (vm == null) 
+				{ // vm was not created
 					Log.printLine(CloudSim.clock() + ": " + getName() + ": Postponing execution of cloudlet "
 							+ cloudlet.getCloudletId() + ": bount VM not available");
 					continue;
@@ -358,6 +526,7 @@ public class DatacenterBroker extends SimEntity {
 					+ cloudlet.getCloudletId() + " to VM #" + vm.getId());
 			cloudlet.setVmId(vm.getId());
 			sendNow(getVmsToDatacentersMap().get(vm.getId()), CloudSimTags.CLOUDLET_SUBMIT, cloudlet);
+			//send(getVmsToDatacentersMap().get(vm.getId()),cloudlet.getSubmitTime()-CloudSim.clock(), CloudSimTags.CLOUDLET_SUBMIT, cloudlet);
 			cloudletsSubmitted++;
 			vmIndex = (vmIndex + 1) % getVmsCreatedList().size();
 			getCloudletSubmittedList().add(cloudlet);
@@ -650,6 +819,13 @@ public class DatacenterBroker extends SimEntity {
 	 */
 	protected void setDatacenterRequestedIdsList(List<Integer> datacenterRequestedIdsList) {
 		this.datacenterRequestedIdsList = datacenterRequestedIdsList;
+	}
+	
+	
+	public void setfailurezones(int [] data)
+	{
+		failurezones = data;
+		
 	}
 
 }

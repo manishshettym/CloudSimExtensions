@@ -151,7 +151,14 @@ public class HostDynamicWorkload extends Host {
 				continue;
 			}
 			if (vm.getCurrentRequestedTotalMips() == 0) {
-				vmsToRemove.add(vm);
+				for(VmStateHistoryEntry hist : vm.getStateHistory()) {
+					if(hist.getRequestedMips() > 0.0)
+					{
+						vmsToRemove.add(vm);
+						break;
+					}
+				}
+			
 			}
 		}
 		return vmsToRemove;

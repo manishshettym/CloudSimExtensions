@@ -297,9 +297,11 @@ public class Host {
 	public Vm getVm(int vmId, int userId) {
 		for (Vm vm : getVmList()) {
 			if (vm.getId() == vmId && vm.getUserId() == userId) {
+				System.out.println("Host.java");
 				return vm;
 			}
 		}
+		
 		return null;
 	}
 

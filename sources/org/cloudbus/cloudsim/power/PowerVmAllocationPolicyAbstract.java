@@ -86,6 +86,8 @@ public abstract class PowerVmAllocationPolicyAbstract extends VmAllocationPolicy
 	 * @return the power host
 	 */
 	public PowerHost findHostForVm(Vm vm) {
+		// override getHostList to return list of hosts from a powered up sector
+		// getHostList is a public method in VmAllocationPolicy.java
 		for (PowerHost host : this.<PowerHost> getHostList()) {
 			if (host.isSuitableForVm(vm)) {
 				return host;
@@ -121,6 +123,11 @@ public abstract class PowerVmAllocationPolicyAbstract extends VmAllocationPolicy
 	 */
 	@Override
 	public Host getHost(int vmId, int userId) {
+		
+		if(getVmTable().get(Vm.getUid(userId, vmId)) == null)
+		{
+			Log.printLine("PowerVmAllocationPolicyAbstract");
+		}
 		return getVmTable().get(Vm.getUid(userId, vmId));
 	}
 

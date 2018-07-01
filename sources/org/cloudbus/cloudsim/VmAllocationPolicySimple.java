@@ -14,6 +14,9 @@ import java.util.List;
 import java.util.Map;
 
 import org.cloudbus.cloudsim.core.CloudSim;
+import org.cloudbus.cloudsim.lists.VmList;
+import org.cloudbus.cloudsim.*;
+
 
 /**
  * VmAllocationPolicySimple is an VmAllocationPolicy that chooses, as the host for a VM, the host
@@ -65,17 +68,23 @@ public class VmAllocationPolicySimple extends VmAllocationPolicy {
 	@Override
 	public boolean allocateHostForVm(Vm vm) {
 		int requiredPes = vm.getNumberOfPes();
+		
+		Log.printLine("Vm "+ vm.getId() + " requires " + requiredPes + " Pes");
 		boolean result = false;
 		int tries = 0;
+		
 		List<Integer> freePesTmp = new ArrayList<Integer>();
 		for (Integer freePes : getFreePes()) {
 			freePesTmp.add(freePes);
 		}
+		
+		
+		Log.printLine("Free Pes are : " + freePesTmp);
 
 		if (!getVmTable().containsKey(vm.getUid())) { // if this vm was not created
 			do {// we still trying until we find a host or until we try all of them
-				int moreFree = Integer.MIN_VALUE;
-				int idx = -1;
+				//int moreFree = Integer.MIN_VALUE;
+				/*int idx = -1;
 
 				// we want the host with less pes in use
 				for (int i = 0; i < freePesTmp.size(); i++) {
@@ -83,12 +92,71 @@ public class VmAllocationPolicySimple extends VmAllocationPolicy {
 						moreFree = freePesTmp.get(i);
 						idx = i;
 					}
+				}*/
+				
+				int selectedhostpes;
+				int idx=0;
+				
+				
+				int vid = vm.getId();
+				
+				
+				ArrayList<ArrayList <Vm>> vcopy = (ArrayList) DatacenterBroker.vmcopies;
+				int original = vcopy.get(0).size();
+				
+				
+				
+				if(original<=vid)
+				{
+					if(original==vid)
+					{	
+						Log.printLine(vid);
+						idx++;
+						selectedhostpes=freePesTmp.get(idx);
+					}
+					
+					else
+					{
+						Vm prev = DatacenterBroker.vmList.get(vid-1);
+						idx = getHost(prev).getId();
+						
+						selectedhostpes=freePesTmp.get(idx);
+						if(selectedhostpes==0)
+						{
+							idx++;
+							selectedhostpes=freePesTmp.get(idx);
+						}
+						
+						
+					}
+					
 				}
-
+				
+				
+				
+				else
+				{
+					
+						selectedhostpes=freePesTmp.get(idx);
+						if(selectedhostpes==0)
+						{
+							idx++;
+							selectedhostpes=freePesTmp.get(idx);
+						}
+						
+						
+				}
+				
 				Host host = getHostList().get(idx);
 				result = host.vmCreate(vm);
+				
 
-				if (result) { // if vm were succesfully created in the host
+				
+				
+				
+		
+				if (result) 
+				{ // if vm were succesfully created in the host
 					getVmTable().put(vm.getUid(), host);
 					getUsedPes().put(vm.getUid(), requiredPes);
 					getFreePes().set(idx, getFreePes().get(idx) - requiredPes);

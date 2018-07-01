@@ -61,42 +61,44 @@ import org.cloudbus.cloudsim.UtilizationModelFull;
  */
 public class WorkloadFileReader implements WorkloadModel {
 
-	private final File file; // file name
+	protected final File file; // file name
 
-	private final int rating; // a PE rating
+	protected final int rating; // a PE rating
 
-	private ArrayList<Cloudlet> jobs = null; // a list for getting all the
+	protected ArrayList<Cloudlet> jobs = null; // a list for getting all the
 
 	// Gridlets
 
 	// using Standard Workload Format
-	private int JOB_NUM = 1 - 1; // job number
+	protected int JOB_NUM = 1 - 1; // job number
 
-	private int SUBMIT_TIME = 2 - 1; // submit time of a Gridlet
+	protected int SUBMIT_TIME = 2 - 1; // submit time of a Gridlet
 
-	private final int RUN_TIME = 4 - 1; // running time of a Gridlet
+	protected final int RUN_TIME = 4 - 1; // running time of a Gridlet
 
-	private final int NUM_PROC = 5 - 1; // number of processors needed for a
+	protected final int NUM_PROC = 5 - 1; // number of processors needed for a
 
 	// Gridlet
-	private int REQ_NUM_PROC = 8 - 1; // required number of processors
+	protected int REQ_NUM_PROC = 8 - 1; // required number of processors
 
-	private int REQ_RUN_TIME = 9 - 1; // required running time
+	protected int REQ_RUN_TIME = 9 - 1; // required running time
 
-	private final int USER_ID = 12 - 1; // if of user who submitted the job
+	protected final int USER_ID = 12 - 1; // if of user who submitted the job
 
-	private final int GROUP_ID = 13 - 1; // if of group of the user who
+	protected final int GROUP_ID = 13 - 1; // if of group of the user who
+	
+	
 
 	// submitted the
 	// job
-	private int MAX_FIELD = 18; // max number of field in the trace file
+	protected int MAX_FIELD = 18; // max number of field in the trace file
 
 	private String COMMENT = ";"; // a string that denotes the start of a
 
 	// comment
-	private static final int IRRELEVANT = -1; // irrelevant number
+	protected static final int IRRELEVANT = -1; // irrelevant number
 
-	private String[] fieldArray = null; // a temp array storing all the fields
+	protected String[] fieldArray = null; // a temp array storing all the fields
 
 	/**
 	 * Create a new {@link WorkloadFileReader} object.
@@ -151,13 +153,20 @@ public class WorkloadFileReader implements WorkloadModel {
 					readFile(file);
 				}
 			} catch (final FileNotFoundException e) {
+				System.out.println("Input file not found!");
+				e.printStackTrace();
+				System.exit(0);
 			} catch (final IOException e) {
+				System.out.println("IO Exception");
+				e.printStackTrace();
+				System.exit(0);
 			}
 		}
-
+		System.out.println("Size of jobs: "+jobs.size());
 		return jobs;
 	}
-
+	
+	
 	/**
 	 * Identifies the start of a comment line.
 	 * 
@@ -264,7 +273,7 @@ public class WorkloadFileReader implements WorkloadModel {
 	 * @pre numProc > 0
 	 * @post $none
 	 */
-	private void createJob(
+	protected void createJob(
 			final int id,
 			final long submitTime,
 			final int runTime,
@@ -295,7 +304,7 @@ public class WorkloadFileReader implements WorkloadModel {
 	 * @pre array != null
 	 * @pre line > 0
 	 */
-	private void extractField(final String[] array, final int line) {
+	protected void extractField(final String[] array, final int line) {
 		try {
 			Integer obj = null;
 
@@ -347,7 +356,7 @@ public class WorkloadFileReader implements WorkloadModel {
 			}
 			createJob(id, submitTime, runTime, numProc, reqRunTime, userID, groupID);
 		} catch (final Exception e) {
-
+				e.printStackTrace();
 		}
 	}
 
@@ -396,7 +405,7 @@ public class WorkloadFileReader implements WorkloadModel {
 	 * @throws IOException if the there was any error reading the file
 	 * @throws FileNotFoundException if the file was not found
 	 */
-	private boolean readFile(final File fl) throws IOException, FileNotFoundException {
+	protected boolean readFile(final File fl) throws IOException, FileNotFoundException {
 		boolean success = false;
 		BufferedReader reader = null;
 		try {
@@ -428,7 +437,7 @@ public class WorkloadFileReader implements WorkloadModel {
 	 * @throws IOException if the there was any error reading the file
 	 * @throws FileNotFoundException if the file was not found
 	 */
-	private boolean readGZIPFile(final File fl) throws IOException, FileNotFoundException {
+	protected boolean readGZIPFile(final File fl) throws IOException, FileNotFoundException {
 		boolean success = false;
 		BufferedReader reader = null;
 		try {
@@ -459,7 +468,7 @@ public class WorkloadFileReader implements WorkloadModel {
 	 * @return <code>true</code> if reading a file is successful; <code>false</code> otherwise.
 	 * @throws IOException if the there was any error reading the file
 	 */
-	private boolean readZipFile(final File fl) throws IOException {
+	protected boolean readZipFile(final File fl) throws IOException {
 		boolean success = false;
 		ZipFile zipFile = null;
 		try {
