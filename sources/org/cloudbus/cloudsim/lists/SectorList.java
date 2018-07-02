@@ -1,9 +1,12 @@
 package org.cloudbus.cloudsim.lists;
 
 
+import java.util.ArrayList;
 import java.util.List;
 
+import org.cloudbus.cloudsim.Aisle;
 import org.cloudbus.cloudsim.EnhancedHost;
+import org.cloudbus.cloudsim.Rack;
 
 import org.cloudbus.cloudsim.Sector;
 
@@ -33,14 +36,24 @@ public class SectorList {
 	}
 	public static<T extends Sector> List<EnhancedHost> getHostsBySector(List<T> sectorList,int sectorId)
 	{
+		List <EnhancedHost> sechosts = new ArrayList<EnhancedHost>();
+		
+		
 		for(Sector sec : sectorList)
-		{
+		{	
 			if(sec.getSectorId() == sectorId)
 			{
-				return sec.getSectorHostList();
+				for(Aisle aisle  : sec.getSectorAisleList())
+				{
+					for(Rack rack : aisle.getAisleRackList())
+					{
+						sechosts.addAll( rack.getRackHostList());
+				
+					}
+				}
 			}
 		}
-		return null;
+		return sechosts;
 	}
 	
 	public static<T extends Sector> int getFreePes(List<T> sectorList,int sectorId)

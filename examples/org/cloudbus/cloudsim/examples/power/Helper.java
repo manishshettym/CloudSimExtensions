@@ -33,6 +33,7 @@ import org.cloudbus.cloudsim.power.PowerDatacenter;
 import org.cloudbus.cloudsim.power.PowerDatacenterBroker;
 
 import org.cloudbus.cloudsim.power.PowerHost;
+import org.cloudbus.cloudsim.EnhancedHost;
 import org.cloudbus.cloudsim.power.PowerHostUtilizationHistory;
 import org.cloudbus.cloudsim.power.PowerVm;
 import org.cloudbus.cloudsim.power.PowerVmAllocationPolicyMigrationAbstract;
@@ -92,7 +93,7 @@ public class Helper{
 	 * @return the list< power host>
 	 */
 	
-	public static List<PowerHost> createHostList(int hostsNumber) {
+	/*public static List<PowerHost> createHostList(int hostsNumber) {
 		List<PowerHost> hostList = new ArrayList<PowerHost>();
 		for (int i = 0; i < hostsNumber; i++) {
 			int hostType = i % Constants.HOST_TYPES;
@@ -112,9 +113,9 @@ public class Helper{
 					Constants.HOST_POWER[hostType]));
 		}
 		return hostList;
-	}
+	}*/
 	
-	/*
+	
 	public static List<EnhancedHost> createHostList(int hostsNumber) {
 		List<EnhancedHost> hostList = new ArrayList<EnhancedHost>();
 		for (int i = 0; i < hostsNumber; i++) {
@@ -136,7 +137,7 @@ public class Helper{
 		}
 		return hostList;
 	}
-	*/
+	
 
 
 	/**

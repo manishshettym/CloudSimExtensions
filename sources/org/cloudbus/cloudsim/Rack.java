@@ -2,35 +2,27 @@ package org.cloudbus.cloudsim;
 
 import java.util.List;
 
-
-import java.util.ArrayList;
-
-/*Class used to represent a sector/zone in a datacenter
- * The sector is determined by the top left and bottom right positions
- * of its rectangular region, coordinates specified as a list
- * containing aisle_tl,rack_tl,aisle_br,rack_br(tl - top_left,br - bottom_right)
- */
-public class Sector {
-
-	private List<Integer> sectorCoords; //list of sector-coords
-	private String sectorName; //name of the sector
-	private int sectorId; //id of the sector
+public class Rack 
+{
+	private List<Integer> rackCoords; 
+	private String rackName; 
+	private int rackId; 
 	private int coolingStatus;
-	private List<Aisle> sectorAisleList;
+	private List<EnhancedHost> rackHostList;
 	
 	
 	
-	public Sector(int sectorId, List<Aisle> sectorAisles, int status)
+	public Rack(int rackId, List<EnhancedHost> racksHosts, int status)
 	{
-		this.sectorId = sectorId;
-		this.sectorAisleList = sectorAisles;
-		this.sectorName ="";
+		this.rackId = rackId;
+		this.rackHostList = racksHosts;
+		this.rackName ="";
 		setCoolingStatus(0);
 		
 	}
 	
 	
-	public Sector(int sectorId,int c1_aisle,
+	/*public Sector(int sectorId,int c1_aisle,
 			int c1_rack,
 			int c2_aisle,
 			int c2_rack
@@ -42,36 +34,36 @@ public class Sector {
 		sectorCoords.add(c2_aisle);
 		sectorCoords.add(c2_rack);
 		setCoolingStatus(0);
-	}
+	}*/
 	
 	//sets the name of the sector
 	public void setName(String name) {
-		this.sectorName = name;
+		this.rackName = name;
 	}
 	
 	//returns the name of the sector
 	public String getName() {
-		return sectorName;
+		return rackName;
 	}
 	
 	//returns the sectorId
-	public int getSectorId() {
-		return sectorId;
+	public int getRackId() {
+		return rackId;
 	}
 	
 	//sets the sectorId
-	public void setSectorId(int id) {
-		sectorId = id;
+	public void setRackId(int id) {
+		rackId = id;
 	}
 	
 	//returns the list of sectorCoords
-	public List<Integer> getSectorCoords() {
-		return sectorCoords;
+	public List<Integer> getRackCoords() {
+		return rackCoords;
 	}
 	
-	public List<Aisle> getSectorAisleList()
+	public List<EnhancedHost> getRackHostList()
 	{
-		return this.sectorAisleList;
+		return this.rackHostList;
 	}
 
 	public int getCoolingStatus() {
@@ -82,61 +74,36 @@ public class Sector {
 		this.coolingStatus = coolingStatus;
 	}
 
-	public int freePesPerSector() 
-	{
-		if(sectorAisleList == null) 
-		{
+	public int freePesPerRack() {
+		if(rackHostList == null) {
 			return -1;
 		}
 		int freePes = 0;
-		for(Aisle aisle : sectorAisleList) 
+		for(EnhancedHost host: rackHostList)
 		{
-			for(Rack rack : aisle.getAisleRackList()) 
-			{
-				for(EnhancedHost host : rack.getRackHostList()) 
-				{
-					freePes += host.getNumberOfFreePes();
-				}
-			}
+			freePes += host.getNumberOfFreePes();
 		}
 		return freePes;
 	}
 	
-	public int freeRamPerSector() 
-	{
-		if(sectorAisleList == null) 
-		{
+	public int freeRamPerRack() {
+		if(rackHostList == null) {
 			return -1;
 		}
-		int freeRam = 0;
-		for(Aisle aisle : sectorAisleList) 
-		{
-			for(Rack rack : aisle.getAisleRackList()) 
-			{
-				for(EnhancedHost host : rack.getRackHostList()) 
-				{
-					freeRam += host.getRamProvisioner().getAvailableRam();
-				}
-			}
+		int ramAvail = 0;
+		for(EnhancedHost host : rackHostList) {
+			ramAvail += host.getRamProvisioner().getAvailableRam();
 		}
-		return freeRam;
+		return ramAvail;
 	}
 	
-	public double freeMipsPerSector() {
-		if(sectorAisleList == null) 
-		{
+	public double freeMipsPerRack() {
+		if(rackHostList == null) {
 			return -1;
 		}
 		double freeMips = 0;
-		for(Aisle aisle : sectorAisleList) 
-		{
-			for(Rack rack : aisle.getAisleRackList()) 
-			{
-				for(EnhancedHost host : rack.getRackHostList()) 
-				{
-					freeMips += host.getAvailableMips();
-				}
-			}
+		for(EnhancedHost host : rackHostList) {
+			freeMips += host.getAvailableMips();
 		}
 		return freeMips;
 	}
@@ -181,6 +148,4 @@ public class Sector {
 		}
 		return false;
 	}
-	
-	
 }

@@ -1,36 +1,29 @@
 package org.cloudbus.cloudsim;
 
+import java.util.ArrayList;
 import java.util.List;
 
-
-import java.util.ArrayList;
-
-/*Class used to represent a sector/zone in a datacenter
- * The sector is determined by the top left and bottom right positions
- * of its rectangular region, coordinates specified as a list
- * containing aisle_tl,rack_tl,aisle_br,rack_br(tl - top_left,br - bottom_right)
- */
-public class Sector {
-
-	private List<Integer> sectorCoords; //list of sector-coords
-	private String sectorName; //name of the sector
-	private int sectorId; //id of the sector
+public class Aisle 
+{
+	private List<Integer> aisleCoords; 
+	private String aisleName; 
+	private int aisleId; 
 	private int coolingStatus;
-	private List<Aisle> sectorAisleList;
+	private List<Rack> aisleRackList;
 	
 	
 	
-	public Sector(int sectorId, List<Aisle> sectorAisles, int status)
+	public Aisle(int aisleId, List<Rack> aisleRacks, int status)
 	{
-		this.sectorId = sectorId;
-		this.sectorAisleList = sectorAisles;
-		this.sectorName ="";
+		this.aisleId = aisleId;
+		this.aisleRackList = aisleRacks;
+		this.aisleName ="";
 		setCoolingStatus(0);
 		
 	}
 	
 	
-	public Sector(int sectorId,int c1_aisle,
+	/*public Sector(int sectorId,int c1_aisle,
 			int c1_rack,
 			int c2_aisle,
 			int c2_rack
@@ -42,36 +35,36 @@ public class Sector {
 		sectorCoords.add(c2_aisle);
 		sectorCoords.add(c2_rack);
 		setCoolingStatus(0);
-	}
+	}*/
 	
 	//sets the name of the sector
 	public void setName(String name) {
-		this.sectorName = name;
+		this.aisleName = name;
 	}
 	
 	//returns the name of the sector
 	public String getName() {
-		return sectorName;
+		return aisleName;
 	}
 	
 	//returns the sectorId
-	public int getSectorId() {
-		return sectorId;
+	public int getAisleId() {
+		return aisleId;
 	}
 	
 	//sets the sectorId
-	public void setSectorId(int id) {
-		sectorId = id;
+	public void setAisleId(int id) {
+		aisleId = id;
 	}
 	
 	//returns the list of sectorCoords
-	public List<Integer> getSectorCoords() {
-		return sectorCoords;
+	public List<Integer> getAisleCoords() {
+		return aisleCoords;
 	}
 	
-	public List<Aisle> getSectorAisleList()
+	public List<Rack> getAisleRackList()
 	{
-		return this.sectorAisleList;
+		return this.aisleRackList;
 	}
 
 	public int getCoolingStatus() {
@@ -82,62 +75,59 @@ public class Sector {
 		this.coolingStatus = coolingStatus;
 	}
 
-	public int freePesPerSector() 
-	{
-		if(sectorAisleList == null) 
+	public int freePesPerAisle() {
+		if(aisleRackList == null) 
 		{
 			return -1;
 		}
 		int freePes = 0;
-		for(Aisle aisle : sectorAisleList) 
+		
+		for(Rack rack : aisleRackList) 
 		{
-			for(Rack rack : aisle.getAisleRackList()) 
+			for(EnhancedHost host : rack.getRackHostList()) 
 			{
-				for(EnhancedHost host : rack.getRackHostList()) 
-				{
-					freePes += host.getNumberOfFreePes();
-				}
+				freePes += host.getNumberOfFreePes();
 			}
 		}
+
 		return freePes;
 	}
 	
-	public int freeRamPerSector() 
+	public int freeRamPerAisle() 
 	{
-		if(sectorAisleList == null) 
+		if(aisleRackList == null) 
 		{
 			return -1;
 		}
 		int freeRam = 0;
-		for(Aisle aisle : sectorAisleList) 
+		
+		for(Rack rack : aisleRackList) 
 		{
-			for(Rack rack : aisle.getAisleRackList()) 
+			for(EnhancedHost host : rack.getRackHostList()) 
 			{
-				for(EnhancedHost host : rack.getRackHostList()) 
-				{
-					freeRam += host.getRamProvisioner().getAvailableRam();
-				}
+				freeRam += host.getRamProvisioner().getAvailableRam();
 			}
 		}
+
 		return freeRam;
 	}
 	
-	public double freeMipsPerSector() {
-		if(sectorAisleList == null) 
+	public double freeMipsPerAisle() 
+	{
+		if(aisleRackList == null) 
 		{
 			return -1;
 		}
-		double freeMips = 0;
-		for(Aisle aisle : sectorAisleList) 
+		int freeMips = 0;
+		
+		for(Rack rack : aisleRackList) 
 		{
-			for(Rack rack : aisle.getAisleRackList()) 
+			for(EnhancedHost host : rack.getRackHostList()) 
 			{
-				for(EnhancedHost host : rack.getRackHostList()) 
-				{
-					freeMips += host.getAvailableMips();
-				}
+				freeMips += host.getAvailableMips();
 			}
 		}
+
 		return freeMips;
 	}
 	//naive fitness function
@@ -181,6 +171,5 @@ public class Sector {
 		}
 		return false;
 	}
-	
 	
 }

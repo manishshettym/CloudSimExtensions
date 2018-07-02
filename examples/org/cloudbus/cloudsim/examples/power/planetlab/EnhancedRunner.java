@@ -6,6 +6,7 @@ import java.util.Calendar;
 import java.util.LinkedList;
 import java.util.List;
 
+import org.cloudbus.cloudsim.Aisle;
 import org.cloudbus.cloudsim.Cloudlet;
 import org.cloudbus.cloudsim.CloudletSubmitTime;
 import org.cloudbus.cloudsim.Datacenter;
@@ -16,8 +17,11 @@ import org.cloudbus.cloudsim.EnhancedHost;
 import org.cloudbus.cloudsim.Host;
 import org.cloudbus.cloudsim.Log;
 import org.cloudbus.cloudsim.Pe;
+import org.cloudbus.cloudsim.Rack;
 import org.cloudbus.cloudsim.Sector;
 import org.cloudbus.cloudsim.Storage;
+import org.cloudbus.cloudsim.UtilizationModel;
+import org.cloudbus.cloudsim.UtilizationModelFull;
 import org.cloudbus.cloudsim.Vm;
 import org.cloudbus.cloudsim.VmAllocationPolicy;
 import org.cloudbus.cloudsim.VmAllocationPolicySimple;
@@ -50,16 +54,22 @@ public class EnhancedRunner
 	/** The broker. */
 	protected static DatacenterBrokerSubmitTime broker;
 
-	/** The cloudlet list. */
-	protected static List<CloudletSubmitTime> cloudletList;
-
+	/** The cloudlet list for workload. */
+	protected static List<CloudletSubmitTime> cloudletListworkload;
+	
+	protected static List<Cloudlet> cloudletList;
+	
+	protected static List<EnhancedPowerDatacenter> datacenterList;
+	
 	/** The vm list. */
 	protected static List<Vm> vmList;
 
-	/** The host list. */
+	/** The lists !! */
 	protected static List<EnhancedHost> hostList;
-	
 	protected static List<Sector> sectorList;
+	protected static List<Aisle>aisleList;
+	protected static List<Rack>rackList;
+	
 	
 	public EnhancedRunner(String workFile, String outputFolder,String confpath)throws IOException, FileNotFoundException 
 	{
@@ -70,7 +80,7 @@ public class EnhancedRunner
 		
 		String fl = files[0].getAbsolutePath();
 		
-		int[]  data = new int[6];
+		int[]  data = new int[12];
 		
 		BufferedReader reader = null;
 		try {
@@ -114,76 +124,10 @@ public class EnhancedRunner
 		//call init
 		//init(workFile,data[0],data[1]);
 		//call start
-		//start("SimpleSectorAllocation",outputFolder,data[0],data[1]);
+		//start("SimpleSectorAllocation",outputFolder,r,fz1,fz2...);
 	}
 	
-	private static Datacenter createDatacenter(String name , int ho){
-
-	List<Host> hostList = new ArrayList<Host>();
-		
-	for(int i=0 ; i<ho ;i++)	
-	{	
-		
-		
-		List<Pe> peList1 = new ArrayList<Pe>();
-		int mips = 1000;
-		peList1.add(new Pe(0, new PeProvisionerSimple(mips))); // need to store Pe id and MIPS Rating
-		peList1.add(new Pe(1, new PeProvisionerSimple(mips)));
-		peList1.add(new Pe(2, new PeProvisionerSimple(mips)));
-		peList1.add(new Pe(3, new PeProvisionerSimple(mips)));
-		peList1.add(new Pe(4, new PeProvisionerSimple(mips)));
-		
-		int hostId=i;
-		int ram = 2048*2; //host memory (MB)
-		long storage = 1000000; //host storage
-		int bw = 10000;
-
-		hostList.add(
-    			new Host(
-    				hostId,
-    				new RamProvisionerSimple(ram),
-    				new BwProvisionerSimple(bw),
-    				storage,
-    				peList1,
-    				new VmSchedulerTimeShared(peList1)
-    			)
-    		); 
-
-	}
-		
-
-
-
-		// 5. Create a DatacenterCharacteristics object that stores the
-		//    properties of a data center: architecture, OS, list of
-		//    Machines, allocation policy: time- or space-shared, time zone
-		//    and its price (G$/Pe time unit).
-		String arch = "x86";      // system architecture
-		String os = "Linux";          // operating system
-		String vmm = "Xen";
-		double time_zone = 10.0;         // time zone this resource located
-		double cost = 3.0;              // the cost of using processing in this resource
-		double costPerMem = 0.05;		// the cost of using memory in this resource
-		double costPerStorage = 0.1;	// the cost of using storage in this resource
-		double costPerBw = 0.1;			// the cost of using bw in this resource
-		LinkedList<Storage> storageList = new LinkedList<Storage>();	//we are not adding SAN devices by now
-
-		DatacenterCharacteristics characteristics = new DatacenterCharacteristics(
-                arch, os, vmm, hostList, time_zone, cost, costPerMem, costPerStorage, costPerBw);
-
-
-		// 6. Finally, we need to create a PowerDatacenter object.
-		Datacenter datacenter = null;
-		try {
-			datacenter = new Datacenter(name, characteristics, new VmAllocationPolicySimple(hostList), storageList, 0);
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-
-		return datacenter;
-	}
-	
-	protected void init(String workFile,int dc, int ho ,int cl , int r ,int fz1 , int fz2 ) 
+	protected void init(String workFile,int dc,int sectorPerDC , int aislesPerSector , int racksPerAisle, int hostsPerRack ,int cloudlets , int [] failurezones)
 	{
 		try {
 			
@@ -194,31 +138,49 @@ public class EnhancedRunner
 			boolean trace_flag = false;  
 			CloudSim.init(num_user, calendar, trace_flag);
 			
+			int totalhosts = sectorPerDC * aislesPerSector * racksPerAisle * hostsPerRack ;
+			
+			hostList = EnhancedHelper.createEnhancedHostList(totalhosts);
+			rackList = EnhancedHelper.createRackList(hostList,hostsPerRack);
+			aisleList = EnhancedHelper.createAisleList(rackList,racksPerAisle);
+			sectorList = EnhancedHelper.createSectorList(aisleList,aislesPerSector);
+			
+			
+			VmAllocationPolicy vmAllocationPolicy = new FzonesVmAllocationPolicy(hostList,rackList,aisleList,sectorList,failurezones);
+			
 			
 			//Step2: Create datacenters
 			for(int i=0; i<dc;i++)
 			{
-				Datacenter datacenter = createDatacenter("Datacenter_"+i ,ho);
+				datacenterList.add( EnhancedHelper.createEnhancedDatacenter("Datacenter_"+i ,se,ai,ra,ho));
 			}
 			
 			
-			//Step2: Generate cloudlets from workload file
 			
-			WorkloadFileReaderLANLSubmitTime workloadReader = new WorkloadFileReaderLANLSubmitTime(workFile, Constants.HOST_MIPS[0]); //1860, rating in MIPS
-			cloudletList = workloadReader.generateWorkload(brokerId);
+			
+			
+			
+			//Step3: Create the broker
+			DatacenterBroker broker = createBroker();
+			int brokerId = broker.getId();
+			
+			
+			//Step4: Generate cloudlets from workload file OR using the no.
+			cloudletList = createCloudlet(brokerId,cl);
+			
+			/*WorkloadFileReaderLANLSubmitTime workloadReader = new WorkloadFileReaderLANLSubmitTime(workFile, Constants.HOST_MIPS[0]); //1860, rating in MIPS
+			cloudletListworkload = workloadReader.generateWorkload(brokerId);
 			Log.printLine("brokerId: "+brokerId);
-			for(Cloudlet cl : cloudletList)
+			for(Cloudlet cl : cloudletListworkload)
 			{
 				cl.setUserId(brokerId);
-			}
+			}*/
 			
 			
 			
+			//Step5: Create enough Vms for cloudlets
 			vmList = Helper.createVmList(brokerId, cloudletList.size());
-			//hostList = EnhancedHelper.createEnhancedHostList(40);
-			hostList = EnhancedHelper.createEnhancedHostList(100);
-			//sectorList = EnhancedHelper.MakeSectorList(hostList,hostsPerSector);
-			sectorList = EnhancedHelper.MakeSectorList(hostList,hostsPerSector,numFailureZones);
+
 			
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -228,32 +190,21 @@ public class EnhancedRunner
 	}
 	
 	
-	protected void start(String experimentName, String outputFolder, int HostsPerSector,int numOfFailureZones) {
+	protected void start(String experimentName, String outputFolder,int r, int fz1 , int fz2) {
 		System.out.println("Starting " + experimentName);
 		
-		VmAllocationPolicy vmAllocationPolicy = new SectorAllocationPolicyHoneyBeeV2(hostList, sectorList,vmList);
 	
 		try {
-		ReplicationEnhancedPowerDatacenter datacenter = (ReplicationEnhancedPowerDatacenter) EnhancedHelper.createReplicationEnhancedDatacenter(
-					"Datacenter",
-					ReplicationEnhancedPowerDatacenter.class,
-					hostList,
-					vmAllocationPolicy,
-					HostsPerSector,
-					numOfFailureZones,
-					vmList);  
-			datacenter.setDisableMigrations(false);
 			
-			/*EnhancedPowerDatacenter datacenter = (EnhancedPowerDatacenter) EnhancedHelper.createEnhancedDatacenter(
-					"Datacenter",
-					EnhancedPowerDatacenter.class,
-					hostList,
-					vmAllocationPolicy,
-				HostsPerSector,
-				numOfFailureZones,
-				vmList);  
-			datacenter.setDisableMigrations(false);*/
-
+			int [] failurezones = new int[3]; // rn 3 make more as fz increases
+			failurezones[0]=r;
+			failurezones[1]=fz1;
+			failurezones[2]=fz2;
+			
+			//.. so on
+			
+		
+			broker.setfailurezones(failurezones);
 			broker.submitVmList(vmList);
 			broker.submitCloudletList(cloudletList);
 
@@ -267,13 +218,16 @@ public class EnhancedRunner
 
 			CloudSim.stopSimulation();
 
-			Helper.printResults(
-					datacenter,
-					vmList,
-					lastClock,
-					experimentName,
-					Constants.OUTPUT_CSV,
-					outputFolder);
+			for(EnhancedPowerDatacenter datacenter : datacenterList )
+			{	
+				Helper.printResults(
+						datacenter,
+						vmList,
+						lastClock,
+						experimentName,
+						Constants.OUTPUT_CSV,
+						outputFolder);
+			}
 
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -283,16 +237,56 @@ public class EnhancedRunner
 
 		Log.printLine("Finished " + experimentName);
 	}
+	
+	private static EnhancedPowerDatacenter createDatacenter(String name , int ho)
+	{
+		
+		
+		VmAllocationPolicy vmAllocationPolicy = new FzonesVmAllocationPolicy()
+	
+		List<EnhancedHost> hostList = Helper.createHostList(ho);	
+		EnhancedPowerDatacenter datacenter = Helper.createDatacenter(name, hostList, vmAllocationPolicy)
 
+		return datacenter;
+	}
 	
 	
+	private static DatacenterBroker createBroker(){
+
+		DatacenterBroker broker = null;
+		try {
+			broker = new DatacenterBroker("Broker");
+		} catch (Exception e) {
+			e.printStackTrace();
+			return null;
+		}
+		return broker;
+	}
 	
-	/**
-	 * Gets the experiment name.
-	 * 
-	 * @param args the args
-	 * @return the experiment name
-	 */
+	
+	private static List<Cloudlet> createCloudlet(int userId, int cloudlets){
+		// Creates a container to store Cloudlets
+		LinkedList<Cloudlet> list = new LinkedList<Cloudlet>();
+
+		//cloudlet parameters
+		long length = 1000;
+		long fileSize = 300;
+		long outputSize = 300;
+		int pesNumber = 1;
+		UtilizationModel utilizationModel = new UtilizationModelFull();
+
+		Cloudlet[] cloudlet = new Cloudlet[cloudlets];
+
+		for(int i=0;i<cloudlets;i++){
+			cloudlet[i] = new Cloudlet(i, length, pesNumber, fileSize, outputSize, utilizationModel, utilizationModel, utilizationModel);
+			// setting the owner of these Cloudlets
+			cloudlet[i].setUserId(userId);
+			list.add(cloudlet[i]);
+		}
+
+		return list;
+	}
+
 	protected String getExperimentName(String... args) {
 		StringBuilder experimentName = new StringBuilder();
 		for (int i = 0; i < args.length; i++) {
