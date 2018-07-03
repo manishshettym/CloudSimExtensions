@@ -18,6 +18,8 @@ public class Sector {
 	private int coolingStatus;
 	private List<Aisle> sectorAisleList;
 	
+	private Datacenter datacenter;
+	
 	
 	
 	public Sector(int sectorId, List<Aisle> sectorAisles, int status)
@@ -62,6 +64,19 @@ public class Sector {
 	//sets the sectorId
 	public void setSectorId(int id) {
 		sectorId = id;
+	}
+	
+	
+	//set datacenter
+	public void setDatacenter(Datacenter datacenter)
+	{
+		this.datacenter = datacenter;
+	}
+	
+	//get datacenter
+	public Datacenter getDatacenter()
+	{
+		return datacenter;
 	}
 	
 	//returns the list of sectorCoords

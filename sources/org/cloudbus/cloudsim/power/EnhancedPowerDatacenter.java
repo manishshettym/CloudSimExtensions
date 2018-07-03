@@ -3,9 +3,12 @@ package org.cloudbus.cloudsim.power;
 
 import java.util.List;
 
+import org.cloudbus.cloudsim.Aisle;
 import org.cloudbus.cloudsim.DatacenterCharacteristics;
 import org.cloudbus.cloudsim.EnhancedHost;
+import org.cloudbus.cloudsim.Host;
 import org.cloudbus.cloudsim.Log;
+import org.cloudbus.cloudsim.Rack;
 import org.cloudbus.cloudsim.Sector;
 import org.cloudbus.cloudsim.Storage;
 import org.cloudbus.cloudsim.Vm;
@@ -19,6 +22,8 @@ public class EnhancedPowerDatacenter extends PowerDatacenter
 	
 	
 	protected List<Sector> sectorList;
+	
+	
 	public EnhancedPowerDatacenter(
 			String name,
 			DatacenterCharacteristics characteristics,
@@ -31,23 +36,24 @@ public class EnhancedPowerDatacenter extends PowerDatacenter
 				 vmAllocationPolicy,
 				 storageList,
 				 schedulingInterval);
+		
+		
+		
+		for (Rack rack : getCharacteristics().getRackList()) {
+			rack.setDatacenter(this);
+		}
+		
+		
+		
+		for (Aisle aisle : getCharacteristics().getAisleList()) {
+			aisle.setDatacenter(this);
+		}
+		
+		for (Sector sector : getCharacteristics().getSectorList()) {
+			sector.setDatacenter(this);
+		}
 	}
 	
-	public EnhancedPowerDatacenter(
-			String name,
-			DatacenterCharacteristics characteristics,
-			VmAllocationPolicy vmAllocationPolicy,
-			List<Storage> storageList,
-			double schedulingInterval,
-			List<Sector> sectorList) throws Exception
-	{
-		super(  name,
-				characteristics,
-				 vmAllocationPolicy,
-				 storageList,
-				 schedulingInterval);
-		this.setSectorList(sectorList);
-	}
 
 	
 	@Override
@@ -110,7 +116,7 @@ public class EnhancedPowerDatacenter extends PowerDatacenter
 					currentTime,
 					timeFrameDatacenterEnergy);
 			// power used for cooling 
-			timeFrameDatacenterEnergy += getCoolingEnergy(timeDiff);
+			//timeFrameDatacenterEnergy += getCoolingEnergy(timeDiff);
 		}
 		
 		
@@ -133,7 +139,7 @@ public class EnhancedPowerDatacenter extends PowerDatacenter
 		return minTime;
 	}
 	
-	public double getCoolingEnergy(double timeDiff)
+	/*public double getCoolingEnergy(double timeDiff)
 	{
 		double coolingEnergy = 0.0;
 		// iterate over sector list
@@ -173,14 +179,8 @@ public class EnhancedPowerDatacenter extends PowerDatacenter
 		
 		Log.printLine("Total cooling cost is: "+coolingEnergy);
 		return coolingEnergy;
-	}
+	}*/
 	
-	public List<Sector> getSectorList() {
-		return sectorList;
-	}
-	public void setSectorList(List<Sector> sectorList) {
-		this.sectorList = sectorList;
-	}
 	
 	
 }

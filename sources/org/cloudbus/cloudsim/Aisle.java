@@ -11,6 +11,8 @@ public class Aisle
 	private int coolingStatus;
 	private List<Rack> aisleRackList;
 	
+	private Datacenter datacenter;
+	
 	
 	
 	public Aisle(int aisleId, List<Rack> aisleRacks, int status)
@@ -56,6 +58,19 @@ public class Aisle
 	public void setAisleId(int id) {
 		aisleId = id;
 	}
+	
+	//set datacenter
+	public void setDatacenter(Datacenter datacenter)
+	{
+		this.datacenter = datacenter;
+	}
+		
+	//get datacenter
+	public Datacenter getDatacenter()
+	{
+		return datacenter;
+	}
+	
 	
 	//returns the list of sectorCoords
 	public List<Integer> getAisleCoords() {

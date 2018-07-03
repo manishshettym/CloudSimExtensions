@@ -10,6 +10,7 @@ public class Rack
 	private int coolingStatus;
 	private List<EnhancedHost> rackHostList;
 	
+	private Datacenter datacenter;
 	
 	
 	public Rack(int rackId, List<EnhancedHost> racksHosts, int status)
@@ -55,6 +56,19 @@ public class Rack
 	public void setRackId(int id) {
 		rackId = id;
 	}
+	
+	//set datacenter
+	public void setDatacenter(Datacenter datacenter)
+	{
+		this.datacenter = datacenter;
+	}
+		
+	//get datacenter
+	public Datacenter getDatacenter()
+	{
+		return datacenter;
+	}
+	
 	
 	//returns the list of sectorCoords
 	public List<Integer> getRackCoords() {

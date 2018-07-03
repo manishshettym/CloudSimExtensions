@@ -38,7 +38,7 @@ public class DatacenterBroker extends SimEntity {
 	public int [] failurezones;
 
 	/** The vm list. */
-	protected static List<? extends Vm> vmList;
+	public static List<? extends Vm> vmList;
 
 	/** The vms created list. */
 	protected List<? extends Vm> vmsCreatedList;
@@ -254,7 +254,7 @@ public class DatacenterBroker extends SimEntity {
 			}
 			
 			
-			if(failurezones[2]==1)
+			if(failurezones[2]==1 ||failurezones[3]==1 || failurezones[4]==1 || failurezones[2]==1)
 			{
 				vmcopies = (List) new ArrayList< ArrayList<Vm> > ();
 				
@@ -824,7 +824,7 @@ public class DatacenterBroker extends SimEntity {
 	
 	public void setfailurezones(int [] data)
 	{
-		failurezones = data;
+		this.failurezones = data;
 		
 	}
 

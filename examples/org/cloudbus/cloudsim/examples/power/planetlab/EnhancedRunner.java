@@ -52,7 +52,7 @@ public class EnhancedRunner
 
 
 	/** The broker. */
-	protected static DatacenterBrokerSubmitTime broker;
+	protected static DatacenterBroker broker;
 
 	/** The cloudlet list for workload. */
 	protected static List<CloudletSubmitTime> cloudletListworkload;
@@ -122,13 +122,17 @@ public class EnhancedRunner
 		
 
 		//call init
-		//init(workFile,data[0],data[1]);
+		int [] failurezones = new int[6];
+		failurezones = init(workFile,data[0],data[1],data[2],data[3],data[4],data[5],data);
+		
 		//call start
-		//start("SimpleSectorAllocation",outputFolder,r,fz1,fz2...);
+		start("SimpleSectorAllocation",outputFolder,failurezones);
 	}
 	
-	protected void init(String workFile,int dc,int sectorPerDC , int aislesPerSector , int racksPerAisle, int hostsPerRack ,int cloudlets , int [] failurezones)
+	protected int [] init(String workFile,int dc,int sectorPerDC , int aislesPerSector , int racksPerAisle, int hostsPerRack ,int cloudlets , int [] data)
 	{
+		int [] failurezones = new int[6];
+		
 		try {
 			
 			//Step1:initialize the library
@@ -145,14 +149,29 @@ public class EnhancedRunner
 			aisleList = EnhancedHelper.createAisleList(rackList,racksPerAisle);
 			sectorList = EnhancedHelper.createSectorList(aisleList,aislesPerSector);
 			
+
 			
+			int j=0;
+			//parsing data to get only failure zones info:
+			for(int i=0 ; i< data.length ; i++)
+			{
+				if(i>5)
+				{
+					failurezones[j++]=data[i];
+				}
+					
+			}
+			
+			//initialize the alloc policy
 			VmAllocationPolicy vmAllocationPolicy = new FzonesVmAllocationPolicy(hostList,rackList,aisleList,sectorList,failurezones);
 			
 			
 			//Step2: Create datacenters
+			datacenterList = new ArrayList <EnhancedPowerDatacenter>();
 			for(int i=0; i<dc;i++)
 			{
-				datacenterList.add( EnhancedHelper.createEnhancedDatacenter("Datacenter_"+i ,se,ai,ra,ho));
+				
+				datacenterList.add( EnhancedHelper.createEnhancedDatacenter("Datacenter_"+i , sectorList,aisleList,rackList,hostList,vmAllocationPolicy));
 			}
 			
 			
@@ -161,12 +180,12 @@ public class EnhancedRunner
 			
 			
 			//Step3: Create the broker
-			DatacenterBroker broker = createBroker();
+			broker = createBroker();
 			int brokerId = broker.getId();
 			
 			
 			//Step4: Generate cloudlets from workload file OR using the no.
-			cloudletList = createCloudlet(brokerId,cl);
+			cloudletList = createCloudlet(brokerId,cloudlets);
 			
 			/*WorkloadFileReaderLANLSubmitTime workloadReader = new WorkloadFileReaderLANLSubmitTime(workFile, Constants.HOST_MIPS[0]); //1860, rating in MIPS
 			cloudletListworkload = workloadReader.generateWorkload(brokerId);
@@ -187,21 +206,16 @@ public class EnhancedRunner
 			Log.printLine("The simulation has been terminated due to an unexpected error");
 			System.exit(0);
 		}
+	
+		return failurezones;
 	}
 	
 	
-	protected void start(String experimentName, String outputFolder,int r, int fz1 , int fz2) {
+	protected void start(String experimentName, String outputFolder,int [] failurezones) {
 		System.out.println("Starting " + experimentName);
 		
 	
 		try {
-			
-			int [] failurezones = new int[3]; // rn 3 make more as fz increases
-			failurezones[0]=r;
-			failurezones[1]=fz1;
-			failurezones[2]=fz2;
-			
-			//.. so on
 			
 		
 			broker.setfailurezones(failurezones);
@@ -236,18 +250,6 @@ public class EnhancedRunner
 		}
 
 		Log.printLine("Finished " + experimentName);
-	}
-	
-	private static EnhancedPowerDatacenter createDatacenter(String name , int ho)
-	{
-		
-		
-		VmAllocationPolicy vmAllocationPolicy = new FzonesVmAllocationPolicy()
-	
-		List<EnhancedHost> hostList = Helper.createHostList(ho);	
-		EnhancedPowerDatacenter datacenter = Helper.createDatacenter(name, hostList, vmAllocationPolicy)
-
-		return datacenter;
 	}
 	
 	

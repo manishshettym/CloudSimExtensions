@@ -169,15 +169,21 @@ public class EnhancedHelper extends Helper
 	}
 	
 	
+	//////////////////////////// Create OBJECTS METHODS //////////////////////
 	
 	public static EnhancedPowerDatacenter createEnhancedDatacenter(
 			String name,
-			Class<EnhancedPowerDatacenter> class1,
+			//Class<EnhancedPowerDatacenter> class1,
+			List<Sector> sectorList,
+			List<Aisle> aisleList,
+			List<Rack> rackList,
 			List<EnhancedHost> hostList,
-			VmAllocationPolicy vmAllocationPolicy, 
-			int hostsPerSector,
-			int numOfFailureZones,
-			List<Vm> vmList) throws Exception {
+			VmAllocationPolicy vmAllocationPolicy) throws Exception 
+	{
+		
+		Log.printLine(name + " trying to be created");
+		
+		//Setup the characterstics
 		String arch = "x86"; // system architecture
 		String os = "Linux"; // operating system
 		String vmm = "Xen";
@@ -187,27 +193,26 @@ public class EnhancedHelper extends Helper
 		double costPerStorage = 0.001; // the cost of using storage in this resource
 		double costPerBw = 0.0; // the cost of using bw in this resource
 
-	
-		List<Sector> sectorList = MakeSectorList(hostList,hostsPerSector,numOfFailureZones); // 1 failrue zone by deafault
 		
+		// I think all the other lists need to be passed as characteristics
 		
 		DatacenterCharacteristics characteristics = new DatacenterCharacteristics(
 				arch,
 				os,
 				vmm,
 				hostList,
+				rackList,
+				aisleList,
+				sectorList,
 				time_zone,
 				cost,
 				costPerMem,
 				costPerStorage,
 				costPerBw);
 		
-		List<Integer>FailureZoneIds = new ArrayList<Integer>();
-		for(int i =0;i<numOfFailureZones;i++)
-		{
-			FailureZoneIds.add(i);
-		}
+		
 		EnhancedPowerDatacenter datacenter = null;
+		
 		try {
 			datacenter = new EnhancedPowerDatacenter(
 					name,
@@ -216,8 +221,9 @@ public class EnhancedHelper extends Helper
 					new LinkedList<Storage>(),
 					Constants.SCHEDULING_INTERVAL
 					);
-			datacenter.setSectorList(sectorList);
+			
 		} catch (Exception e) {
+			
 			e.printStackTrace();
 			System.exit(0);
 		}

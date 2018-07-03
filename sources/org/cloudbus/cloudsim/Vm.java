@@ -54,6 +54,15 @@ public class Vm {
 
 	/** The host. */
 	private Host host;
+	
+	/** The Sector. */
+	private Sector sector;
+	
+	/** The Aisle. */
+	private Aisle aisle;
+	
+	/** The Rack. */
+	private Rack rack;
 
 	/** In migration flag. */
 	private boolean inMigration;
@@ -464,6 +473,35 @@ public class Vm {
 	 */
 	public Host getHost() {
 		return host;
+	}
+	
+	
+	
+	//Sector
+	public void setSector(Sector sector) {
+		this.sector = sector;
+	}
+
+	public Sector getSector() {
+		return sector;
+	}
+	
+	//Aisle
+	public void setAisle(Aisle aisle) {
+		this.aisle = aisle;
+	}
+
+	public Aisle getAisle() {
+		return aisle;
+	}
+	
+	//Rack
+	public void setRack(Rack rack) {
+		this.rack  = rack ;
+	}
+
+	public Rack getRack() {
+		return rack;
 	}
 
 	/**
