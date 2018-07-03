@@ -38,6 +38,17 @@ public class DatacenterCharacteristics {
 
 	/** The host list. */
 	private List<? extends Host> hostList;
+	
+	/** The rack list. */
+	private List<? extends Rack> rackList;
+	
+	/** The aisle list. */
+	private List<? extends Aisle> aisleList;
+	
+	/** The sector list. */
+	private List<? extends Sector> sectorList;
+	
+	
 
 	/** The time zone -- difference from GMT. */
 	private double timeZone;
@@ -116,6 +127,39 @@ public class DatacenterCharacteristics {
 		setArchitecture(architecture);
 		setOs(os);
 		setHostList(hostList);
+		setAllocationPolicy(allocationPolicy);
+		setCostPerSecond(costPerSec);
+
+		setTimeZone(0.0);
+
+		setVmm(vmm);
+		setCostPerMem(costPerMem);
+		setCostPerStorage(costPerStorage);
+		setCostPerBw(costPerBw);
+	}
+	
+	public DatacenterCharacteristics(
+			String architecture,
+			String os,
+			String vmm,
+			List<? extends Host> hostList,
+			List<? extends Rack> rackList,
+			List<? extends Aisle> aisleList,
+			List<? extends Sector> sectorList,
+			double timeZone,
+			double costPerSec,
+			double costPerMem,
+			double costPerStorage,
+			double costPerBw) {
+		setId(-1);
+		setArchitecture(architecture);
+		setOs(os);
+		
+		setHostList(hostList);
+		this.rackList = rackList;
+		this.aisleList= aisleList;
+		this.sectorList = sectorList;
+		
 		setAllocationPolicy(allocationPolicy);
 		setCostPerSecond(costPerSec);
 
@@ -492,6 +536,21 @@ public class DatacenterCharacteristics {
 	@SuppressWarnings("unchecked")
 	public <T extends Host> List<T> getHostList() {
 		return (List<T>) hostList;
+	}
+	
+	@SuppressWarnings("unchecked")
+	public <T extends Rack> List<T> getRackList() {
+		return (List<T>) rackList;
+	}
+	
+	@SuppressWarnings("unchecked")
+	public <T extends Aisle> List<T> getAisleList() {
+		return (List<T>) aisleList;
+	}
+	
+	@SuppressWarnings("unchecked")
+	public <T extends Sector> List<T> getSectorList() {
+		return (List<T>) sectorList;
 	}
 
 	/**

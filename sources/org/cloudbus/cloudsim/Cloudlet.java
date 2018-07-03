@@ -59,6 +59,7 @@ public class Cloudlet {
 
 	/** The time where this Cloudlet completes. */
 	private double finishTime;
+	
 
 	/**
 	 * Start time of executing this Cloudlet. With new functionalities, such as CANCEL, PAUSED and
@@ -147,7 +148,7 @@ public class Cloudlet {
 
 	// Data cloudlet
 	/** The required files. */
-	private List<String> requiredFiles = null;   // list of required filenames
+	protected List<String> requiredFiles = null;   // list of required filenames
 
 	/**
 	 * Allocates a new Cloudlet object. The Cloudlet length, input and output file sizes should be
@@ -170,6 +171,7 @@ public class Cloudlet {
 	 * @pre cloudletOutputSize >= 1
 	 * @post $none
 	 */
+
 	public Cloudlet(
 			final int cloudletId,
 			final long cloudletLength,
@@ -189,13 +191,34 @@ public class Cloudlet {
 				utilizationModelRam,
 				utilizationModelBw,
 				false);
+		 
 		vmId = -1;
 		accumulatedBwCost = 0.0;
 		costPerBw = 0.0;
 
 		requiredFiles = new LinkedList<String>();
 	}
+	
+	//Create copy of the cloudlet passed in the parameter
+	public Cloudlet(Cloudlet cl, int idshift) {
+		this(
+				cl.cloudletId+idshift,
+				cl.cloudletLength,
+				cl.numberOfPes,
+				cl.cloudletFileSize,
+				cl.cloudletOutputSize,
+				cl.utilizationModelCpu,
+				cl.utilizationModelRam,
+				cl.utilizationModelBw,
+				false);
+		 
+		vmId = -1;
+		accumulatedBwCost = 0.0;
+		costPerBw = 0.0;
 
+		requiredFiles = new LinkedList<String>();
+	}
+	
 	/**
 	 * Allocates a new Cloudlet object. The Cloudlet length, input and output file sizes should be
 	 * greater than or equal to 1.
@@ -395,6 +418,7 @@ public class Cloudlet {
 
 	// ////////////////////// End of Internal Class //////////////////////////
 
+	
 	/**
 	 * Sets the id of the reservation made for this cloudlet.
 	 * 

@@ -115,7 +115,6 @@ public class SimEvent implements Cloneable, Comparable<SimEvent> {
 	/**
 	 * @see Comparable#compareTo(Object)
 	 */
-	@Override
 	public int compareTo(SimEvent event) {
 		if (event == null) {
 			return 1;

@@ -54,6 +54,15 @@ public class Vm {
 
 	/** The host. */
 	private Host host;
+	
+	/** The Sector. */
+	private Sector sector;
+	
+	/** The Aisle. */
+	private Aisle aisle;
+	
+	/** The Rack. */
+	private Rack rack;
 
 	/** In migration flag. */
 	private boolean inMigration;
@@ -127,6 +136,30 @@ public class Vm {
 		setCurrentAllocatedRam(0);
 		setCurrentAllocatedSize(0);
 	}
+	
+	//Creates a clone of the Vm provided with id shifted
+	public Vm(Vm vm, int idshift) {
+		setId(vm.id + idshift);
+		setUserId(vm.userId);
+		setUid(getUid(vm.userId, id));
+		setMips(vm.mips);
+		setNumberOfPes(vm.numberOfPes);
+		setRam(vm.ram);
+		setBw(vm.bw);
+		setSize(vm.size);
+		setVmm(vm.vmm);
+		setCloudletScheduler(vm.cloudletScheduler);
+
+		setInMigration(false);
+		setBeingInstantiated(true);
+
+		setCurrentAllocatedBw(0);
+		setCurrentAllocatedMips(null);
+		setCurrentAllocatedRam(0);
+		setCurrentAllocatedSize(0);
+	}
+	
+	
 
 	/**
 	 * Updates the processing of cloudlets running on this VM.
@@ -440,6 +473,35 @@ public class Vm {
 	 */
 	public Host getHost() {
 		return host;
+	}
+	
+	
+	
+	//Sector
+	public void setSector(Sector sector) {
+		this.sector = sector;
+	}
+
+	public Sector getSector() {
+		return sector;
+	}
+	
+	//Aisle
+	public void setAisle(Aisle aisle) {
+		this.aisle = aisle;
+	}
+
+	public Aisle getAisle() {
+		return aisle;
+	}
+	
+	//Rack
+	public void setRack(Rack rack) {
+		this.rack  = rack ;
+	}
+
+	public Rack getRack() {
+		return rack;
 	}
 
 	/**

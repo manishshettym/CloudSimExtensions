@@ -12,6 +12,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import org.cloudbus.cloudsim.EnhancedHost;
 import org.cloudbus.cloudsim.Host;
 import org.cloudbus.cloudsim.Log;
 import org.cloudbus.cloudsim.Vm;
@@ -35,7 +36,7 @@ import org.cloudbus.cloudsim.core.CloudSim;
 public abstract class PowerVmAllocationPolicyAbstract extends VmAllocationPolicy {
 
 	/** The vm table. */
-	private final Map<String, Host> vmTable = new HashMap<String, Host>();
+	public  Map<String, EnhancedHost> vmTable = new HashMap<String, EnhancedHost>();
 
 	/**
 	 * Instantiates a new power vm allocation policy abstract.
@@ -86,6 +87,8 @@ public abstract class PowerVmAllocationPolicyAbstract extends VmAllocationPolicy
 	 * @return the power host
 	 */
 	public PowerHost findHostForVm(Vm vm) {
+		// override getHostList to return list of hosts from a powered up sector
+		// getHostList is a public method in VmAllocationPolicy.java
 		for (PowerHost host : this.<PowerHost> getHostList()) {
 			if (host.isSuitableForVm(vm)) {
 				return host;
@@ -121,6 +124,11 @@ public abstract class PowerVmAllocationPolicyAbstract extends VmAllocationPolicy
 	 */
 	@Override
 	public Host getHost(int vmId, int userId) {
+		
+		if(getVmTable().get(Vm.getUid(userId, vmId)) == null)
+		{
+			Log.printLine("PowerVmAllocationPolicyAbstract");
+		}
 		return getVmTable().get(Vm.getUid(userId, vmId));
 	}
 
@@ -129,7 +137,7 @@ public abstract class PowerVmAllocationPolicyAbstract extends VmAllocationPolicy
 	 * 
 	 * @return the vm table
 	 */
-	public Map<String, Host> getVmTable() {
+	public Map<String, EnhancedHost> getVmTable() {
 		return vmTable;
 	}
 

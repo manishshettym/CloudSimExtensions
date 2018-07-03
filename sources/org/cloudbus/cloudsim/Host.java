@@ -186,7 +186,8 @@ public class Host {
 	 * @return true, if is suitable for vm
 	 */
 	public boolean isSuitableForVm(Vm vm) {
-		return (getVmScheduler().getPeCapacity() >= vm.getCurrentRequestedMaxMips()
+		return (getNumberOfFreePes()>=vm.getNumberOfPes() 
+				&& getVmScheduler().getPeCapacity() >= vm.getCurrentRequestedMaxMips()
 				&& getVmScheduler().getAvailableMips() >= vm.getCurrentRequestedTotalMips()
 				&& getRamProvisioner().isSuitableForVm(vm, vm.getCurrentRequestedRam()) && getBwProvisioner()
 				.isSuitableForVm(vm, vm.getCurrentRequestedBw()));
@@ -297,9 +298,11 @@ public class Host {
 	public Vm getVm(int vmId, int userId) {
 		for (Vm vm : getVmList()) {
 			if (vm.getId() == vmId && vm.getUserId() == userId) {
+				System.out.println("Host.java");
 				return vm;
 			}
 		}
+		
 		return null;
 	}
 

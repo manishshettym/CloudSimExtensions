@@ -431,6 +431,8 @@ public class Datacenter extends SimEntity {
 		boolean result = getVmAllocationPolicy().allocateHostForVm(vm);
 
 		if (ack) {
+			
+			//Log.printLine(vm.getId() + " has been processed in the Datacenter "+ getId()+" with result:"+ result ); 
 			int[] data = new int[3];
 			data[0] = getId();
 			data[1] = vm.getId();
@@ -722,6 +724,7 @@ public class Datacenter extends SimEntity {
 			double fileTransferTime = predictFileTransferTime(cl.getRequiredFiles());
 
 			Host host = getVmAllocationPolicy().getHost(vmId, userId);
+			
 			Vm vm = host.getVm(vmId, userId);
 			CloudletScheduler scheduler = vm.getCloudletScheduler();
 			double estimatedFinishTime = scheduler.cloudletSubmit(cl, fileTransferTime);

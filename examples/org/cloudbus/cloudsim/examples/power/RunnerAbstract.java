@@ -173,7 +173,7 @@ public abstract class RunnerAbstract {
 			double lastClock = CloudSim.startSimulation();
 
 			List<Cloudlet> newList = broker.getCloudletReceivedList();
-			Log.printLine("Received " + newList.size() + " cloudlets");
+			Log.printLine("Received " + newList.size() + " cloudlets"); 
 
 			CloudSim.stopSimulation();
 
