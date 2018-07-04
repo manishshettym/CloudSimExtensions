@@ -1,0 +1,787 @@
+2
+2
+2
+3
+2
+15
+2
+0
+0
+0
+1
+0
+Initialising...
+Rack #1: hosts 0 to 1
+Rack #1 size is: 2
+Rack #2: hosts 2 to 3
+Rack #2 size is: 2
+Rack #3: hosts 4 to 5
+Rack #3 size is: 2
+Rack #4: hosts 6 to 7
+Rack #4 size is: 2
+Rack #5: hosts 8 to 9
+Rack #5 size is: 2
+Rack #6: hosts 10 to 11
+Rack #6 size is: 2
+Rack #7: hosts 12 to 13
+Rack #7 size is: 2
+Rack #8: hosts 14 to 15
+Rack #8 size is: 2
+Rack #9: hosts 16 to 17
+Rack #9 size is: 2
+Rack #10: hosts 18 to 19
+Rack #10 size is: 2
+Rack #11: hosts 20 to 21
+Rack #11 size is: 2
+Rack #12: hosts 22 to 23
+Rack #12 size is: 2
+Aisle #1: racks 0 to 2
+Aisle #1 size is: 3
+Aisle #2: racks 3 to 5
+Aisle #2 size is: 3
+Aisle #3: racks 6 to 8
+Aisle #3 size is: 3
+Aisle #4: racks 9 to 11
+Aisle #4 size is: 3
+Sector #1: aisles 0 to 1
+Sector #1 size is: 2
+Sector #2: aisles 2 to 3
+Sector #2 size is: 2
+Datacenter_0 trying to be created
+Datacenter_1 trying to be created
+Starting CloudSim version 3.0
+Datacenter_0 is starting...
+Datacenter_1 is starting...
+Broker is starting...
+Entities started.
+0.0: Broker: Cloud Resource List received with 2 resource(s)
+Datacenters available[2, 3]
+Entered copying area2
+0.0: Broker: Trying to Create VM #0 in Datacenter_0
+0.0: Broker: Trying to Create VM #1 in Datacenter_0
+0.0: Broker: Trying to Create VM #2 in Datacenter_0
+0.0: Broker: Trying to Create VM #3 in Datacenter_0
+0.0: Broker: Trying to Create VM #4 in Datacenter_0
+0.0: Broker: Trying to Create VM #5 in Datacenter_0
+0.0: Broker: Trying to Create VM #6 in Datacenter_0
+0.0: Broker: Trying to Create VM #7 in Datacenter_0
+0.0: Broker: Trying to Create VM #8 in Datacenter_0
+0.0: Broker: Trying to Create VM #9 in Datacenter_0
+0.0: Broker: Trying to Create VM #10 in Datacenter_0
+0.0: Broker: Trying to Create VM #11 in Datacenter_0
+0.0: Broker: Trying to Create VM #12 in Datacenter_0
+0.0: Broker: Trying to Create VM #13 in Datacenter_0
+0.0: Broker: Trying to Create VM #14 in Datacenter_0
+0.0: Broker: Trying to Create VM #15 in Datacenter_0
+0.0: Broker: Trying to Create VM #16 in Datacenter_0
+0.0: Broker: Trying to Create VM #17 in Datacenter_0
+0.0: Broker: Trying to Create VM #18 in Datacenter_0
+0.0: Broker: Trying to Create VM #19 in Datacenter_0
+0.0: Broker: Trying to Create VM #20 in Datacenter_0
+0.0: Broker: Trying to Create VM #21 in Datacenter_0
+0.0: Broker: Trying to Create VM #22 in Datacenter_0
+0.0: Broker: Trying to Create VM #23 in Datacenter_0
+0.0: Broker: Trying to Create VM #24 in Datacenter_0
+0.0: Broker: Trying to Create VM #25 in Datacenter_0
+0.0: Broker: Trying to Create VM #26 in Datacenter_0
+0.0: Broker: Trying to Create VM #27 in Datacenter_0
+0.0: Broker: Trying to Create VM #28 in Datacenter_0
+0.0: Broker: Trying to Create VM #29 in Datacenter_0
+HIIIIIIIIIII
+Vm 0 requires 1 Pes
+Free Pes are : [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2] Size 24
+0
+1
+IDX:0
+Host:0
+Rack:0
+Aisle:0
+Sector:0
+0.00: VM #0 has been allocated to the host #0
+HIIIIIIIIIII
+Vm 1 requires 1 Pes
+Free Pes are : [1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2] Size 24
+0
+1
+IDX:0
+Host:0
+Rack:0
+Aisle:0
+Sector:0
+0.00: VM #1 has been allocated to the host #0
+HIIIIIIIIIII
+Vm 2 requires 1 Pes
+Free Pes are : [0, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2] Size 24
+0
+1
+IDX:0
+Host:1
+Rack:0
+Aisle:0
+Sector:0
+0.00: VM #2 has been allocated to the host #1
+HIIIIIIIIIII
+Vm 3 requires 1 Pes
+Free Pes are : [0, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2] Size 24
+0
+1
+IDX:0
+Host:1
+Rack:0
+Aisle:0
+Sector:0
+0.00: VM #3 has been allocated to the host #1
+HIIIIIIIIIII
+Vm 4 requires 1 Pes
+Free Pes are : [0, 0, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2] Size 24
+0
+1
+IDX:0
+IDX:0
+2
+3
+IDX:2
+Host:2
+Rack:1
+Aisle:0
+Sector:0
+0.00: VM #4 has been allocated to the host #2
+HIIIIIIIIIII
+Vm 5 requires 1 Pes
+Free Pes are : [0, 0, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2] Size 24
+0
+1
+IDX:0
+IDX:0
+2
+3
+IDX:2
+Host:2
+Rack:1
+Aisle:0
+Sector:0
+0.00: VM #5 has been allocated to the host #2
+HIIIIIIIIIII
+Vm 6 requires 1 Pes
+Free Pes are : [0, 0, 0, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2] Size 24
+0
+1
+IDX:0
+IDX:0
+2
+3
+IDX:2
+Host:3
+Rack:1
+Aisle:0
+Sector:0
+0.00: VM #6 has been allocated to the host #3
+HIIIIIIIIIII
+Vm 7 requires 1 Pes
+Free Pes are : [0, 0, 0, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2] Size 24
+0
+1
+IDX:0
+IDX:0
+2
+3
+IDX:2
+Host:3
+Rack:1
+Aisle:0
+Sector:0
+0.00: VM #7 has been allocated to the host #3
+HIIIIIIIIIII
+Vm 8 requires 1 Pes
+Free Pes are : [0, 0, 0, 0, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2] Size 24
+0
+1
+IDX:0
+IDX:0
+2
+3
+IDX:2
+4
+5
+IDX:4
+Host:4
+Rack:2
+Aisle:0
+Sector:0
+0.00: VM #8 has been allocated to the host #4
+HIIIIIIIIIII
+Vm 9 requires 1 Pes
+Free Pes are : [0, 0, 0, 0, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2] Size 24
+0
+1
+IDX:0
+IDX:0
+2
+3
+IDX:2
+4
+5
+IDX:4
+Host:4
+Rack:2
+Aisle:0
+Sector:0
+0.00: VM #9 has been allocated to the host #4
+HIIIIIIIIIII
+Vm 10 requires 1 Pes
+Free Pes are : [0, 0, 0, 0, 0, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2] Size 24
+0
+1
+IDX:0
+IDX:0
+2
+3
+IDX:2
+4
+5
+IDX:4
+Host:5
+Rack:2
+Aisle:0
+Sector:0
+0.00: VM #10 has been allocated to the host #5
+HIIIIIIIIIII
+Vm 11 requires 1 Pes
+Free Pes are : [0, 0, 0, 0, 0, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2] Size 24
+0
+1
+IDX:0
+IDX:0
+2
+3
+IDX:2
+4
+5
+IDX:4
+Host:5
+Rack:2
+Aisle:0
+Sector:0
+0.00: VM #11 has been allocated to the host #5
+HIIIIIIIIIII
+Vm 12 requires 1 Pes
+Free Pes are : [0, 0, 0, 0, 0, 0, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2] Size 24
+0
+1
+IDX:0
+IDX:0
+2
+3
+IDX:2
+4
+5
+IDX:4
+6
+7
+IDX:6
+Host:6
+Rack:3
+Aisle:1
+Sector:0
+0.00: VM #12 has been allocated to the host #6
+HIIIIIIIIIII
+Vm 13 requires 1 Pes
+Free Pes are : [0, 0, 0, 0, 0, 0, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2] Size 24
+0
+1
+IDX:0
+IDX:0
+2
+3
+IDX:2
+4
+5
+IDX:4
+6
+7
+IDX:6
+Host:6
+Rack:3
+Aisle:1
+Sector:0
+0.00: VM #13 has been allocated to the host #6
+HIIIIIIIIIII
+Vm 14 requires 1 Pes
+Free Pes are : [0, 0, 0, 0, 0, 0, 0, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2] Size 24
+0
+1
+IDX:0
+IDX:0
+2
+3
+IDX:2
+4
+5
+IDX:4
+6
+7
+IDX:6
+Host:7
+Rack:3
+Aisle:1
+Sector:0
+0.00: VM #14 has been allocated to the host #7
+HIIIIIIIIIII
+Vm 15 requires 1 Pes
+Free Pes are : [0, 0, 0, 0, 0, 0, 0, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2] Size 24
+8
+9
+IDX:8
+Host:8
+Rack:4
+Aisle:1
+Sector:0
+0.00: VM #15 has been allocated to the host #8
+HIIIIIIIIIII
+Vm 16 requires 1 Pes
+Free Pes are : [0, 0, 0, 0, 0, 0, 0, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2] Size 24
+8
+9
+IDX:8
+Host:8
+Rack:4
+Aisle:1
+Sector:0
+0.00: VM #16 has been allocated to the host #8
+HIIIIIIIIIII
+Vm 17 requires 1 Pes
+Free Pes are : [0, 0, 0, 0, 0, 0, 0, 1, 0, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2] Size 24
+8
+9
+IDX:8
+Host:9
+Rack:4
+Aisle:1
+Sector:0
+0.00: VM #17 has been allocated to the host #9
+HIIIIIIIIIII
+Vm 18 requires 1 Pes
+Free Pes are : [0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2] Size 24
+8
+9
+IDX:8
+Host:9
+Rack:4
+Aisle:1
+Sector:0
+0.00: VM #18 has been allocated to the host #9
+HIIIIIIIIIII
+Vm 19 requires 1 Pes
+Free Pes are : [0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2] Size 24
+10
+11
+IDX:10
+Host:10
+Rack:5
+Aisle:1
+Sector:0
+0.00: VM #19 has been allocated to the host #10
+HIIIIIIIIIII
+Vm 20 requires 1 Pes
+Free Pes are : [0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2] Size 24
+10
+11
+IDX:10
+Host:10
+Rack:5
+Aisle:1
+Sector:0
+0.00: VM #20 has been allocated to the host #10
+HIIIIIIIIIII
+Vm 21 requires 1 Pes
+Free Pes are : [0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2] Size 24
+10
+11
+IDX:10
+Host:11
+Rack:5
+Aisle:1
+Sector:0
+0.00: VM #21 has been allocated to the host #11
+HIIIIIIIIIII
+Vm 22 requires 1 Pes
+Free Pes are : [0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2] Size 24
+10
+11
+IDX:10
+Host:11
+Rack:5
+Aisle:1
+Sector:0
+0.00: VM #22 has been allocated to the host #11
+HIIIIIIIIIII
+Vm 23 requires 1 Pes
+Free Pes are : [0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2] Size 24
+12
+13
+IDX:12
+Host:12
+Rack:6
+Aisle:2
+Sector:1
+0.00: VM #23 has been allocated to the host #12
+HIIIIIIIIIII
+Vm 24 requires 1 Pes
+Free Pes are : [0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2] Size 24
+12
+13
+IDX:12
+Host:12
+Rack:6
+Aisle:2
+Sector:1
+0.00: VM #24 has been allocated to the host #12
+HIIIIIIIIIII
+Vm 25 requires 1 Pes
+Free Pes are : [0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2] Size 24
+12
+13
+IDX:12
+Host:13
+Rack:6
+Aisle:2
+Sector:1
+0.00: VM #25 has been allocated to the host #13
+HIIIIIIIIIII
+Vm 26 requires 1 Pes
+Free Pes are : [0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2] Size 24
+12
+13
+IDX:12
+Host:13
+Rack:6
+Aisle:2
+Sector:1
+0.00: VM #26 has been allocated to the host #13
+HIIIIIIIIIII
+Vm 27 requires 1 Pes
+Free Pes are : [0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2] Size 24
+14
+15
+IDX:14
+Host:14
+Rack:7
+Aisle:2
+Sector:1
+0.00: VM #27 has been allocated to the host #14
+HIIIIIIIIIII
+Vm 28 requires 1 Pes
+Free Pes are : [0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2] Size 24
+14
+15
+IDX:14
+Host:14
+Rack:7
+Aisle:2
+Sector:1
+0.00: VM #28 has been allocated to the host #14
+HIIIIIIIIIII
+Vm 29 requires 1 Pes
+Free Pes are : [0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 2, 2, 2, 2, 2, 2, 2, 2, 2] Size 24
+14
+15
+IDX:14
+Host:15
+Rack:7
+Aisle:2
+Sector:1
+0.00: VM #29 has been allocated to the host #15
+0.1: Broker: VM #0 has been created in Datacenter #2, Host #0
+0.1: Broker: VM #1 has been created in Datacenter #2, Host #0
+0.1: Broker: VM #2 has been created in Datacenter #2, Host #1
+0.1: Broker: VM #3 has been created in Datacenter #2, Host #1
+0.1: Broker: VM #4 has been created in Datacenter #2, Host #2
+0.1: Broker: VM #5 has been created in Datacenter #2, Host #2
+0.1: Broker: VM #6 has been created in Datacenter #2, Host #3
+0.1: Broker: VM #7 has been created in Datacenter #2, Host #3
+0.1: Broker: VM #8 has been created in Datacenter #2, Host #4
+0.1: Broker: VM #9 has been created in Datacenter #2, Host #4
+0.1: Broker: VM #10 has been created in Datacenter #2, Host #5
+0.1: Broker: VM #11 has been created in Datacenter #2, Host #5
+0.1: Broker: VM #12 has been created in Datacenter #2, Host #6
+0.1: Broker: VM #13 has been created in Datacenter #2, Host #6
+0.1: Broker: VM #14 has been created in Datacenter #2, Host #7
+0.1: Broker: VM #15 has been created in Datacenter #2, Host #8
+0.1: Broker: VM #16 has been created in Datacenter #2, Host #8
+0.1: Broker: VM #17 has been created in Datacenter #2, Host #9
+0.1: Broker: VM #18 has been created in Datacenter #2, Host #9
+0.1: Broker: VM #19 has been created in Datacenter #2, Host #10
+0.1: Broker: VM #20 has been created in Datacenter #2, Host #10
+0.1: Broker: VM #21 has been created in Datacenter #2, Host #11
+0.1: Broker: VM #22 has been created in Datacenter #2, Host #11
+0.1: Broker: VM #23 has been created in Datacenter #2, Host #12
+0.1: Broker: VM #24 has been created in Datacenter #2, Host #12
+0.1: Broker: VM #25 has been created in Datacenter #2, Host #13
+0.1: Broker: VM #26 has been created in Datacenter #2, Host #13
+0.1: Broker: VM #27 has been created in Datacenter #2, Host #14
+0.1: Broker: VM #28 has been created in Datacenter #2, Host #14
+0.1: Broker: VM #29 has been created in Datacenter #2, Host #15
+0.1: Broker: Sending cloudlet 0 to VM #0
+0.1: Broker: Sending cloudlet 1 to VM #1
+0.1: Broker: Sending cloudlet 2 to VM #2
+0.1: Broker: Sending cloudlet 3 to VM #3
+0.1: Broker: Sending cloudlet 4 to VM #4
+0.1: Broker: Sending cloudlet 5 to VM #5
+0.1: Broker: Sending cloudlet 6 to VM #6
+0.1: Broker: Sending cloudlet 7 to VM #7
+0.1: Broker: Sending cloudlet 8 to VM #8
+0.1: Broker: Sending cloudlet 9 to VM #9
+0.1: Broker: Sending cloudlet 10 to VM #10
+0.1: Broker: Sending cloudlet 11 to VM #11
+0.1: Broker: Sending cloudlet 12 to VM #12
+0.1: Broker: Sending cloudlet 13 to VM #13
+0.1: Broker: Sending cloudlet 14 to VM #14
+0.1: Broker: Sending cloudlet 15 to VM #15
+0.1: Broker: Sending cloudlet 16 to VM #16
+0.1: Broker: Sending cloudlet 17 to VM #17
+0.1: Broker: Sending cloudlet 18 to VM #18
+0.1: Broker: Sending cloudlet 19 to VM #19
+0.1: Broker: Sending cloudlet 20 to VM #20
+0.1: Broker: Sending cloudlet 21 to VM #21
+0.1: Broker: Sending cloudlet 22 to VM #22
+0.1: Broker: Sending cloudlet 23 to VM #23
+0.1: Broker: Sending cloudlet 24 to VM #24
+0.1: Broker: Sending cloudlet 25 to VM #25
+0.1: Broker: Sending cloudlet 26 to VM #26
+0.1: Broker: Sending cloudlet 27 to VM #27
+0.1: Broker: Sending cloudlet 28 to VM #28
+0.1: Broker: Sending cloudlet 29 to VM #29
+
+
+--------------------------------------------------------------
+
+
+New resource usage for the time frame starting at 2.10:
+
+2.10: [Host #0] Total allocated MIPS for VM #0 (Host #0) is 0.00, was requested 0.00 out of total 2500.00 (0.00%)
+2.10: [Host #0] MIPS for VM #0 by PEs (2 * 2660.0).
+2.10: [Host #0] Total allocated MIPS for VM #1 (Host #0) is 0.00, was requested 0.00 out of total 2500.00 (0.00%)
+2.10: [Host #0] MIPS for VM #1 by PEs (2 * 2660.0).
+
+2.10: [Host #1] Total allocated MIPS for VM #2 (Host #1) is 0.00, was requested 0.00 out of total 2500.00 (0.00%)
+2.10: [Host #1] MIPS for VM #2 by PEs (2 * 2660.0).
+2.10: [Host #1] Total allocated MIPS for VM #3 (Host #1) is 0.00, was requested 0.00 out of total 2500.00 (0.00%)
+2.10: [Host #1] MIPS for VM #3 by PEs (2 * 2660.0).
+
+2.10: [Host #2] Total allocated MIPS for VM #4 (Host #2) is 0.00, was requested 0.00 out of total 2000.00 (0.00%)
+2.10: [Host #2] MIPS for VM #4 by PEs (2 * 2660.0).
+2.10: [Host #2] Total allocated MIPS for VM #5 (Host #2) is 0.00, was requested 0.00 out of total 2000.00 (0.00%)
+2.10: [Host #2] MIPS for VM #5 by PEs (2 * 2660.0).
+
+2.10: [Host #3] Total allocated MIPS for VM #6 (Host #3) is 0.00, was requested 0.00 out of total 2000.00 (0.00%)
+2.10: [Host #3] MIPS for VM #6 by PEs (2 * 2660.0).
+2.10: [Host #3] Total allocated MIPS for VM #7 (Host #3) is 0.00, was requested 0.00 out of total 2000.00 (0.00%)
+2.10: [Host #3] MIPS for VM #7 by PEs (2 * 2660.0).
+
+2.10: [Host #4] Total allocated MIPS for VM #8 (Host #4) is 0.00, was requested 0.00 out of total 1000.00 (0.00%)
+2.10: [Host #4] MIPS for VM #8 by PEs (2 * 2660.0).
+2.10: [Host #4] Total allocated MIPS for VM #9 (Host #4) is 0.00, was requested 0.00 out of total 1000.00 (0.00%)
+2.10: [Host #4] MIPS for VM #9 by PEs (2 * 2660.0).
+
+2.10: [Host #5] Total allocated MIPS for VM #10 (Host #5) is 0.00, was requested 0.00 out of total 1000.00 (0.00%)
+2.10: [Host #5] MIPS for VM #10 by PEs (2 * 2660.0).
+2.10: [Host #5] Total allocated MIPS for VM #11 (Host #5) is 0.00, was requested 0.00 out of total 1000.00 (0.00%)
+2.10: [Host #5] MIPS for VM #11 by PEs (2 * 2660.0).
+
+2.10: [Host #6] Total allocated MIPS for VM #12 (Host #6) is 0.00, was requested 0.00 out of total 500.00 (0.00%)
+2.10: [Host #6] MIPS for VM #12 by PEs (2 * 2660.0).
+2.10: [Host #6] Total allocated MIPS for VM #13 (Host #6) is 0.00, was requested 0.00 out of total 500.00 (0.00%)
+2.10: [Host #6] MIPS for VM #13 by PEs (2 * 2660.0).
+
+2.10: [Host #7] Total allocated MIPS for VM #14 (Host #7) is 0.00, was requested 0.00 out of total 500.00 (0.00%)
+2.10: [Host #7] MIPS for VM #14 by PEs (2 * 2660.0).
+
+2.10: [Host #8] Total allocated MIPS for VM #15 (Host #8) is 0.00, was requested 0.00 out of total 2500.00 (0.00%)
+2.10: [Host #8] MIPS for VM #15 by PEs (2 * 2660.0).
+2.10: [Host #8] Total allocated MIPS for VM #16 (Host #8) is 0.00, was requested 0.00 out of total 2500.00 (0.00%)
+2.10: [Host #8] MIPS for VM #16 by PEs (2 * 2660.0).
+
+2.10: [Host #9] Total allocated MIPS for VM #17 (Host #9) is 0.00, was requested 0.00 out of total 2500.00 (0.00%)
+2.10: [Host #9] MIPS for VM #17 by PEs (2 * 2660.0).
+2.10: [Host #9] Total allocated MIPS for VM #18 (Host #9) is 0.00, was requested 0.00 out of total 2500.00 (0.00%)
+2.10: [Host #9] MIPS for VM #18 by PEs (2 * 2660.0).
+
+2.10: [Host #10] Total allocated MIPS for VM #19 (Host #10) is 0.00, was requested 0.00 out of total 2000.00 (0.00%)
+2.10: [Host #10] MIPS for VM #19 by PEs (2 * 2660.0).
+2.10: [Host #10] Total allocated MIPS for VM #20 (Host #10) is 0.00, was requested 0.00 out of total 2000.00 (0.00%)
+2.10: [Host #10] MIPS for VM #20 by PEs (2 * 2660.0).
+
+2.10: [Host #11] Total allocated MIPS for VM #21 (Host #11) is 0.00, was requested 0.00 out of total 2000.00 (0.00%)
+2.10: [Host #11] MIPS for VM #21 by PEs (2 * 2660.0).
+2.10: [Host #11] Total allocated MIPS for VM #22 (Host #11) is 0.00, was requested 0.00 out of total 2000.00 (0.00%)
+2.10: [Host #11] MIPS for VM #22 by PEs (2 * 2660.0).
+
+2.10: [Host #12] Total allocated MIPS for VM #23 (Host #12) is 0.00, was requested 0.00 out of total 1000.00 (0.00%)
+2.10: [Host #12] MIPS for VM #23 by PEs (2 * 2660.0).
+2.10: [Host #12] Total allocated MIPS for VM #24 (Host #12) is 0.00, was requested 0.00 out of total 1000.00 (0.00%)
+2.10: [Host #12] MIPS for VM #24 by PEs (2 * 2660.0).
+
+2.10: [Host #13] Total allocated MIPS for VM #25 (Host #13) is 0.00, was requested 0.00 out of total 1000.00 (0.00%)
+2.10: [Host #13] MIPS for VM #25 by PEs (2 * 2660.0).
+2.10: [Host #13] Total allocated MIPS for VM #26 (Host #13) is 0.00, was requested 0.00 out of total 1000.00 (0.00%)
+2.10: [Host #13] MIPS for VM #26 by PEs (2 * 2660.0).
+
+2.10: [Host #14] Total allocated MIPS for VM #27 (Host #14) is 0.00, was requested 0.00 out of total 500.00 (0.00%)
+2.10: [Host #14] MIPS for VM #27 by PEs (2 * 2660.0).
+2.10: [Host #14] Total allocated MIPS for VM #28 (Host #14) is 0.00, was requested 0.00 out of total 500.00 (0.00%)
+2.10: [Host #14] MIPS for VM #28 by PEs (2 * 2660.0).
+
+2.10: [Host #15] Total allocated MIPS for VM #29 (Host #15) is 0.00, was requested 0.00 out of total 500.00 (0.00%)
+2.10: [Host #15] MIPS for VM #29 by PEs (2 * 2660.0).
+
+
+
+
+
+
+
+
+
+2.10: Data center's energy is 0.00 W*sec
+
+
+2.1: Broker: Cloudlet 0 received
+2.1: Broker: Cloudlet 15 received
+2.1: Broker: Cloudlet 1 received
+2.1: Broker: Cloudlet 16 received
+2.1: Broker: Cloudlet 2 received
+2.1: Broker: Cloudlet 17 received
+2.1: Broker: Cloudlet 3 received
+2.1: Broker: Cloudlet 18 received
+2.1: Broker: Cloudlet 4 received
+2.1: Broker: Cloudlet 19 received
+2.1: Broker: Cloudlet 5 received
+2.1: Broker: Cloudlet 20 received
+2.1: Broker: Cloudlet 6 received
+2.1: Broker: Cloudlet 21 received
+2.1: Broker: Cloudlet 7 received
+2.1: Broker: Cloudlet 22 received
+2.1: Broker: Cloudlet 8 received
+2.1: Broker: Cloudlet 23 received
+2.1: Broker: Cloudlet 9 received
+2.1: Broker: Cloudlet 24 received
+2.1: Broker: Cloudlet 10 received
+2.1: Broker: Cloudlet 25 received
+2.1: Broker: Cloudlet 11 received
+2.1: Broker: Cloudlet 26 received
+2.1: Broker: Cloudlet 12 received
+2.1: Broker: Cloudlet 27 received
+2.1: Broker: Cloudlet 13 received
+2.1: Broker: Cloudlet 28 received
+2.1: Broker: Cloudlet 14 received
+2.1: Broker: Cloudlet 29 received
+2.1: Broker: All Cloudlets executed. Finishing...
+2.1: Broker: Destroying VM #0
+2.1: Broker: Destroying VM #1
+2.1: Broker: Destroying VM #2
+2.1: Broker: Destroying VM #3
+2.1: Broker: Destroying VM #4
+2.1: Broker: Destroying VM #5
+2.1: Broker: Destroying VM #6
+2.1: Broker: Destroying VM #7
+2.1: Broker: Destroying VM #8
+2.1: Broker: Destroying VM #9
+2.1: Broker: Destroying VM #10
+2.1: Broker: Destroying VM #11
+2.1: Broker: Destroying VM #12
+2.1: Broker: Destroying VM #13
+2.1: Broker: Destroying VM #14
+2.1: Broker: Destroying VM #15
+2.1: Broker: Destroying VM #16
+2.1: Broker: Destroying VM #17
+2.1: Broker: Destroying VM #18
+2.1: Broker: Destroying VM #19
+2.1: Broker: Destroying VM #20
+2.1: Broker: Destroying VM #21
+2.1: Broker: Destroying VM #22
+2.1: Broker: Destroying VM #23
+2.1: Broker: Destroying VM #24
+2.1: Broker: Destroying VM #25
+2.1: Broker: Destroying VM #26
+2.1: Broker: Destroying VM #27
+2.1: Broker: Destroying VM #28
+2.1: Broker: Destroying VM #29
+Broker is shutting down...
+
+
+--------------------------------------------------------------
+
+
+New resource usage for the time frame starting at 300.10:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+300.10: Data center's energy is 0.00 W*sec
+
+
+Simulation: No more future events
+CloudInformationService: Notify all CloudSim entities for shutting down.
+Datacenter_0 is shutting down...
+Datacenter_1 is shutting down...
+Broker is shutting down...
+Simulation completed.
+Received 30 cloudlets
+Simulation completed.
+
+Experiment name: SimpleSectorAllocation
+Number of hosts: 24
+Number of VMs: 15
+Total simulation time: 300.10 sec
+Energy consumption: 0.00 kWh
+Number of VM migrations: 0
+SLA: NaN%
+SLA perf degradation due to migration: NaN%
+SLA time per active host: NaN%
+Overall SLA violation: NaN%
+Average SLA violation: 0.00%
+Number of host shutdowns: 24
+Mean time before a host shutdown: 2.10 sec
+StDev time before a host shutdown: 0.00 sec
+Mean time before a VM migration: NaN sec
+StDev time before a VM migration: NaN sec
+
+
+Experiment name: SimpleSectorAllocation
+Number of hosts: 24
+Number of VMs: 15
+Total simulation time: 300.10 sec
+Energy consumption: 0.00 kWh
+Number of VM migrations: 0
+SLA: NaN%
+SLA perf degradation due to migration: NaN%
+SLA time per active host: NaN%
+Overall SLA violation: NaN%
+Average SLA violation: 0.00%
+Number of host shutdowns: 24
+Mean time before a host shutdown: 2.10 sec
+StDev time before a host shutdown: 0.00 sec
+Mean time before a VM migration: NaN sec
+StDev time before a VM migration: NaN sec
+

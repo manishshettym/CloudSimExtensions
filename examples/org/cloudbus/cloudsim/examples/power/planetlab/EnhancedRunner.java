@@ -30,6 +30,7 @@ import org.cloudbus.cloudsim.core.CloudSim;
 import org.cloudbus.cloudsim.examples.power.Constants;
 import org.cloudbus.cloudsim.examples.power.EnhancedHelper;
 import org.cloudbus.cloudsim.examples.power.Helper;
+import org.cloudbus.cloudsim.examples.power.RunnerAbstract;
 import org.cloudbus.cloudsim.power.EnhancedPowerDatacenter;
 import org.cloudbus.cloudsim.power.HillClimbingAlgorithm;
 import org.cloudbus.cloudsim.power.RandomBiasedSampling;
@@ -49,6 +50,8 @@ import java.util.Scanner;
 public class EnhancedRunner 
 {
 	
+	/** The enable output. */
+	private static boolean enableOutput;
 
 
 	/** The broker. */
@@ -73,6 +76,21 @@ public class EnhancedRunner
 	
 	public EnhancedRunner(String workFile, String outputFolder,String confpath)throws IOException, FileNotFoundException 
 	{
+		boolean enableOutput = true;
+		boolean outputToFile = true;
+		
+		try {
+			initLogOutput(
+					enableOutput,
+					outputToFile,
+					outputFolder,
+					"SimpleSectorAllocation");
+		} catch (Exception e) {
+			e.printStackTrace();
+			System.exit(0);
+		}
+		
+		
 		
 		//Read the configuration file
 		File inputFolder = new File(confpath);
@@ -124,6 +142,8 @@ public class EnhancedRunner
 		//call init
 		int [] failurezones = new int[6];
 		failurezones = init(workFile,data[0],data[1],data[2],data[3],data[4],data[5],data);
+		
+		//Log.printLine("HELLO" + failurezones[5]);
 		
 		//call start
 		start("SimpleSectorAllocation",outputFolder,failurezones);
@@ -304,7 +324,46 @@ public class EnhancedRunner
 	}
 
 	
+// LOGGING FUNCTIONS
+	protected void initLogOutput(
+			boolean enableOutput,
+			boolean outputToFile,
+			String outputFolder,
+			String parameter) throws IOException, FileNotFoundException {
+		
+		setEnableOutput(enableOutput);
+		Log.setDisabled(!isEnableOutput());
+		
+		if (isEnableOutput() && outputToFile) {
+			File folder = new File(outputFolder);
+			if (!folder.exists()) {
+				folder.mkdir();
+			}
 
+			File folder2 = new File(outputFolder + "/log");
+			if (!folder2.exists()) {
+				folder2.mkdir();
+			}
+
+			File file = new File(outputFolder + "/log/"
+					+ getExperimentName(parameter) + ".txt");
+			file.createNewFile();
+			Log.setOutput(new FileOutputStream(file));
+		}
+	}
+	
+	public void setEnableOutput(boolean enableOutput) {
+		EnhancedRunner.enableOutput = enableOutput;
+	}
+
+	/**
+	 * Checks if is enable output.
+	 * 
+	 * @return true, if is enable output
+	 */
+	public boolean isEnableOutput() {
+		return enableOutput;
+	}
 	
 	
 }

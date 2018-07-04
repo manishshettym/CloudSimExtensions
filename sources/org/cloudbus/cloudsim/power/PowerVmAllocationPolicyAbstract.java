@@ -43,7 +43,7 @@ public abstract class PowerVmAllocationPolicyAbstract extends VmAllocationPolicy
 	 * 
 	 * @param list the list
 	 */
-	public PowerVmAllocationPolicyAbstract(List<? extends Host> list) {
+	public PowerVmAllocationPolicyAbstract(List<? extends EnhancedHost> list) {
 		super(list);
 	}
 

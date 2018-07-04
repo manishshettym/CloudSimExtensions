@@ -254,7 +254,7 @@ public class DatacenterBroker extends SimEntity {
 			}
 			
 			
-			if(failurezones[2]==1 ||failurezones[3]==1 || failurezones[4]==1 || failurezones[2]==1)
+			if(failurezones[2]==1 ||failurezones[3]==1 || failurezones[4]==1 || failurezones[5]==1)
 			{
 				vmcopies = (List) new ArrayList< ArrayList<Vm> > ();
 				

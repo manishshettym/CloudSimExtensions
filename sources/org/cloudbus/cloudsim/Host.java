@@ -14,6 +14,7 @@ import org.cloudbus.cloudsim.core.CloudSim;
 import org.cloudbus.cloudsim.lists.PeList;
 import org.cloudbus.cloudsim.provisioners.BwProvisioner;
 import org.cloudbus.cloudsim.provisioners.RamProvisioner;
+import org.cloudbus.cloudsim.DatacenterCharacteristics;
 
 /**
  * Host executes actions related to management of virtual machines (e.g., creation and destruction).
@@ -186,8 +187,7 @@ public class Host {
 	 * @return true, if is suitable for vm
 	 */
 	public boolean isSuitableForVm(Vm vm) {
-		return (getNumberOfFreePes()>=vm.getNumberOfPes() 
-				&& getVmScheduler().getPeCapacity() >= vm.getCurrentRequestedMaxMips()
+		return (getVmScheduler().getPeCapacity() >= vm.getCurrentRequestedMaxMips()
 				&& getVmScheduler().getAvailableMips() >= vm.getCurrentRequestedTotalMips()
 				&& getRamProvisioner().isSuitableForVm(vm, vm.getCurrentRequestedRam()) && getBwProvisioner()
 				.isSuitableForVm(vm, vm.getCurrentRequestedBw()));

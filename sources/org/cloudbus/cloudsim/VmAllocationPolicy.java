@@ -23,7 +23,7 @@ import java.util.Map;
 public abstract class VmAllocationPolicy {
 
 	/** The host list. */
-	private List<? extends Host> hostList;
+	public List<? extends EnhancedHost> hostList;
 
 	/**
 	 * Allocates a new VmAllocationPolicy object.
@@ -32,7 +32,7 @@ public abstract class VmAllocationPolicy {
 	 * @pre $none
 	 * @post $none
 	 */
-	public VmAllocationPolicy(List<? extends Host> list) {
+	public VmAllocationPolicy(List<? extends EnhancedHost> list) {
 		setHostList(list);
 	}
 
@@ -102,7 +102,7 @@ public abstract class VmAllocationPolicy {
 	 * 
 	 * @param hostList the new host list
 	 */
-	protected void setHostList(List<? extends Host> hostList) {
+	protected void setHostList(List<? extends EnhancedHost> hostList) {
 		this.hostList = hostList;
 	}
 

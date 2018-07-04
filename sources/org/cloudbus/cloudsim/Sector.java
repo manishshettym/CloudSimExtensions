@@ -171,6 +171,17 @@ public class Sector {
 		double sectorCooling = 0.0;
 		double timeDiff = 4.20;
 		if(this.coolingStatus == 1) {
+		
+		for(Sector sector : sectorList) 
+		{
+			int sectorPes = sector.freePesPerSector() ;
+			if(sector.getCoolingStatus() == 1 && sectorPes < minPes && sectorPes > minNeededPes)
+			{
+				
+				for(Aisle aisle : sector.getSectorAisleList())
+				{
+					for(Rack rack : aisle.getAisleRackList())
+					{
 			for(EnhancedHost host : sectorHostList) {
 				sectorCooling += host.getEnergyLinearInterpolation(1, 1, timeDiff); //needs fix
 			}

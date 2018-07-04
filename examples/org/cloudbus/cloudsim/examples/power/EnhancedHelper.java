@@ -124,6 +124,7 @@ public class EnhancedHelper extends Helper
 				list = hostList.subList(i, i+hostsPerRack);
 			}
 			rackList.add(new Rack(rackid,list,0)); // 0 not currently cooled, define the constant somewhere
+			
 			rackid++;
 			
 			Log.printLine("Rack #"+(rackid)+": hosts "+i+" to "+(i+hostsPerRack-1));
