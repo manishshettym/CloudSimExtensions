@@ -7,7 +7,7 @@ public class SectorAllocationSimpleExample
 	public static void main(String[] args)
 	{
 		try {
-		String input = new String("/home/manish/cloudsim-3.0.3ext/examples/workload/LANL/LANL-CM5-short.swf");
+		String input = new String("/home/manish/cloudsim-3.0.3ext/examples/workload/planetlab/20110303");
 		new EnhancedRunner(input,"output","/home/manish/cloudsim-3.0.3ext/examples/workload/planetlab/test");
 		}
 		catch (Exception e)

@@ -8,44 +8,22 @@ import java.util.List;
 
 import org.cloudbus.cloudsim.Aisle;
 import org.cloudbus.cloudsim.Cloudlet;
-import org.cloudbus.cloudsim.CloudletSubmitTime;
-import org.cloudbus.cloudsim.Datacenter;
 import org.cloudbus.cloudsim.DatacenterBroker;
-import org.cloudbus.cloudsim.DatacenterBrokerSubmitTime;
-import org.cloudbus.cloudsim.DatacenterCharacteristics;
 import org.cloudbus.cloudsim.EnhancedHost;
-import org.cloudbus.cloudsim.Host;
 import org.cloudbus.cloudsim.Log;
-import org.cloudbus.cloudsim.Pe;
 import org.cloudbus.cloudsim.Rack;
 import org.cloudbus.cloudsim.Sector;
-import org.cloudbus.cloudsim.Storage;
 import org.cloudbus.cloudsim.UtilizationModel;
 import org.cloudbus.cloudsim.UtilizationModelFull;
 import org.cloudbus.cloudsim.Vm;
 import org.cloudbus.cloudsim.VmAllocationPolicy;
-import org.cloudbus.cloudsim.VmAllocationPolicySimple;
-import org.cloudbus.cloudsim.VmSchedulerTimeShared;
 import org.cloudbus.cloudsim.core.CloudSim;
 import org.cloudbus.cloudsim.examples.power.Constants;
 import org.cloudbus.cloudsim.examples.power.EnhancedHelper;
 import org.cloudbus.cloudsim.examples.power.Helper;
-import org.cloudbus.cloudsim.examples.power.RunnerAbstract;
 import org.cloudbus.cloudsim.power.EnhancedPowerDatacenter;
-import org.cloudbus.cloudsim.power.HillClimbingAlgorithm;
-import org.cloudbus.cloudsim.power.RandomBiasedSampling;
-import org.cloudbus.cloudsim.power.ReplicationEnhancedPowerDatacenter;
-import org.cloudbus.cloudsim.power.SectorAllocationPolicyHoneyBeeV2;
-import org.cloudbus.cloudsim.power.RandomBiasedSampling;
-import org.cloudbus.cloudsim.power.SectorAllocationSimple;
-import org.cloudbus.cloudsim.provisioners.BwProvisionerSimple;
-import org.cloudbus.cloudsim.provisioners.PeProvisionerSimple;
-import org.cloudbus.cloudsim.provisioners.RamProvisionerSimple;
-import org.cloudbus.cloudsim.util.WorkloadFileReaderLANL;
-import org.cloudbus.cloudsim.util.WorkloadFileReaderLANLSubmitTime;
-
+import org.cloudbus.cloudsim.util.WorkloadFileReader;
 import java.io.*;
-import java.util.Scanner;
 
 public class EnhancedRunner 
 {
@@ -57,8 +35,6 @@ public class EnhancedRunner
 	/** The broker. */
 	protected static DatacenterBroker broker;
 
-	/** The cloudlet list for workload. */
-	protected static List<CloudletSubmitTime> cloudletListworkload;
 	
 	protected static List<Cloudlet> cloudletList;
 	
@@ -98,7 +74,7 @@ public class EnhancedRunner
 		
 		String fl = files[0].getAbsolutePath();
 		
-		int[]  data = new int[12];
+		int[]  data = new int[13];
 		
 		BufferedReader reader = null;
 		try {
@@ -205,15 +181,21 @@ public class EnhancedRunner
 			
 			
 			//Step4: Generate cloudlets from workload file OR using the no.
-			cloudletList = createCloudlet(brokerId,cloudlets);
-			
-			/*WorkloadFileReaderLANLSubmitTime workloadReader = new WorkloadFileReaderLANLSubmitTime(workFile, Constants.HOST_MIPS[0]); //1860, rating in MIPS
-			cloudletListworkload = workloadReader.generateWorkload(brokerId);
-			Log.printLine("brokerId: "+brokerId);
-			for(Cloudlet cl : cloudletListworkload)
+			if(cloudlets!=0)
 			{
-				cl.setUserId(brokerId);
-			}*/
+				cloudletList = createCloudlet(brokerId,cloudlets);
+			}
+			
+			else
+			{
+				WorkloadFileReader workloadReader = new WorkloadFileReader(workFile, Constants.HOST_MIPS[0]); //1860, rating in MIPS
+				cloudletList = workloadReader.generateWorkload();
+				Log.printLine("brokerId: "+brokerId);
+				for(Cloudlet cl : cloudletList)
+				{
+					cl.setUserId(brokerId);
+				}
+			}
 			
 			
 			
@@ -256,7 +238,7 @@ public class EnhancedRunner
 			{	
 				Helper.printResults(
 						datacenter,
-						vmList,
+						DatacenterBroker.vmList,
 						lastClock,
 						experimentName,
 						Constants.OUTPUT_CSV,

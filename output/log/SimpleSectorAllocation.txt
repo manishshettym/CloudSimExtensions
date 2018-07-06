@@ -8,8 +8,8 @@
 0
 0
 0
-1
 0
+1
 Initialising...
 Rack #1: hosts 0 to 1
 Rack #1 size is: 2
@@ -90,9 +90,8 @@ Entered copying area2
 HIIIIIIIIIII
 Vm 0 requires 1 Pes
 Free Pes are : [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2] Size 24
-0
-1
-IDX:0
+HIIIIIIIIIII
+Rack: 0 Host: 0 Contains: true
 Host:0
 Rack:0
 Aisle:0
@@ -101,9 +100,8 @@ Sector:0
 HIIIIIIIIIII
 Vm 1 requires 1 Pes
 Free Pes are : [1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2] Size 24
-0
-1
-IDX:0
+HIIIIIIIIIII
+Rack: 0 Host: 0 Contains: true
 Host:0
 Rack:0
 Aisle:0
@@ -112,9 +110,8 @@ Sector:0
 HIIIIIIIIIII
 Vm 2 requires 1 Pes
 Free Pes are : [0, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2] Size 24
-0
-1
-IDX:0
+HIIIIIIIIIII
+Rack: 0 Host: 1 Contains: true
 Host:1
 Rack:0
 Aisle:0
@@ -123,9 +120,8 @@ Sector:0
 HIIIIIIIIIII
 Vm 3 requires 1 Pes
 Free Pes are : [0, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2] Size 24
-0
-1
-IDX:0
+HIIIIIIIIIII
+Rack: 0 Host: 1 Contains: true
 Host:1
 Rack:0
 Aisle:0
@@ -134,13 +130,9 @@ Sector:0
 HIIIIIIIIIII
 Vm 4 requires 1 Pes
 Free Pes are : [0, 0, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2] Size 24
-0
-1
-IDX:0
-IDX:0
-2
-3
-IDX:2
+HIIIIIIIIIII
+Rack: 0 Host: 1 Contains: true
+Rack: 0 Host: 2 Contains: false
 Host:2
 Rack:1
 Aisle:0
@@ -149,13 +141,9 @@ Sector:0
 HIIIIIIIIIII
 Vm 5 requires 1 Pes
 Free Pes are : [0, 0, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2] Size 24
-0
-1
-IDX:0
-IDX:0
-2
-3
-IDX:2
+HIIIIIIIIIII
+Rack: 0 Host: 1 Contains: true
+Rack: 0 Host: 2 Contains: false
 Host:2
 Rack:1
 Aisle:0
@@ -164,13 +152,10 @@ Sector:0
 HIIIIIIIIIII
 Vm 6 requires 1 Pes
 Free Pes are : [0, 0, 0, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2] Size 24
-0
-1
-IDX:0
-IDX:0
-2
-3
-IDX:2
+HIIIIIIIIIII
+Rack: 0 Host: 1 Contains: true
+Rack: 0 Host: 2 Contains: false
+Rack: 1 Host: 3 Contains: true
 Host:3
 Rack:1
 Aisle:0
@@ -179,13 +164,10 @@ Sector:0
 HIIIIIIIIIII
 Vm 7 requires 1 Pes
 Free Pes are : [0, 0, 0, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2] Size 24
-0
-1
-IDX:0
-IDX:0
-2
-3
-IDX:2
+HIIIIIIIIIII
+Rack: 0 Host: 1 Contains: true
+Rack: 0 Host: 2 Contains: false
+Rack: 1 Host: 3 Contains: true
 Host:3
 Rack:1
 Aisle:0
@@ -194,16 +176,11 @@ Sector:0
 HIIIIIIIIIII
 Vm 8 requires 1 Pes
 Free Pes are : [0, 0, 0, 0, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2] Size 24
-0
-1
-IDX:0
-IDX:0
-2
-3
-IDX:2
-4
-5
-IDX:4
+HIIIIIIIIIII
+Rack: 0 Host: 1 Contains: true
+Rack: 0 Host: 2 Contains: false
+Rack: 1 Host: 3 Contains: true
+Rack: 2 Host: 4 Contains: true
 Host:4
 Rack:2
 Aisle:0
@@ -212,16 +189,11 @@ Sector:0
 HIIIIIIIIIII
 Vm 9 requires 1 Pes
 Free Pes are : [0, 0, 0, 0, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2] Size 24
-0
-1
-IDX:0
-IDX:0
-2
-3
-IDX:2
-4
-5
-IDX:4
+HIIIIIIIIIII
+Rack: 0 Host: 1 Contains: true
+Rack: 0 Host: 2 Contains: false
+Rack: 1 Host: 3 Contains: true
+Rack: 2 Host: 4 Contains: true
 Host:4
 Rack:2
 Aisle:0
@@ -230,16 +202,11 @@ Sector:0
 HIIIIIIIIIII
 Vm 10 requires 1 Pes
 Free Pes are : [0, 0, 0, 0, 0, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2] Size 24
-0
-1
-IDX:0
-IDX:0
-2
-3
-IDX:2
-4
-5
-IDX:4
+HIIIIIIIIIII
+Rack: 0 Host: 1 Contains: true
+Rack: 0 Host: 2 Contains: false
+Rack: 1 Host: 3 Contains: true
+Rack: 2 Host: 5 Contains: true
 Host:5
 Rack:2
 Aisle:0
@@ -248,16 +215,11 @@ Sector:0
 HIIIIIIIIIII
 Vm 11 requires 1 Pes
 Free Pes are : [0, 0, 0, 0, 0, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2] Size 24
-0
-1
-IDX:0
-IDX:0
-2
-3
-IDX:2
-4
-5
-IDX:4
+HIIIIIIIIIII
+Rack: 0 Host: 1 Contains: true
+Rack: 0 Host: 2 Contains: false
+Rack: 1 Host: 3 Contains: true
+Rack: 2 Host: 5 Contains: true
 Host:5
 Rack:2
 Aisle:0
@@ -266,19 +228,12 @@ Sector:0
 HIIIIIIIIIII
 Vm 12 requires 1 Pes
 Free Pes are : [0, 0, 0, 0, 0, 0, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2] Size 24
-0
-1
-IDX:0
-IDX:0
-2
-3
-IDX:2
-4
-5
-IDX:4
-6
-7
-IDX:6
+HIIIIIIIIIII
+Rack: 0 Host: 1 Contains: true
+Rack: 0 Host: 2 Contains: false
+Rack: 1 Host: 3 Contains: true
+Rack: 2 Host: 5 Contains: true
+Rack: 3 Host: 6 Contains: true
 Host:6
 Rack:3
 Aisle:1
@@ -287,19 +242,12 @@ Sector:0
 HIIIIIIIIIII
 Vm 13 requires 1 Pes
 Free Pes are : [0, 0, 0, 0, 0, 0, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2] Size 24
-0
-1
-IDX:0
-IDX:0
-2
-3
-IDX:2
-4
-5
-IDX:4
-6
-7
-IDX:6
+HIIIIIIIIIII
+Rack: 0 Host: 1 Contains: true
+Rack: 0 Host: 2 Contains: false
+Rack: 1 Host: 3 Contains: true
+Rack: 2 Host: 5 Contains: true
+Rack: 3 Host: 6 Contains: true
 Host:6
 Rack:3
 Aisle:1
@@ -308,19 +256,12 @@ Sector:0
 HIIIIIIIIIII
 Vm 14 requires 1 Pes
 Free Pes are : [0, 0, 0, 0, 0, 0, 0, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2] Size 24
-0
-1
-IDX:0
-IDX:0
-2
-3
-IDX:2
-4
-5
-IDX:4
-6
-7
-IDX:6
+HIIIIIIIIIII
+Rack: 0 Host: 1 Contains: true
+Rack: 0 Host: 2 Contains: false
+Rack: 1 Host: 3 Contains: true
+Rack: 2 Host: 5 Contains: true
+Rack: 3 Host: 7 Contains: true
 Host:7
 Rack:3
 Aisle:1
@@ -329,9 +270,8 @@ Sector:0
 HIIIIIIIIIII
 Vm 15 requires 1 Pes
 Free Pes are : [0, 0, 0, 0, 0, 0, 0, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2] Size 24
-8
-9
-IDX:8
+HIIIIIIIIIII
+Rack: 4 Host: 8 Contains: true
 Host:8
 Rack:4
 Aisle:1
@@ -340,9 +280,8 @@ Sector:0
 HIIIIIIIIIII
 Vm 16 requires 1 Pes
 Free Pes are : [0, 0, 0, 0, 0, 0, 0, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2] Size 24
-8
-9
-IDX:8
+HIIIIIIIIIII
+Rack: 4 Host: 8 Contains: true
 Host:8
 Rack:4
 Aisle:1
@@ -351,9 +290,8 @@ Sector:0
 HIIIIIIIIIII
 Vm 17 requires 1 Pes
 Free Pes are : [0, 0, 0, 0, 0, 0, 0, 1, 0, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2] Size 24
-8
-9
-IDX:8
+HIIIIIIIIIII
+Rack: 4 Host: 9 Contains: true
 Host:9
 Rack:4
 Aisle:1
@@ -362,9 +300,8 @@ Sector:0
 HIIIIIIIIIII
 Vm 18 requires 1 Pes
 Free Pes are : [0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2] Size 24
-8
-9
-IDX:8
+HIIIIIIIIIII
+Rack: 4 Host: 9 Contains: true
 Host:9
 Rack:4
 Aisle:1
@@ -373,9 +310,8 @@ Sector:0
 HIIIIIIIIIII
 Vm 19 requires 1 Pes
 Free Pes are : [0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2] Size 24
-10
-11
-IDX:10
+HIIIIIIIIIII
+Rack: 5 Host: 10 Contains: true
 Host:10
 Rack:5
 Aisle:1
@@ -384,9 +320,8 @@ Sector:0
 HIIIIIIIIIII
 Vm 20 requires 1 Pes
 Free Pes are : [0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2] Size 24
-10
-11
-IDX:10
+HIIIIIIIIIII
+Rack: 5 Host: 10 Contains: true
 Host:10
 Rack:5
 Aisle:1
@@ -395,9 +330,8 @@ Sector:0
 HIIIIIIIIIII
 Vm 21 requires 1 Pes
 Free Pes are : [0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2] Size 24
-10
-11
-IDX:10
+HIIIIIIIIIII
+Rack: 5 Host: 11 Contains: true
 Host:11
 Rack:5
 Aisle:1
@@ -406,9 +340,8 @@ Sector:0
 HIIIIIIIIIII
 Vm 22 requires 1 Pes
 Free Pes are : [0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2] Size 24
-10
-11
-IDX:10
+HIIIIIIIIIII
+Rack: 5 Host: 11 Contains: true
 Host:11
 Rack:5
 Aisle:1
@@ -417,9 +350,8 @@ Sector:0
 HIIIIIIIIIII
 Vm 23 requires 1 Pes
 Free Pes are : [0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2] Size 24
-12
-13
-IDX:12
+HIIIIIIIIIII
+Rack: 6 Host: 12 Contains: true
 Host:12
 Rack:6
 Aisle:2
@@ -428,9 +360,8 @@ Sector:1
 HIIIIIIIIIII
 Vm 24 requires 1 Pes
 Free Pes are : [0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2] Size 24
-12
-13
-IDX:12
+HIIIIIIIIIII
+Rack: 6 Host: 12 Contains: true
 Host:12
 Rack:6
 Aisle:2
@@ -439,9 +370,8 @@ Sector:1
 HIIIIIIIIIII
 Vm 25 requires 1 Pes
 Free Pes are : [0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2] Size 24
-12
-13
-IDX:12
+HIIIIIIIIIII
+Rack: 6 Host: 13 Contains: true
 Host:13
 Rack:6
 Aisle:2
@@ -450,9 +380,8 @@ Sector:1
 HIIIIIIIIIII
 Vm 26 requires 1 Pes
 Free Pes are : [0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2] Size 24
-12
-13
-IDX:12
+HIIIIIIIIIII
+Rack: 6 Host: 13 Contains: true
 Host:13
 Rack:6
 Aisle:2
@@ -461,9 +390,8 @@ Sector:1
 HIIIIIIIIIII
 Vm 27 requires 1 Pes
 Free Pes are : [0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2] Size 24
-14
-15
-IDX:14
+HIIIIIIIIIII
+Rack: 7 Host: 14 Contains: true
 Host:14
 Rack:7
 Aisle:2
@@ -472,9 +400,8 @@ Sector:1
 HIIIIIIIIIII
 Vm 28 requires 1 Pes
 Free Pes are : [0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2] Size 24
-14
-15
-IDX:14
+HIIIIIIIIIII
+Rack: 7 Host: 14 Contains: true
 Host:14
 Rack:7
 Aisle:2
@@ -483,9 +410,8 @@ Sector:1
 HIIIIIIIIIII
 Vm 29 requires 1 Pes
 Free Pes are : [0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 2, 2, 2, 2, 2, 2, 2, 2, 2] Size 24
-14
-15
-IDX:14
+HIIIIIIIIIII
+Rack: 7 Host: 15 Contains: true
 Host:15
 Rack:7
 Aisle:2
@@ -752,7 +678,7 @@ Simulation completed.
 
 Experiment name: SimpleSectorAllocation
 Number of hosts: 24
-Number of VMs: 15
+Number of VMs: 30
 Total simulation time: 300.10 sec
 Energy consumption: 0.00 kWh
 Number of VM migrations: 0
@@ -770,7 +696,7 @@ StDev time before a VM migration: NaN sec
 
 Experiment name: SimpleSectorAllocation
 Number of hosts: 24
-Number of VMs: 15
+Number of VMs: 30
 Total simulation time: 300.10 sec
 Energy consumption: 0.00 kWh
 Number of VM migrations: 0

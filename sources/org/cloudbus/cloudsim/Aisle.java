@@ -1,6 +1,5 @@
 package org.cloudbus.cloudsim;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class Aisle 
@@ -10,6 +9,7 @@ public class Aisle
 	private int aisleId; 
 	private int coolingStatus;
 	private List<Rack> aisleRackList;
+	public int sector;
 	
 	private Datacenter datacenter;
 	
@@ -55,8 +55,11 @@ public class Aisle
 	}
 	
 	//sets the sectorId
-	public void setAisleId(int id) {
-		aisleId = id;
+	public int getSector() {
+		return sector;
+	}
+	public void setSector(int sector) {
+		this.sector = sector;
 	}
 	
 	//set datacenter
@@ -145,12 +148,13 @@ public class Aisle
 
 		return freeMips;
 	}
+	
 	//naive fitness function
 	public double fitness() {
 		double result = 0;
-		int freePes = this.freePesPerSector();
-		int ramAvail = this.freeRamPerSector();
-		double freeMips = this.freeMipsPerSector();
+		int freePes = this.freePesPerAisle();
+		int ramAvail = this.freeRamPerAisle();
+		double freeMips = this.freeMipsPerAisle();
 		result = 1 / (freePes + ramAvail + freeMips + coolingStatus);
 		return result; //lower the fitness value,better the fit
 	}
@@ -158,33 +162,37 @@ public class Aisle
     public double coolFitness() {
 		double result = 0;
 		double maxPower = 0.0;
-		double sectorCooling = 0.0;
+		double rackCooling = 0.0;
 		double timeDiff = 4.20;
 		if(this.coolingStatus == 1) {
-			for(EnhancedHost host : sectorHostList) {
-				sectorCooling += host.getEnergyLinearInterpolation(1, 1, timeDiff); //needs fix
+		
+			for(Rack rack: getAisleRackList())
+			{
+				for(EnhancedHost host : rack.getRackHostList()) 
+				{
+					rackCooling += host.getEnergyLinearInterpolation(1, 1, timeDiff); //needs fix
+				}
 			}
-			sectorCooling = 1.33 * sectorCooling;
+			
+			rackCooling = 1.33 * rackCooling;
 		}
 		/*
-		 * getting the max power consumed by all hosts in that sector
+		 * getting the max power consumed by all hosts in that rack
 		 * we would want to minimize this
 		 * this is useful for datacenters with heterogeneous hosts
 		 * this way we chose the sector which would consume the least power
-		 */
-		for(EnhancedHost host : sectorHostList) {
-			maxPower += host.getMaxPower();
+		 * */
+		for(Rack rack: getAisleRackList())
+		{
+			for(EnhancedHost host : rack.getRackHostList()) {
+				maxPower += host.getMaxPower();
+			}
 		}
 		maxPower = 1 / maxPower;
-		result = result + 1 / (maxPower + sectorCooling);
+		result = result + 1 / (maxPower + rackCooling);
 		return result;
 	}
 
-	public boolean canSupportVm(Vm vm) {
-		if((this.freeMipsPerSector() >= vm.getCurrentRequestedMaxMips()) &&(this.freeRamPerSector() >= vm.getCurrentRequestedRam()) && (this.freePesPerSector() >= vm.getNumberOfPes())) {
-			return true;
-		}
-		return false;
-	}
+	
 	
 }

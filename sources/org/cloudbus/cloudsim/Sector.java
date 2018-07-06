@@ -170,32 +170,40 @@ public class Sector {
 		double maxPower = 0.0;
 		double sectorCooling = 0.0;
 		double timeDiff = 4.20;
-		if(this.coolingStatus == 1) {
 		
-		for(Sector sector : sectorList) 
+		if(this.coolingStatus == 1) 
 		{
-			int sectorPes = sector.freePesPerSector() ;
-			if(sector.getCoolingStatus() == 1 && sectorPes < minPes && sectorPes > minNeededPes)
-			{
 				
-				for(Aisle aisle : sector.getSectorAisleList())
+				for(Aisle aisle : getSectorAisleList())
 				{
 					for(Rack rack : aisle.getAisleRackList())
 					{
-			for(EnhancedHost host : sectorHostList) {
-				sectorCooling += host.getEnergyLinearInterpolation(1, 1, timeDiff); //needs fix
+						for(EnhancedHost host : rack.getRackHostList()) {
+							sectorCooling += host.getEnergyLinearInterpolation(1, 1, timeDiff); //needs fix
+						}
+					}
+				}
 			}
+			
 			sectorCooling = 1.33 * sectorCooling;
-		}
 		/*
 		 * getting the max power consumed by all hosts in that sector
 		 * we would want to minimize this
 		 * this is useful for datacenters with heterogeneous hosts
 		 * this way we chose the sector which would consume the least power
 		 */
-		for(EnhancedHost host : sectorHostList) {
-			maxPower += host.getMaxPower();
-		}
+			for(Aisle aisle : getSectorAisleList())
+			{
+				for(Rack rack : aisle.getAisleRackList())
+				{	
+		
+					for(EnhancedHost host : rack.getRackHostList()) 
+					{
+						maxPower += host.getMaxPower();
+					}
+				}
+			}
+			
 		maxPower = 1 / maxPower;
 		result = result + 1 / (maxPower + sectorCooling);
 		return result;

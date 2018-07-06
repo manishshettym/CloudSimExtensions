@@ -9,6 +9,7 @@ public class Rack
 	private int rackId; 
 	private int coolingStatus;
 	private List<EnhancedHost> rackHostList;
+	public int aisle;
 	
 	private Datacenter datacenter;
 	
@@ -79,6 +80,14 @@ public class Rack
 	{
 		return this.rackHostList;
 	}
+	
+	public int getAisle() {
+		return this.aisle;
+	}
+	
+	public void setAisle(int aisle) {
+		this.aisle = aisle;
+	}
 
 	public int getCoolingStatus() {
 		return coolingStatus;
@@ -124,9 +133,9 @@ public class Rack
 	//naive fitness function
 	public double fitness() {
 		double result = 0;
-		int freePes = this.freePesPerSector();
-		int ramAvail = this.freeRamPerSector();
-		double freeMips = this.freeMipsPerSector();
+		int freePes = this.freePesPerRack();
+		int ramAvail = this.freeRamPerRack();
+		double freeMips = this.freeMipsPerRack();
 		result = 1 / (freePes + ramAvail + freeMips + coolingStatus);
 		return result; //lower the fitness value,better the fit
 	}
@@ -137,9 +146,10 @@ public class Rack
 		double sectorCooling = 0.0;
 		double timeDiff = 4.20;
 		if(this.coolingStatus == 1) {
-			for(EnhancedHost host : sectorHostList) {
-				sectorCooling += host.getEnergyLinearInterpolation(1, 1, timeDiff); //needs fix
-			}
+				for(EnhancedHost host : getRackHostList()) 
+				{
+					sectorCooling += host.getEnergyLinearInterpolation(1, 1, timeDiff); //needs fix
+				}
 			sectorCooling = 1.33 * sectorCooling;
 		}
 		/*
@@ -148,7 +158,7 @@ public class Rack
 		 * this is useful for datacenters with heterogeneous hosts
 		 * this way we chose the sector which would consume the least power
 		 */
-		for(EnhancedHost host : sectorHostList) {
+		for(EnhancedHost host : getRackHostList()) {
 			maxPower += host.getMaxPower();
 		}
 		maxPower = 1 / maxPower;
@@ -156,10 +166,5 @@ public class Rack
 		return result;
 	}
 
-	public boolean canSupportVm(Vm vm) {
-		if((this.freeMipsPerSector() >= vm.getCurrentRequestedMaxMips()) &&(this.freeRamPerSector() >= vm.getCurrentRequestedRam()) && (this.freePesPerSector() >= vm.getNumberOfPes())) {
-			return true;
-		}
-		return false;
-	}
+	
 }

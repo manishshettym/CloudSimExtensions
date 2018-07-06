@@ -245,7 +245,7 @@ public class Helper{
 	 * @param vms the vms
 	 * @return the times before vm migration
 	 */
-	public static List<Double> getTimesBeforeVmMigration(List<Vm> vms) {
+	public static List<Double> getTimesBeforeVmMigration(List<? extends Vm> vms) {
 		List<Double> timeBeforeVmMigration = new LinkedList<Double>();
 		for (Vm vm : vms) {
 			boolean previousIsInMigration = false;
@@ -274,7 +274,7 @@ public class Helper{
 	 */
 	public static void printResults(
 			PowerDatacenter datacenter,
-			List<Vm> vms,
+			List<?extends Vm> vms,
 			double lastClock,
 			String experimentName,
 			boolean outputInCsv,
@@ -590,7 +590,7 @@ public class Helper{
 	 * @param vms the vms
 	 * @return the sla metrics
 	 */
-	protected static Map<String, Double> getSlaMetrics(List<Vm> vms) {
+	protected static Map<String, Double> getSlaMetrics(List<? extends Vm> vms) {
 		Map<String, Double> metrics = new HashMap<String, Double>();
 		List<Double> slaViolation = new LinkedList<Double>();
 		double totalAllocated = 0;

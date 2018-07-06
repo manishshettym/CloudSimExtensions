@@ -64,6 +64,7 @@ public class EnhancedHelper extends Helper
 				list = aisleList.subList(i, i+aislesPerSector);
 			}
 			sectorList.add(new Sector(sectorid,list,0)); // 0 not currently cooled, define the constant somewhere
+			setSectorForAisle(list,sectorid);
 			sectorid++;
 			
 			Log.printLine("Sector #"+(sectorid)+": aisles "+i+" to "+(i+aislesPerSector-1));
@@ -94,6 +95,7 @@ public class EnhancedHelper extends Helper
 				list = rackList.subList(i, i+racksPerAisle);
 			}
 			aisleList.add(new Aisle(aisleid,list,0)); // 0 not currently cooled, define the constant somewhere
+			setAisleForRack(list,aisleid);
 			aisleid++;
 			
 			Log.printLine("Aisle #"+(aisleid)+": racks "+i+" to "+(i+racksPerAisle-1));
@@ -123,7 +125,11 @@ public class EnhancedHelper extends Helper
 			{	
 				list = hostList.subList(i, i+hostsPerRack);
 			}
+			
 			rackList.add(new Rack(rackid,list,0)); // 0 not currently cooled, define the constant somewhere
+			
+			setRackForHost(list,rackid);
+			
 			
 			rackid++;
 			
@@ -231,6 +237,30 @@ public class EnhancedHelper extends Helper
 
 		return datacenter;
 	}
-
+	
+	
+	public static void setRackForHost(List <EnhancedHost> list, int rackid)
+	{
+		for(EnhancedHost host : list)
+		{
+			host.setRack(rackid);
+		}
+	}
+	
+	public static void setAisleForRack(List <Rack> list, int aisleid)
+	{
+		for(Rack rack : list)
+		{
+			rack.setAisle(aisleid);
+		}
+	}
+	
+	public static void setSectorForAisle(List <Aisle> list, int sectorid)
+	{
+		for(Aisle aisle : list)
+		{
+			aisle.setSector(sectorid);
+		}
+	}
 
 }
