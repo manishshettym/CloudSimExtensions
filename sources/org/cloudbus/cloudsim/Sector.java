@@ -32,6 +32,17 @@ public class Sector {
 	}
 	
 	
+	//copy constructor
+	public Sector(Sector se)
+	{
+		this.sectorId = se.sectorId;
+		this.sectorAisleList = se.getSectorAisleList();
+		this.sectorName ="";
+		setCoolingStatus(0);
+		
+	}
+	
+	
 	public Sector(int sectorId,int c1_aisle,
 			int c1_rack,
 			int c2_aisle,

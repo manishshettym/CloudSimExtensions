@@ -21,6 +21,7 @@ import org.cloudbus.cloudsim.core.CloudSim;
 import org.cloudbus.cloudsim.core.CloudSimTags;
 import org.cloudbus.cloudsim.core.SimEvent;
 import org.cloudbus.cloudsim.core.predicates.PredicateType;
+import org.cloudbus.cloudsim.examples.power.planetlab.FzonesVmAllocationPolicy;
 
 /**
  * PowerDatacenter is a class that enables simulation of power-aware data centers.

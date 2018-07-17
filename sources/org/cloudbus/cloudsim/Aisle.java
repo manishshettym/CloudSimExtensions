@@ -24,6 +24,17 @@ public class Aisle
 		
 	}
 	
+	//copy of aisle
+	public Aisle(Aisle ai)
+	{   
+		
+		this.aisleId = ai.aisleId;
+		this.aisleRackList = ai.getAisleRackList();
+		this.aisleName ="";
+		setCoolingStatus(0);
+		
+	}
+	
 	
 	/*public Sector(int sectorId,int c1_aisle,
 			int c1_rack,

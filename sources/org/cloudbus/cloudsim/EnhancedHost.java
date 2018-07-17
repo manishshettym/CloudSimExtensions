@@ -19,6 +19,17 @@ public class EnhancedHost extends PowerHostUtilizationHistory{
 	private int rack;
 	private int aisle;
 	private int sectorId;
+	
+	//constructor to create copy of an existing host
+	public EnhancedHost(EnhancedHost host)
+	{
+		super(host.getId(),host.getRamProvisioner(),host.getBwProvisioner(),host.getStorage(),host.getPeList(),host.getVmScheduler(),host.getPowerModel());
+		this.aisle = host.aisle;
+		this.rack = host.rack;
+		
+	}
+	
+	
 	public EnhancedHost(int id,
 			RamProvisioner ramProvisioner,
 			BwProvisioner bwProvisioner,

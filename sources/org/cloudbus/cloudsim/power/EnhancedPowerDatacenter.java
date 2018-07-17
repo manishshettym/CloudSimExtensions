@@ -5,12 +5,11 @@ import java.util.List;
 
 import org.cloudbus.cloudsim.Aisle;
 import org.cloudbus.cloudsim.DatacenterCharacteristics;
-import org.cloudbus.cloudsim.EnhancedHost;
-import org.cloudbus.cloudsim.Host;
 import org.cloudbus.cloudsim.Log;
 import org.cloudbus.cloudsim.Rack;
 import org.cloudbus.cloudsim.Sector;
 import org.cloudbus.cloudsim.Storage;
+import org.cloudbus.cloudsim.Summary;
 import org.cloudbus.cloudsim.Vm;
 import org.cloudbus.cloudsim.VmAllocationPolicy;
 import org.cloudbus.cloudsim.core.CloudSim;
@@ -22,6 +21,10 @@ public class EnhancedPowerDatacenter extends PowerDatacenter
 	
 	
 	protected List<Sector> sectorList;
+	
+	public int sectorleft;
+	public  int aisleleft;
+	public  int rackleft;
 	
 	
 	public EnhancedPowerDatacenter(
@@ -62,7 +65,11 @@ public class EnhancedPowerDatacenter extends PowerDatacenter
 		double minTime = Double.MAX_VALUE;
 		double timeDiff = currentTime - getLastProcessTime();
 		double timeFrameDatacenterEnergy = 0.0;
-
+		
+		
+		if(currentTime==300.1)Summary.printLine("STARTING SIMULATION ");
+		
+		
 		Log.printLine("\n\n--------------------------------------------------------------\n\n");
 		Log.formatLine("New resource usage for the time frame starting at %.2f:", currentTime);
 
@@ -70,15 +77,17 @@ public class EnhancedPowerDatacenter extends PowerDatacenter
 			Log.printLine();
 
 			double time = host.updateVmsProcessing(currentTime); // inform VMs to update processing
-			if (time < minTime) {
+			
+			if (time < minTime) 
+			{
 				minTime = time;
 			}
 
-			//Log.formatLine(
-			//		"%.2f: [Host #%d] utilization is %.2f%%",
-			//		currentTime,
-			//		host.getId(),
-			//		host.getUtilizationOfCpu() * 100);
+			Log.formatLine(
+					"%.2f: [Host #%d] utilization is %.2f%%",
+					currentTime,
+					host.getId(),
+					host.getUtilizationOfCpu() * 100);
 		}
 
 		if (timeDiff > 0) {
@@ -94,6 +103,7 @@ public class EnhancedPowerDatacenter extends PowerDatacenter
 						previousUtilizationOfCpu,
 						utilizationOfCpu,
 						timeDiff);
+				
 				timeFrameDatacenterEnergy += timeFrameHostEnergy;
 
 				//Log.printLine();
@@ -112,6 +122,11 @@ public class EnhancedPowerDatacenter extends PowerDatacenter
 			}
 
 			Log.formatLine(
+					"\n%.2f: Data center's energy is %.2f W*sec\n",
+					currentTime,
+					timeFrameDatacenterEnergy);
+			
+			Summary.formatLine(
 					"\n%.2f: Data center's energy is %.2f W*sec\n",
 					currentTime,
 					timeFrameDatacenterEnergy);
@@ -145,7 +160,7 @@ public class EnhancedPowerDatacenter extends PowerDatacenter
 		// iterate over sector list
 		for(Sector sec : this.sectorList)
 		{
-			Log.printLine("Sector #"+sec.getSectorId() +" Colling Status: "+sec.getCoolingStatus());
+			Log.printLine("Sector #"+sec.getSectorId() +" Cooling Status: "+sec.getCoolingStatus());
 			double sectorCooling = 0.0;
 			boolean coolingNeeded = false;
 			for(EnhancedHost host : sec.getSectorHostList())
@@ -154,7 +169,7 @@ public class EnhancedPowerDatacenter extends PowerDatacenter
 				{
 					coolingNeeded = true;
 				}
-				// not directly multiplying becuse hosts may be non homogenous
+				// not directly multiplying because hosts may be non homogeneous
 				sectorCooling += host.getEnergyLinearInterpolation(
 						1,
 						1,
@@ -181,6 +196,35 @@ public class EnhancedPowerDatacenter extends PowerDatacenter
 		return coolingEnergy;
 	}*/
 	
+	public void setSectorLeft(int sec)
+	{
+		sectorleft=sec;
+	}
+	
+	public  int getSectorLeft()
+	{
+		return sectorleft;
+	}
+	
+	public  void setAisleLeft(int ai)
+	{
+		aisleleft=ai;
+	}
+	
+	public  int getAisleLeft()
+	{
+		return aisleleft;
+	}
+	
+	public  void setRackLeft(int rack)
+	{
+		rackleft=rack;
+	}
+	
+	public int getRackLeft()
+	{
+		return rackleft;
+	}
 	
 	
 }

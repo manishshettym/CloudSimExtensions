@@ -22,10 +22,10 @@ public class Constants {
 	public final static boolean ENABLE_OUTPUT = true;
 	public final static boolean OUTPUT_CSV    = false;
 
-	public final static double SCHEDULING_INTERVAL = 300;
-	public final static double SIMULATION_LIMIT = 24 * 60 * 60;
+	public final static double SCHEDULING_INTERVAL = 300; //5 min
+	public final static double SIMULATION_LIMIT = 24 * 60 * 60 *10 ; //1 day in seconds
 
-	public final static int CLOUDLET_LENGTH	= 2500 * (int) SIMULATION_LIMIT;
+	public final static int CLOUDLET_LENGTH	= 2500 * (int) SIMULATION_LIMIT; //2500*86400 Mil Instr => each cloudlet ran for 1 day @2500 mips
 	public final static int CLOUDLET_PES	= 1;
 
 	/*
@@ -54,7 +54,7 @@ public class Constants {
 	public final static int HOST_TYPES	 = 2;
 	public final static int[] HOST_MIPS	 = { 1860, 2660 };
 	public final static int[] HOST_PES	 = { 2, 2 };
-	public final static int[] HOST_RAM	 = { 4096, 4096 };
+	public final static int[] HOST_RAM	 = { 4096, 4096 }; //4k
 	public final static int HOST_BW		 = 1000000; // 1 Gbit/s
 	public final static int HOST_STORAGE = 1000000; // 1 GB
 

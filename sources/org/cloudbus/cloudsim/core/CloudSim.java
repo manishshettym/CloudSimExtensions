@@ -18,6 +18,7 @@ import java.util.List;
 import java.util.Map;
 
 import org.cloudbus.cloudsim.Log;
+import org.cloudbus.cloudsim.Summary;
 import org.cloudbus.cloudsim.core.predicates.Predicate;
 import org.cloudbus.cloudsim.core.predicates.PredicateAny;
 import org.cloudbus.cloudsim.core.predicates.PredicateNone;
@@ -184,6 +185,7 @@ public class CloudSim {
 	 */
 	public static double startSimulation() throws NullPointerException {
 		Log.printLine("Starting CloudSim version " + CLOUDSIM_VERSION_STRING);
+		
 		try {
 			double clock = run();
 

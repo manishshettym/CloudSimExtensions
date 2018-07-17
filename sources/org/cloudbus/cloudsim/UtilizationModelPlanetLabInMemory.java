@@ -13,6 +13,8 @@ public class UtilizationModelPlanetLabInMemory implements UtilizationModel {
 	private double schedulingInterval;
 
 	/** The data (5 min * 288 = 24 hours). */
+	//I think it means data was collected every 5 mins 288 times in a day
+	
 	private final double[] data; 
 	
 	/**
@@ -63,16 +65,26 @@ public class UtilizationModelPlanetLabInMemory implements UtilizationModel {
 	 * @see cloudsim.power.UtilizationModel#getUtilization(double)
 	 */
 	@Override
-	public double getUtilization(double time) {
-		if (time % getSchedulingInterval() == 0) {
+	public double getUtilization(double time) 
+	{
+		if (time % getSchedulingInterval() == 0) 
+		{
 			return data[(int) time / (int) getSchedulingInterval()];
 		}
+			
 		int time1 = (int) Math.floor(time / getSchedulingInterval());
 		int time2 = (int) Math.ceil(time / getSchedulingInterval());
+		
+		
+		
 		double utilization1 = data[time1];
 		double utilization2 = data[time2];
 		double delta = (utilization2 - utilization1) / ((time2 - time1) * getSchedulingInterval());
 		double utilization = utilization1 + delta * (time - time1 * getSchedulingInterval());
+		
+		
+	
+		
 		return utilization;
 
 	}

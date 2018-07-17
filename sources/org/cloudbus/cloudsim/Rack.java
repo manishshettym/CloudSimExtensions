@@ -23,6 +23,15 @@ public class Rack
 		
 	}
 	
+	//copy rack
+	public Rack(Rack ra)
+	{
+		this.rackId =ra.rackId;
+		this.rackHostList = ra.getRackHostList();
+		this.rackName ="";
+		setCoolingStatus(0);
+		
+	}
 	
 	/*public Sector(int sectorId,int c1_aisle,
 			int c1_rack,

@@ -12,6 +12,13 @@ import org.cloudbus.cloudsim.provisioners.RamProvisioner;
 
 @SuppressWarnings("unused")
 public class EnhancedHostList extends HostList{
+	
+	
+	//create a copy of host list
+	
+	
+	
+	
 
 	/*These methods override the methods defined in HostList
 	 * Basically they act as helper methods for obtaining hosts 

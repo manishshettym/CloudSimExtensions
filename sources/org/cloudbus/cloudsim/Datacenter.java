@@ -17,6 +17,7 @@ import org.cloudbus.cloudsim.core.CloudSim;
 import org.cloudbus.cloudsim.core.CloudSimTags;
 import org.cloudbus.cloudsim.core.SimEntity;
 import org.cloudbus.cloudsim.core.SimEvent;
+import org.cloudbus.cloudsim.examples.power.planetlab.FzonesVmAllocationPolicy;
 
 /**
  * Datacenter class is a CloudResource whose hostList are virtualized. It deals with processing of
@@ -47,7 +48,7 @@ public class Datacenter extends SimEntity {
 	private List<Storage> storageList;
 
 	/** The vm list. */
-	private List<? extends Vm> vmList;
+	public List<? extends Vm> vmList;
 
 	/** The scheduling interval. */
 	private double schedulingInterval;
@@ -419,7 +420,7 @@ public class Datacenter extends SimEntity {
 	/**
 	 * Process the event for an User/Broker who wants to create a VM in this PowerDatacenter. This
 	 * PowerDatacenter will then send the status back to the User/Broker.
-	 * 
+	 *  
 	 * @param ev a Sim_event object
 	 * @param ack the ack
 	 * @pre ev != null
@@ -427,7 +428,8 @@ public class Datacenter extends SimEntity {
 	 */
 	protected void processVmCreate(SimEvent ev, boolean ack) {
 		Vm vm = (Vm) ev.getData();
-
+	
+		Log.printLine("DATACENTER " + getId());
 		boolean result = getVmAllocationPolicy().allocateHostForVm(vm);
 
 		if (ack) {
@@ -722,6 +724,8 @@ public class Datacenter extends SimEntity {
 
 			// time to transfer the files
 			double fileTransferTime = predictFileTransferTime(cl.getRequiredFiles());
+			
+			System.out.println(fileTransferTime);
 
 			Host host = getVmAllocationPolicy().getHost(vmId, userId);
 			
@@ -732,6 +736,7 @@ public class Datacenter extends SimEntity {
 			// if this cloudlet is in the exec queue
 			if (estimatedFinishTime > 0.0 && !Double.isInfinite(estimatedFinishTime)) {
 				estimatedFinishTime += fileTransferTime;
+				System.out.println(estimatedFinishTime);
 				send(getId(), estimatedFinishTime, CloudSimTags.VM_DATACENTER_EVENT);
 			}
 

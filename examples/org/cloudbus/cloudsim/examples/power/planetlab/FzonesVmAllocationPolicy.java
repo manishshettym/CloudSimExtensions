@@ -14,6 +14,7 @@ import org.cloudbus.cloudsim.Rack;
 import org.cloudbus.cloudsim.Sector;
 import org.cloudbus.cloudsim.Vm;
 import org.cloudbus.cloudsim.core.CloudSim;
+import org.cloudbus.cloudsim.examples.power.EnhancedRunner;
 import org.cloudbus.cloudsim.power.PowerVmAllocationPolicyAbstract;
 
 public class FzonesVmAllocationPolicy extends PowerVmAllocationPolicyAbstract
@@ -21,8 +22,27 @@ public class FzonesVmAllocationPolicy extends PowerVmAllocationPolicyAbstract
 	protected List<? extends Sector> sectorList;
 	protected List<?extends Aisle> aisleList;
 	protected List<?extends Rack> rackList;
+	public int DcId;
+	
 	//protected List<?extends EnhancedHost> hostList;
 	int [] failurezones = new int[6];
+	
+	
+	public List<? extends Sector> getSectorList()
+	{
+		return this.sectorList;
+	}
+	
+	/** set the dc id for this policy */
+	public void setDcId(int id)
+	{
+		this.DcId = id;
+	}
+	
+	public int getDcId()
+	{
+		return this.DcId ;
+	}
 	
 	/** The used pes. */
 	private Map<String, Integer> usedPes;
@@ -45,6 +65,7 @@ public class FzonesVmAllocationPolicy extends PowerVmAllocationPolicyAbstract
 		this.aisleList = aisleList;
 		this.sectorList = sectorList;
 		this.failurezones = failurezones;
+		
 		
 		setFreePes(new ArrayList<Integer>());
 		for(Sector sector: sectorList)
@@ -77,7 +98,7 @@ public class FzonesVmAllocationPolicy extends PowerVmAllocationPolicyAbstract
 	@SuppressWarnings({ "unchecked", "rawtypes" })
 	public EnhancedHost findEnhancedHostForVm(Vm vm)
 	{
-		Log.printLine("HIIIIIIIIIII");
+		Log.printLine("Allocating in DC: " + getDcId());
 	
 		//Needs changes to be made according to Fzones
 		/*
@@ -108,11 +129,127 @@ public class FzonesVmAllocationPolicy extends PowerVmAllocationPolicyAbstract
 		
 		Log.printLine("Free Pes are : " + freePesTmp + " Size " + freePesTmp.size() );
 		
+				
 		
 // CHECKING THE APPROPRIATE FAILURE ZONE CASE 
 		
+		if(failurezones[1]==1 && DatacenterBroker.getDcLeft()!=0)
+		{
+			Log.printLine("DC left for copy: " + DatacenterBroker.getDcLeft());
+			
+			for(Sector sector : sectorList)
+			{
+				
+				for(Aisle aisle : sector.getSectorAisleList())
+				{
+					
+					for(Rack rack: aisle.getAisleRackList())
+					{
+						
+					int hostidx = rack.getRackHostList().get(0).getId();
+					
+					do //choose a host
+					{	
+						
+						int vid = vm.getId();
+						ArrayList<ArrayList <Vm>> vcopy = (ArrayList) DatacenterBroker.vmcopies;
+						int original = vcopy.get(0).size();
+						
+						if(vid%original==0 && vid!=0)
+						{
+							failurezones[6]--;
+							Log.printLine("No of copies left are: "+ failurezones[6]);
+							DatacenterBroker.setDcLeft(DatacenterBroker.getDcLeft()-1);
+						}
+						
+						if(getFreePesInHost(getHostById(hostidx)) == 0)
+						{
+							hostidx++;
+						}
+						
+						host = getHostById(hostidx);
+						
+						Log.printLine("Rack: " + rack.getRackId() + " Host: " + host.getId() + " Contains: " + rack.getRackHostList().contains(host));
+						
+						if(!rack.getRackHostList().contains(getHostById(hostidx)))
+						{
+							//Log.printLine("HIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII "+ rack.getRackId());
+							rack = rackList.get(getHostById(hostidx).getRack());
+						}
+						if(!aisle.getAisleRackList().contains(rack))
+						{
+							//Log.printLine("HIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII "+ rack.getRackId());
+							aisle = aisleList.get(rack.getAisle());
+						}
+						
+						if(!sector.getSectorAisleList().contains(aisle))
+						{
+							//Log.printLine("HIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII "+ rack.getRackId());
+							sector=sectorList.get(aisle.getSector());
+						}
+						tries++;
+						
+						
+						if (!getVmTable().containsKey(vm.getUid())) 
+						{ // if this vm was not created
+							
+								
+							boolean r1 = (getFreePesInHost(host)==0)? false : true; //ch
+							result = host.isSuitableForVm(vm) && r1 ;  //ch
+									
+							//if(vm.getId()==10)Log.print("RESULT " + r1 + " " + result);
+									
+							if (result) 
+							{ // if vm were succesfully created in the host
+								Log.printLine("Host:"+ hostidx);
+								getVmSectorTable().put(vm.getUid(), sector);
+								getVmAisleTable().put(vm.getUid(), aisle);
+								getVmRackTable().put(vm.getUid(), rack);
+								getUsedPes().put(vm.getUid(), requiredPes);
+								getFreePes().set(hostidx, getFreePes().get(hostidx) - requiredPes);
+								result = true;
+								break;
+							} else {
+								freePesTmp.set(hostidx, Integer.MIN_VALUE);
+							}
+							
+						}
+							
+						
+						
+						
+					}while(!result  && tries < host.getNumberOfFreePes());
+					if(result==true)
+					{	
+						vm.setRack(rack);
+						Log.printLine("Rack:" + rack.getRackId());
+						break;
+					}
+					
+				}
+				if(result==true)
+				{
+					vm.setAisle(aisle);
+					Log.printLine("Aisle:" + aisle.getAisleId());
+					break;
+				}
+				
+			}
+			if(result==true)
+			{
+				vm.setSector(sector);
+				Log.printLine("Sector:" + sector.getSectorId());
+				break;
+			}
+		
+		}
+		
+		
+		return host;
+		}
+		
 		//Level 2 check:
-		if(failurezones[2]==1)
+		else if(failurezones[2]==1 && EnhancedRunner.getDcById(getDcId()).getSectorLeft()!=0)
 		{
 			Sector sector = null;
 			int secidx =0;
@@ -125,10 +262,11 @@ public class FzonesVmAllocationPolicy extends PowerVmAllocationPolicyAbstract
 				
 				if(original<=vid)
 				{
-					if(original==vid)
+					if(vid%original==0)
 					{	
 						Vm prev = DatacenterBroker.vmList.get(vid-1);
 						secidx = getSector(prev).getSectorId() + 1 ;
+						EnhancedRunner.getDcById(getDcId()).setSectorLeft(EnhancedRunner.getDcById(getDcId()).getSectorLeft()-1);
 					}
 					
 					else
@@ -216,6 +354,7 @@ public class FzonesVmAllocationPolicy extends PowerVmAllocationPolicyAbstract
 						
 						if(result==true)
 						{	
+							vm.setRack(rack);
 							Log.printLine("Rack:" + rack.getRackId());
 							break;
 						}
@@ -223,6 +362,7 @@ public class FzonesVmAllocationPolicy extends PowerVmAllocationPolicyAbstract
 					}
 					if(result==true)
 					{
+						vm.setAisle(aisle);
 						Log.printLine("Aisle:" + aisle.getAisleId());
 						break;
 					}
@@ -232,12 +372,15 @@ public class FzonesVmAllocationPolicy extends PowerVmAllocationPolicyAbstract
 			}while(!result);
 			if(result==true)
 			{	
+				vm.setSector(sector);
 				Log.printLine("Sector :" + sector.getSectorId());
 			}
+			
+			return host;
 		}
 		
 		//Level 3 check:
-		else if(failurezones[3]==1)
+		else if(failurezones[3]==1 && EnhancedRunner.getDcById(getDcId()).getAisleLeft()!=0)
 		{
 			for(Sector sector: sectorList)
 			{	
@@ -257,7 +400,7 @@ public class FzonesVmAllocationPolicy extends PowerVmAllocationPolicyAbstract
 					
 					if(original<=vid)
 					{
-						if(original==vid)
+						if(vid%original==0)
 						{
 						
 							Vm prev = DatacenterBroker.vmList.get(vid-1);
@@ -266,6 +409,8 @@ public class FzonesVmAllocationPolicy extends PowerVmAllocationPolicyAbstract
 							{
 								sector = sectorList.get(getAisleById(aisleidx).getSector());
 							}
+							
+							EnhancedRunner.getDcById(getDcId()).setAisleLeft(EnhancedRunner.getDcById(getDcId()).getAisleLeft()-1);
 							
 						}
 						
@@ -355,6 +500,7 @@ public class FzonesVmAllocationPolicy extends PowerVmAllocationPolicyAbstract
 						
 						if(result==true)
 						{	
+							vm.setRack(rack);
 							Log.printLine("Rack:" + rack.getRackId());
 							break;
 						}
@@ -362,6 +508,7 @@ public class FzonesVmAllocationPolicy extends PowerVmAllocationPolicyAbstract
 					}
 					if(result==true)
 					{
+						vm.setAisle(aisle);
 						Log.printLine("Aisle:" + aisle.getAisleId());
 						break;
 					}
@@ -370,15 +517,17 @@ public class FzonesVmAllocationPolicy extends PowerVmAllocationPolicyAbstract
 				} while(!result);
 				if(result==true)
 				{
+					vm.setSector(sector);
 					Log.printLine("Sector:" + sector.getSectorId());
 					break;
 				}
 			}
 			
+			return host;
 		}
 				
 		//Level 4 check:
-		else if(failurezones[4]==1)
+		else if(failurezones[4]==1 && EnhancedRunner.getDcById(getDcId()).getRackLeft()!=0)
 		{
 			
 			for(Sector sector : sectorList)
@@ -396,7 +545,7 @@ public class FzonesVmAllocationPolicy extends PowerVmAllocationPolicyAbstract
 						
 						if(original<=vid)
 						{
-							if(original==vid)
+							if(vid%original==0)
 							{	
 								Vm prev = DatacenterBroker.vmList.get(vid-1);
 								rackidx = getRack(prev).getRackId() + 1 ;
@@ -411,6 +560,7 @@ public class FzonesVmAllocationPolicy extends PowerVmAllocationPolicyAbstract
 									sector=sectorList.get(aisle.getSector());
 								}
 								
+								EnhancedRunner.getDcById(getDcId()).setRackLeft(EnhancedRunner.getDcById(getDcId()).getRackLeft()-1);
 							}
 							
 							else
@@ -508,6 +658,7 @@ public class FzonesVmAllocationPolicy extends PowerVmAllocationPolicyAbstract
 						}
 						if(result==true)
 						{	
+							vm.setRack(rack);
 							Log.printLine("Rack:" + rack.getRackId());
 							break;
 						}
@@ -515,6 +666,7 @@ public class FzonesVmAllocationPolicy extends PowerVmAllocationPolicyAbstract
 					}while(!result);
 					if(result==true)
 					{
+						vm.setAisle(aisle);
 						Log.printLine("Aisle:" + aisle.getAisleId());
 						break;
 					}
@@ -522,11 +674,13 @@ public class FzonesVmAllocationPolicy extends PowerVmAllocationPolicyAbstract
 				}
 				if(result==true)
 				{
+					vm.setSector(sector);
 					Log.printLine("Sector:" + sector.getSectorId());
 					break;
 				}
 			}
 			
+			return host;
 		}
 		
 			
@@ -554,7 +708,7 @@ public class FzonesVmAllocationPolicy extends PowerVmAllocationPolicyAbstract
 						
 						if(original<=vid)
 						{
-							if(original==vid)
+							if(vid%original==0)
 							{	
 								Vm prev = DatacenterBroker.vmList.get(vid-1);
 								hostidx = getHost(prev).getId() + 1 ;
@@ -659,6 +813,7 @@ public class FzonesVmAllocationPolicy extends PowerVmAllocationPolicyAbstract
 					}while(!result  && tries < host.getNumberOfFreePes());
 					if(result==true)
 					{	
+						vm.setRack(rack);
 						Log.printLine("Rack:" + rack.getRackId());
 						break;
 					}
@@ -666,6 +821,7 @@ public class FzonesVmAllocationPolicy extends PowerVmAllocationPolicyAbstract
 				}
 				if(result==true)
 				{
+					vm.setAisle(aisle);
 					Log.printLine("Aisle:" + aisle.getAisleId());
 					break;
 				}
@@ -673,6 +829,7 @@ public class FzonesVmAllocationPolicy extends PowerVmAllocationPolicyAbstract
 			}
 			if(result==true)
 			{
+				vm.setSector(sector);
 				Log.printLine("Sector:" + sector.getSectorId());
 				break;
 			}
@@ -684,11 +841,112 @@ public class FzonesVmAllocationPolicy extends PowerVmAllocationPolicyAbstract
 	}
 		
 		
+		Log.printLine("COMMON CASE");
 		
-		
-		
-		return host;
+		for(Sector sector : sectorList)
+		{
+			
+			for(Aisle aisle : sector.getSectorAisleList())
+			{
+				
+				for(Rack rack: aisle.getAisleRackList())
+				{
+					
+				int hostidx = rack.getRackHostList().get(0).getId();
+				
+				do //choose a host
+				{	
+					
+					int vid = vm.getId();
+					
+					if(getFreePesInHost(getHostById(hostidx)) == 0 || ! getHostById(hostidx).isSuitableForVm(vm))
+					{
+						//Log.printLine("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+						hostidx++;
+					}
+					
+									
+					host = getHostById(hostidx);
+					
+					Log.printLine("Rack: " + rack.getRackId() + " Host: " + host.getId() + " Contains: " + rack.getRackHostList().contains(host));
+					
+					if(!rack.getRackHostList().contains(getHostById(hostidx)))
+					{
+						//Log.printLine("HIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII "+ rack.getRackId());
+						rack = rackList.get(getHostById(hostidx).getRack());
+					}
+					if(!aisle.getAisleRackList().contains(rack))
+					{
+						//Log.printLine("HIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII "+ rack.getRackId());
+						aisle = aisleList.get(rack.getAisle());
+					}
+					
+					if(!sector.getSectorAisleList().contains(aisle))
+					{
+						//Log.printLine("HIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII "+ rack.getRackId());
+						sector=sectorList.get(aisle.getSector());
+					}
+					tries++;
+					
+					
+					if (!getVmTable().containsKey(vm.getUid())) 
+					{ // if this vm was not created
+						
+							
+						boolean r1 = (getFreePesInHost(host)==0)? false : true; //ch
+						result = host.isSuitableForVm(vm) && r1 ;  //ch
+								
+						//if(vm.getId()==10)Log.print("RESULT " + r1 + " " + result);
+								
+						if (result) 
+						{ // if vm were succesfully created in the host
+							Log.printLine("Host:"+ hostidx);
+							getVmSectorTable().put(vm.getUid(), sector);
+							getVmAisleTable().put(vm.getUid(), aisle);
+							getVmRackTable().put(vm.getUid(), rack);
+							getUsedPes().put(vm.getUid(), requiredPes);
+							getFreePes().set(hostidx, getFreePes().get(hostidx) - requiredPes);
+							result = true;
+							break;
+						} else {
+							freePesTmp.set(hostidx, Integer.MIN_VALUE);
+						}
+						
+					}
+						
+					
+					
+					
+				}while(!result);
+				if(result==true)
+				{	
+					vm.setRack(rack);
+					Log.printLine("Rack:" + rack.getRackId());
+					break;
+				}
+				
+			}
+			if(result==true)
+			{
+				vm.setAisle(aisle);
+				Log.printLine("Aisle:" + aisle.getAisleId());
+				break;
+			}
+			
+		}
+		if(result==true)
+		{
+			vm.setSector(sector);
+			Log.printLine("Sector:" + sector.getSectorId());
+			break;
+		}
 	
+	}
+	
+	return host;
+		
+		
+		
 }
 	
 	public boolean allocateHostForVm(Vm vm, EnhancedHost host)

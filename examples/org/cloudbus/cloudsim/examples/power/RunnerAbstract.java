@@ -8,6 +8,7 @@ import java.util.List;
 
 import org.cloudbus.cloudsim.Cloudlet;
 import org.cloudbus.cloudsim.DatacenterBroker;
+import org.cloudbus.cloudsim.EnhancedHost;
 import org.cloudbus.cloudsim.Log;
 import org.cloudbus.cloudsim.Vm;
 import org.cloudbus.cloudsim.VmAllocationPolicy;
@@ -55,7 +56,7 @@ public abstract class RunnerAbstract {
 	protected static List<Vm> vmList;
 
 	/** The host list. */
-	protected static List<PowerHost> hostList;
+	protected static List<EnhancedHost> hostList;
 
 	/**
 	 * Run.

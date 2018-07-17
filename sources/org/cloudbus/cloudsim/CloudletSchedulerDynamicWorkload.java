@@ -267,6 +267,8 @@ public class CloudletSchedulerDynamicWorkload extends CloudletSchedulerTimeShare
 	 * @return the estimated finish time
 	 */
 	public double getEstimatedFinishTime(ResCloudlet rcl, double time) {
+		
+		System.out.println("CurrentTime:" + time + "+ RemainingLength:"+(rcl.getRemainingCloudletLength())+ " TotalAllocMips:" + getTotalCurrentAllocatedMipsForCloudlet(rcl, time));
 		return time
 				+ ((rcl.getRemainingCloudletLength()) / getTotalCurrentAllocatedMipsForCloudlet(rcl, time));
 	}

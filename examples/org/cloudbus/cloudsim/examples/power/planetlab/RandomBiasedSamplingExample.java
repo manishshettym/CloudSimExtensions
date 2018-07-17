@@ -1,6 +1,6 @@
 package org.cloudbus.cloudsim.examples.power.planetlab;
 
-import org.cloudbus.cloudsim.examples.power.planetlab.EnhancedRunner;
+import org.cloudbus.cloudsim.examples.power.EnhancedRunner;
 
 public class RandomBiasedSamplingExample
 {

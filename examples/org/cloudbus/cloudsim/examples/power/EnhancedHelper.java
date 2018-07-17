@@ -16,6 +16,7 @@ import org.cloudbus.cloudsim.Storage;
 import org.cloudbus.cloudsim.Vm;
 import org.cloudbus.cloudsim.VmAllocationPolicy;
 import org.cloudbus.cloudsim.VmSchedulerTimeSharedOverSubscription;
+import org.cloudbus.cloudsim.examples.power.planetlab.FzonesVmAllocationPolicy;
 import org.cloudbus.cloudsim.power.EnhancedPowerDatacenter;
 import org.cloudbus.cloudsim.power.PowerDatacenterBroker;
 
@@ -146,15 +147,7 @@ public class EnhancedHelper extends Helper
 		List<EnhancedHost> hostList = new ArrayList<EnhancedHost>();
 		
 		for (int i = 0; i < hostsNumber; i++) {
-			int hostType = 0;
-			if( i % 2 == 0)
-			{
-				hostType = 1;
-			}
-			else
-			{
-				hostType = 1;
-			}
+			int hostType = i % Constants.HOST_TYPES;
 			
 			List<Pe> peList = new ArrayList<Pe>();
 			for (int j = 0; j < Constants.HOST_PES[hostType]; j++) {
@@ -228,6 +221,13 @@ public class EnhancedHelper extends Helper
 					new LinkedList<Storage>(),
 					Constants.SCHEDULING_INTERVAL
 					);
+			
+			datacenter.setSectorLeft(sectorList.size()-1);
+			datacenter.setAisleLeft(aisleList.size()-1);
+			datacenter.setRackLeft(rackList.size()-1);
+			
+			FzonesVmAllocationPolicy vmallocpol = (FzonesVmAllocationPolicy) datacenter.getVmAllocationPolicy();
+			vmallocpol.setDcId(datacenter.getId());
 			
 		} catch (Exception e) {
 			

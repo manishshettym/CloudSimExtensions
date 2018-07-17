@@ -25,6 +25,7 @@ import org.cloudbus.cloudsim.HostStateHistoryEntry;
 import org.cloudbus.cloudsim.Log;
 import org.cloudbus.cloudsim.Pe;
 import org.cloudbus.cloudsim.Storage;
+import org.cloudbus.cloudsim.Summary;
 import org.cloudbus.cloudsim.Vm;
 import org.cloudbus.cloudsim.VmAllocationPolicy;
 import org.cloudbus.cloudsim.VmSchedulerTimeSharedOverSubscription;
@@ -441,6 +442,43 @@ public class Helper{
 					"Mean time before a VM migration: %.2f sec",
 					meanTimeBeforeVmMigration));
 			Log.printLine(String.format(
+					"StDev time before a VM migration: %.2f sec",
+					stDevTimeBeforeVmMigration));
+			
+			
+			//summary
+			
+			Summary.setDisabled(false);
+			Summary.printLine();
+			Summary.printLine(String.format("Experiment name: " + experimentName));
+			Summary.printLine(String.format("Number of hosts: " + numberOfHosts));
+			Summary.printLine(String.format("Number of VMs: " + numberOfVms));
+			Summary.printLine(String.format("Total simulation time: %.2f sec", totalSimulationTime));
+			Summary.printLine(String.format("Energy consumption: %.2f kWh", energy));
+			Summary.printLine(String.format("Number of VM migrations: %d", numberOfMigrations));
+			Summary.printLine(String.format("SLA: %.5f%%", sla * 100));
+			Summary.printLine(String.format(
+					"SLA perf degradation due to migration: %.2f%%",
+					slaDegradationDueToMigration * 100));
+			Summary.printLine(String.format("SLA time per active host: %.2f%%", slaTimePerActiveHost * 100));
+			Summary.printLine(String.format("Overall SLA violation: %.2f%%", slaOverall * 100));
+			Summary.printLine(String.format("Average SLA violation: %.2f%%", slaAverage * 100));
+			// Log.printLine(String.format("SLA time per VM with migration: %.2f%%",
+			// slaTimePerVmWithMigration * 100));
+			// Log.printLine(String.format("SLA time per VM without migration: %.2f%%",
+			// slaTimePerVmWithoutMigration * 100));
+			// Log.printLine(String.format("SLA time per host: %.2f%%", slaTimePerHost * 100));
+			Summary.printLine(String.format("Number of host shutdowns: %d", numberOfHostShutdowns));
+			Summary.printLine(String.format(
+					"Mean time before a host shutdown: %.2f sec",
+					meanTimeBeforeHostShutdown));
+			Summary.printLine(String.format(
+					"StDev time before a host shutdown: %.2f sec",
+					stDevTimeBeforeHostShutdown));
+			Summary.printLine(String.format(
+					"Mean time before a VM migration: %.2f sec",
+					meanTimeBeforeVmMigration));
+			Summary.printLine(String.format(
 					"StDev time before a VM migration: %.2f sec",
 					stDevTimeBeforeVmMigration));
 
