@@ -1,0 +1,24 @@
+DCno
+2
+Sector/DC
+1
+Aisles/Sector
+1
+Racks/aisle
+1
+Hosts/Rack
+800
+Application( if using workload , type 0 )
+0
+ReplicationFactor
+2
+DCfailure
+1
+Sectorfailure
+0
+Aislefailure
+0
+Rackfailure
+0
+Hostfailure
+0

@@ -1,0 +1,2168 @@
+CONFIGURATION USED
+DCno: 2
+Sector/DC: 1
+Aisles/Sector: 1
+Racks/aisle: 1
+Hosts/Rack: 800
+Application( if using workload , type 0 ): 0
+ReplicationFactor: 2
+DCfailure: 1
+Sectorfailure: 0
+Aislefailure: 0
+Rackfailure: 0
+Hostfailure: 0
+
+ INITIALIZING the configuration 
+0.1: Broker: VM #0 has been created in Datacenter #2, Sector #0, Aisle #0, Rack #0, Host #0
+0.1: Broker: VM #1 has been created in Datacenter #2, Sector #0, Aisle #0, Rack #0, Host #0
+0.1: Broker: VM #2 has been created in Datacenter #2, Sector #0, Aisle #0, Rack #0, Host #1
+0.1: Broker: VM #3 has been created in Datacenter #2, Sector #0, Aisle #0, Rack #0, Host #1
+0.1: Broker: VM #4 has been created in Datacenter #2, Sector #0, Aisle #0, Rack #0, Host #2
+0.1: Broker: VM #5 has been created in Datacenter #2, Sector #0, Aisle #0, Rack #0, Host #2
+0.1: Broker: Creation of VM #6 failed in Datacenter #2
+0.1: Broker: Creation of VM #7 failed in Datacenter #2
+0.1: Broker: Creation of VM #8 failed in Datacenter #2
+0.1: Broker: Creation of VM #9 failed in Datacenter #2
+0.1: Broker: Creation of VM #10 failed in Datacenter #2
+0.1: Broker: Creation of VM #11 failed in Datacenter #2
+0.1: Broker: Creation of VM #12 failed in Datacenter #2
+0.1: Broker: Creation of VM #13 failed in Datacenter #2
+0.1: Broker: Creation of VM #14 failed in Datacenter #2
+0.1: Broker: Creation of VM #15 failed in Datacenter #2
+0.1: Broker: Creation of VM #16 failed in Datacenter #2
+0.1: Broker: Creation of VM #17 failed in Datacenter #2
+0.1: Broker: Creation of VM #18 failed in Datacenter #2
+0.1: Broker: Creation of VM #19 failed in Datacenter #2
+0.1: Broker: Creation of VM #20 failed in Datacenter #2
+0.1: Broker: Creation of VM #21 failed in Datacenter #2
+0.1: Broker: Creation of VM #22 failed in Datacenter #2
+0.1: Broker: Creation of VM #23 failed in Datacenter #2
+0.1: Broker: Creation of VM #24 failed in Datacenter #2
+0.1: Broker: Creation of VM #25 failed in Datacenter #2
+0.1: Broker: Creation of VM #26 failed in Datacenter #2
+0.1: Broker: Creation of VM #27 failed in Datacenter #2
+0.1: Broker: Creation of VM #28 failed in Datacenter #2
+0.1: Broker: Creation of VM #29 failed in Datacenter #2
+0.1: Broker: Creation of VM #30 failed in Datacenter #2
+0.1: Broker: Creation of VM #31 failed in Datacenter #2
+0.1: Broker: Creation of VM #32 failed in Datacenter #2
+0.1: Broker: Creation of VM #33 failed in Datacenter #2
+0.1: Broker: Creation of VM #34 failed in Datacenter #2
+0.1: Broker: Creation of VM #35 failed in Datacenter #2
+0.1: Broker: Creation of VM #36 failed in Datacenter #2
+0.1: Broker: Creation of VM #37 failed in Datacenter #2
+0.1: Broker: Creation of VM #38 failed in Datacenter #2
+0.1: Broker: Creation of VM #39 failed in Datacenter #2
+0.1: Broker: Creation of VM #40 failed in Datacenter #2
+0.1: Broker: Creation of VM #41 failed in Datacenter #2
+0.1: Broker: Creation of VM #42 failed in Datacenter #2
+0.1: Broker: Creation of VM #43 failed in Datacenter #2
+0.1: Broker: Creation of VM #44 failed in Datacenter #2
+0.1: Broker: Creation of VM #45 failed in Datacenter #2
+0.1: Broker: Creation of VM #46 failed in Datacenter #2
+0.1: Broker: Creation of VM #47 failed in Datacenter #2
+0.1: Broker: Creation of VM #48 failed in Datacenter #2
+0.1: Broker: Creation of VM #49 failed in Datacenter #2
+0.1: Broker: Creation of VM #50 failed in Datacenter #2
+0.1: Broker: Creation of VM #51 failed in Datacenter #2
+0.1: Broker: Creation of VM #52 failed in Datacenter #2
+0.1: Broker: Creation of VM #53 failed in Datacenter #2
+0.1: Broker: Creation of VM #54 failed in Datacenter #2
+0.1: Broker: Creation of VM #55 failed in Datacenter #2
+0.1: Broker: Creation of VM #56 failed in Datacenter #2
+0.1: Broker: Creation of VM #57 failed in Datacenter #2
+0.1: Broker: Creation of VM #58 failed in Datacenter #2
+0.1: Broker: Creation of VM #59 failed in Datacenter #2
+0.1: Broker: Creation of VM #60 failed in Datacenter #2
+0.1: Broker: Creation of VM #61 failed in Datacenter #2
+0.1: Broker: Creation of VM #62 failed in Datacenter #2
+0.1: Broker: Creation of VM #63 failed in Datacenter #2
+0.1: Broker: Creation of VM #64 failed in Datacenter #2
+0.1: Broker: Creation of VM #65 failed in Datacenter #2
+0.1: Broker: Creation of VM #66 failed in Datacenter #2
+0.1: Broker: Creation of VM #67 failed in Datacenter #2
+0.1: Broker: Creation of VM #68 failed in Datacenter #2
+0.1: Broker: Creation of VM #69 failed in Datacenter #2
+0.1: Broker: Creation of VM #70 failed in Datacenter #2
+0.1: Broker: Creation of VM #71 failed in Datacenter #2
+0.1: Broker: Creation of VM #72 failed in Datacenter #2
+0.1: Broker: Creation of VM #73 failed in Datacenter #2
+0.1: Broker: Creation of VM #74 failed in Datacenter #2
+0.1: Broker: Creation of VM #75 failed in Datacenter #2
+0.1: Broker: Creation of VM #76 failed in Datacenter #2
+0.1: Broker: Creation of VM #77 failed in Datacenter #2
+0.1: Broker: Creation of VM #78 failed in Datacenter #2
+0.1: Broker: Creation of VM #79 failed in Datacenter #2
+0.1: Broker: Creation of VM #80 failed in Datacenter #2
+0.1: Broker: Creation of VM #81 failed in Datacenter #2
+0.1: Broker: Creation of VM #82 failed in Datacenter #2
+0.1: Broker: Creation of VM #83 failed in Datacenter #2
+0.1: Broker: Creation of VM #84 failed in Datacenter #2
+0.1: Broker: Creation of VM #85 failed in Datacenter #2
+0.1: Broker: Creation of VM #86 failed in Datacenter #2
+0.1: Broker: Creation of VM #87 failed in Datacenter #2
+0.1: Broker: Creation of VM #88 failed in Datacenter #2
+0.1: Broker: Creation of VM #89 failed in Datacenter #2
+0.1: Broker: Creation of VM #90 failed in Datacenter #2
+0.1: Broker: Creation of VM #91 failed in Datacenter #2
+0.1: Broker: Creation of VM #92 failed in Datacenter #2
+0.1: Broker: Creation of VM #93 failed in Datacenter #2
+0.1: Broker: Creation of VM #94 failed in Datacenter #2
+0.1: Broker: Creation of VM #95 failed in Datacenter #2
+0.1: Broker: Creation of VM #96 failed in Datacenter #2
+0.1: Broker: Creation of VM #97 failed in Datacenter #2
+0.1: Broker: Creation of VM #98 failed in Datacenter #2
+0.1: Broker: Creation of VM #99 failed in Datacenter #2
+0.1: Broker: Creation of VM #100 failed in Datacenter #2
+0.1: Broker: Creation of VM #101 failed in Datacenter #2
+0.1: Broker: Creation of VM #102 failed in Datacenter #2
+0.1: Broker: Creation of VM #103 failed in Datacenter #2
+0.1: Broker: Creation of VM #104 failed in Datacenter #2
+0.1: Broker: Creation of VM #105 failed in Datacenter #2
+0.1: Broker: Creation of VM #106 failed in Datacenter #2
+0.1: Broker: Creation of VM #107 failed in Datacenter #2
+0.1: Broker: Creation of VM #108 failed in Datacenter #2
+0.1: Broker: Creation of VM #109 failed in Datacenter #2
+0.1: Broker: Creation of VM #110 failed in Datacenter #2
+0.1: Broker: Creation of VM #111 failed in Datacenter #2
+0.1: Broker: Creation of VM #112 failed in Datacenter #2
+0.1: Broker: Creation of VM #113 failed in Datacenter #2
+0.1: Broker: Creation of VM #114 failed in Datacenter #2
+0.1: Broker: Creation of VM #115 failed in Datacenter #2
+0.1: Broker: Creation of VM #116 failed in Datacenter #2
+0.1: Broker: Creation of VM #117 failed in Datacenter #2
+0.1: Broker: Creation of VM #118 failed in Datacenter #2
+0.1: Broker: Creation of VM #119 failed in Datacenter #2
+0.1: Broker: Creation of VM #120 failed in Datacenter #2
+0.1: Broker: Creation of VM #121 failed in Datacenter #2
+0.1: Broker: Creation of VM #122 failed in Datacenter #2
+0.1: Broker: Creation of VM #123 failed in Datacenter #2
+0.1: Broker: Creation of VM #124 failed in Datacenter #2
+0.1: Broker: Creation of VM #125 failed in Datacenter #2
+0.1: Broker: Creation of VM #126 failed in Datacenter #2
+0.1: Broker: Creation of VM #127 failed in Datacenter #2
+0.1: Broker: Creation of VM #128 failed in Datacenter #2
+0.1: Broker: Creation of VM #129 failed in Datacenter #2
+0.1: Broker: Creation of VM #130 failed in Datacenter #2
+0.1: Broker: Creation of VM #131 failed in Datacenter #2
+0.1: Broker: Creation of VM #132 failed in Datacenter #2
+0.1: Broker: Creation of VM #133 failed in Datacenter #2
+0.1: Broker: Creation of VM #134 failed in Datacenter #2
+0.1: Broker: Creation of VM #135 failed in Datacenter #2
+0.1: Broker: Creation of VM #136 failed in Datacenter #2
+0.1: Broker: Creation of VM #137 failed in Datacenter #2
+0.1: Broker: Creation of VM #138 failed in Datacenter #2
+0.1: Broker: Creation of VM #139 failed in Datacenter #2
+0.1: Broker: Creation of VM #140 failed in Datacenter #2
+0.1: Broker: Creation of VM #141 failed in Datacenter #2
+0.1: Broker: Creation of VM #142 failed in Datacenter #2
+0.1: Broker: Creation of VM #143 failed in Datacenter #2
+0.1: Broker: Creation of VM #144 failed in Datacenter #2
+0.1: Broker: Creation of VM #145 failed in Datacenter #2
+0.1: Broker: Creation of VM #146 failed in Datacenter #2
+0.1: Broker: Creation of VM #147 failed in Datacenter #2
+0.1: Broker: Creation of VM #148 failed in Datacenter #2
+0.1: Broker: Creation of VM #149 failed in Datacenter #2
+0.1: Broker: Creation of VM #150 failed in Datacenter #2
+0.1: Broker: Creation of VM #151 failed in Datacenter #2
+0.1: Broker: Creation of VM #152 failed in Datacenter #2
+0.1: Broker: Creation of VM #153 failed in Datacenter #2
+0.1: Broker: Creation of VM #154 failed in Datacenter #2
+0.1: Broker: Creation of VM #155 failed in Datacenter #2
+0.1: Broker: Creation of VM #156 failed in Datacenter #2
+0.1: Broker: Creation of VM #157 failed in Datacenter #2
+0.1: Broker: Creation of VM #158 failed in Datacenter #2
+0.1: Broker: Creation of VM #159 failed in Datacenter #2
+0.1: Broker: Creation of VM #160 failed in Datacenter #2
+0.1: Broker: Creation of VM #161 failed in Datacenter #2
+0.1: Broker: Creation of VM #162 failed in Datacenter #2
+0.1: Broker: Creation of VM #163 failed in Datacenter #2
+0.1: Broker: Creation of VM #164 failed in Datacenter #2
+0.1: Broker: Creation of VM #165 failed in Datacenter #2
+0.1: Broker: Creation of VM #166 failed in Datacenter #2
+0.1: Broker: Creation of VM #167 failed in Datacenter #2
+0.1: Broker: Creation of VM #168 failed in Datacenter #2
+0.1: Broker: Creation of VM #169 failed in Datacenter #2
+0.1: Broker: Creation of VM #170 failed in Datacenter #2
+0.1: Broker: Creation of VM #171 failed in Datacenter #2
+0.1: Broker: Creation of VM #172 failed in Datacenter #2
+0.1: Broker: Creation of VM #173 failed in Datacenter #2
+0.1: Broker: Creation of VM #174 failed in Datacenter #2
+0.1: Broker: Creation of VM #175 failed in Datacenter #2
+0.1: Broker: Creation of VM #176 failed in Datacenter #2
+0.1: Broker: Creation of VM #177 failed in Datacenter #2
+0.1: Broker: Creation of VM #178 failed in Datacenter #2
+0.1: Broker: Creation of VM #179 failed in Datacenter #2
+0.1: Broker: Creation of VM #180 failed in Datacenter #2
+0.1: Broker: Creation of VM #181 failed in Datacenter #2
+0.1: Broker: Creation of VM #182 failed in Datacenter #2
+0.1: Broker: Creation of VM #183 failed in Datacenter #2
+0.1: Broker: Creation of VM #184 failed in Datacenter #2
+0.1: Broker: Creation of VM #185 failed in Datacenter #2
+0.1: Broker: Creation of VM #186 failed in Datacenter #2
+0.1: Broker: Creation of VM #187 failed in Datacenter #2
+0.1: Broker: Creation of VM #188 failed in Datacenter #2
+0.1: Broker: Creation of VM #189 failed in Datacenter #2
+0.1: Broker: Creation of VM #190 failed in Datacenter #2
+0.1: Broker: Creation of VM #191 failed in Datacenter #2
+0.1: Broker: Creation of VM #192 failed in Datacenter #2
+0.1: Broker: Creation of VM #193 failed in Datacenter #2
+0.1: Broker: Creation of VM #194 failed in Datacenter #2
+0.1: Broker: Creation of VM #195 failed in Datacenter #2
+0.1: Broker: Creation of VM #196 failed in Datacenter #2
+0.1: Broker: Creation of VM #197 failed in Datacenter #2
+0.1: Broker: Creation of VM #198 failed in Datacenter #2
+0.1: Broker: Creation of VM #199 failed in Datacenter #2
+0.1: Broker: Creation of VM #200 failed in Datacenter #2
+0.1: Broker: Creation of VM #201 failed in Datacenter #2
+0.1: Broker: Creation of VM #202 failed in Datacenter #2
+0.1: Broker: Creation of VM #203 failed in Datacenter #2
+0.1: Broker: Creation of VM #204 failed in Datacenter #2
+0.1: Broker: Creation of VM #205 failed in Datacenter #2
+0.1: Broker: Creation of VM #206 failed in Datacenter #2
+0.1: Broker: Creation of VM #207 failed in Datacenter #2
+0.1: Broker: Creation of VM #208 failed in Datacenter #2
+0.1: Broker: Creation of VM #209 failed in Datacenter #2
+0.1: Broker: Creation of VM #210 failed in Datacenter #2
+0.1: Broker: Creation of VM #211 failed in Datacenter #2
+0.1: Broker: Creation of VM #212 failed in Datacenter #2
+0.1: Broker: Creation of VM #213 failed in Datacenter #2
+0.1: Broker: Creation of VM #214 failed in Datacenter #2
+0.1: Broker: Creation of VM #215 failed in Datacenter #2
+0.1: Broker: Creation of VM #216 failed in Datacenter #2
+0.1: Broker: Creation of VM #217 failed in Datacenter #2
+0.1: Broker: Creation of VM #218 failed in Datacenter #2
+0.1: Broker: Creation of VM #219 failed in Datacenter #2
+0.1: Broker: Creation of VM #220 failed in Datacenter #2
+0.1: Broker: Creation of VM #221 failed in Datacenter #2
+0.1: Broker: Creation of VM #222 failed in Datacenter #2
+0.1: Broker: Creation of VM #223 failed in Datacenter #2
+0.1: Broker: Creation of VM #224 failed in Datacenter #2
+0.1: Broker: Creation of VM #225 failed in Datacenter #2
+0.1: Broker: Creation of VM #226 failed in Datacenter #2
+0.1: Broker: Creation of VM #227 failed in Datacenter #2
+0.1: Broker: Creation of VM #228 failed in Datacenter #2
+0.1: Broker: Creation of VM #229 failed in Datacenter #2
+0.1: Broker: Creation of VM #230 failed in Datacenter #2
+0.1: Broker: Creation of VM #231 failed in Datacenter #2
+0.1: Broker: Creation of VM #232 failed in Datacenter #2
+0.1: Broker: Creation of VM #233 failed in Datacenter #2
+0.1: Broker: Creation of VM #234 failed in Datacenter #2
+0.1: Broker: Creation of VM #235 failed in Datacenter #2
+0.1: Broker: Creation of VM #236 failed in Datacenter #2
+0.1: Broker: Creation of VM #237 failed in Datacenter #2
+0.1: Broker: Creation of VM #238 failed in Datacenter #2
+0.1: Broker: Creation of VM #239 failed in Datacenter #2
+0.1: Broker: Creation of VM #240 failed in Datacenter #2
+0.1: Broker: Creation of VM #241 failed in Datacenter #2
+0.1: Broker: Creation of VM #242 failed in Datacenter #2
+0.1: Broker: Creation of VM #243 failed in Datacenter #2
+0.1: Broker: Creation of VM #244 failed in Datacenter #2
+0.1: Broker: Creation of VM #245 failed in Datacenter #2
+0.1: Broker: Creation of VM #246 failed in Datacenter #2
+0.1: Broker: Creation of VM #247 failed in Datacenter #2
+0.1: Broker: Creation of VM #248 failed in Datacenter #2
+0.1: Broker: Creation of VM #249 failed in Datacenter #2
+0.1: Broker: Creation of VM #250 failed in Datacenter #2
+0.1: Broker: Creation of VM #251 failed in Datacenter #2
+0.1: Broker: Creation of VM #252 failed in Datacenter #2
+0.1: Broker: Creation of VM #253 failed in Datacenter #2
+0.1: Broker: Creation of VM #254 failed in Datacenter #2
+0.1: Broker: Creation of VM #255 failed in Datacenter #2
+0.1: Broker: Creation of VM #256 failed in Datacenter #2
+0.1: Broker: Creation of VM #257 failed in Datacenter #2
+0.1: Broker: Creation of VM #258 failed in Datacenter #2
+0.1: Broker: Creation of VM #259 failed in Datacenter #2
+0.1: Broker: Creation of VM #260 failed in Datacenter #2
+0.1: Broker: Creation of VM #261 failed in Datacenter #2
+0.1: Broker: Creation of VM #262 failed in Datacenter #2
+0.1: Broker: Creation of VM #263 failed in Datacenter #2
+0.1: Broker: Creation of VM #264 failed in Datacenter #2
+0.1: Broker: Creation of VM #265 failed in Datacenter #2
+0.1: Broker: Creation of VM #266 failed in Datacenter #2
+0.1: Broker: Creation of VM #267 failed in Datacenter #2
+0.1: Broker: Creation of VM #268 failed in Datacenter #2
+0.1: Broker: Creation of VM #269 failed in Datacenter #2
+0.1: Broker: Creation of VM #270 failed in Datacenter #2
+0.1: Broker: Creation of VM #271 failed in Datacenter #2
+0.1: Broker: Creation of VM #272 failed in Datacenter #2
+0.1: Broker: Creation of VM #273 failed in Datacenter #2
+0.1: Broker: Creation of VM #274 failed in Datacenter #2
+0.1: Broker: Creation of VM #275 failed in Datacenter #2
+0.1: Broker: Creation of VM #276 failed in Datacenter #2
+0.1: Broker: Creation of VM #277 failed in Datacenter #2
+0.1: Broker: Creation of VM #278 failed in Datacenter #2
+0.1: Broker: Creation of VM #279 failed in Datacenter #2
+0.1: Broker: Creation of VM #280 failed in Datacenter #2
+0.1: Broker: Creation of VM #281 failed in Datacenter #2
+0.1: Broker: Creation of VM #282 failed in Datacenter #2
+0.1: Broker: Creation of VM #283 failed in Datacenter #2
+0.1: Broker: Creation of VM #284 failed in Datacenter #2
+0.1: Broker: Creation of VM #285 failed in Datacenter #2
+0.1: Broker: Creation of VM #286 failed in Datacenter #2
+0.1: Broker: Creation of VM #287 failed in Datacenter #2
+0.1: Broker: Creation of VM #288 failed in Datacenter #2
+0.1: Broker: Creation of VM #289 failed in Datacenter #2
+0.1: Broker: Creation of VM #290 failed in Datacenter #2
+0.1: Broker: Creation of VM #291 failed in Datacenter #2
+0.1: Broker: Creation of VM #292 failed in Datacenter #2
+0.1: Broker: Creation of VM #293 failed in Datacenter #2
+0.1: Broker: Creation of VM #294 failed in Datacenter #2
+0.1: Broker: Creation of VM #295 failed in Datacenter #2
+0.1: Broker: Creation of VM #296 failed in Datacenter #2
+0.1: Broker: Creation of VM #297 failed in Datacenter #2
+0.1: Broker: Creation of VM #298 failed in Datacenter #2
+0.1: Broker: Creation of VM #299 failed in Datacenter #2
+0.1: Broker: Creation of VM #300 failed in Datacenter #2
+0.1: Broker: Creation of VM #301 failed in Datacenter #2
+0.1: Broker: Creation of VM #302 failed in Datacenter #2
+0.1: Broker: Creation of VM #303 failed in Datacenter #2
+0.1: Broker: Creation of VM #304 failed in Datacenter #2
+0.1: Broker: Creation of VM #305 failed in Datacenter #2
+0.1: Broker: Creation of VM #306 failed in Datacenter #2
+0.1: Broker: Creation of VM #307 failed in Datacenter #2
+0.1: Broker: Creation of VM #308 failed in Datacenter #2
+0.1: Broker: Creation of VM #309 failed in Datacenter #2
+0.1: Broker: Creation of VM #310 failed in Datacenter #2
+0.1: Broker: Creation of VM #311 failed in Datacenter #2
+0.1: Broker: Creation of VM #312 failed in Datacenter #2
+0.1: Broker: Creation of VM #313 failed in Datacenter #2
+0.1: Broker: Creation of VM #314 failed in Datacenter #2
+0.1: Broker: Creation of VM #315 failed in Datacenter #2
+0.1: Broker: Creation of VM #316 failed in Datacenter #2
+0.1: Broker: Creation of VM #317 failed in Datacenter #2
+0.1: Broker: Creation of VM #318 failed in Datacenter #2
+0.1: Broker: Creation of VM #319 failed in Datacenter #2
+0.1: Broker: Creation of VM #320 failed in Datacenter #2
+0.1: Broker: Creation of VM #321 failed in Datacenter #2
+0.1: Broker: Creation of VM #322 failed in Datacenter #2
+0.1: Broker: Creation of VM #323 failed in Datacenter #2
+0.1: Broker: Creation of VM #324 failed in Datacenter #2
+0.1: Broker: Creation of VM #325 failed in Datacenter #2
+0.1: Broker: Creation of VM #326 failed in Datacenter #2
+0.1: Broker: Creation of VM #327 failed in Datacenter #2
+0.1: Broker: Creation of VM #328 failed in Datacenter #2
+0.1: Broker: Creation of VM #329 failed in Datacenter #2
+0.1: Broker: Creation of VM #330 failed in Datacenter #2
+0.1: Broker: Creation of VM #331 failed in Datacenter #2
+0.1: Broker: Creation of VM #332 failed in Datacenter #2
+0.1: Broker: Creation of VM #333 failed in Datacenter #2
+0.1: Broker: Creation of VM #334 failed in Datacenter #2
+0.1: Broker: Creation of VM #335 failed in Datacenter #2
+0.1: Broker: Creation of VM #336 failed in Datacenter #2
+0.1: Broker: Creation of VM #337 failed in Datacenter #2
+0.1: Broker: Creation of VM #338 failed in Datacenter #2
+0.1: Broker: Creation of VM #339 failed in Datacenter #2
+0.1: Broker: Creation of VM #340 failed in Datacenter #2
+0.1: Broker: Creation of VM #341 failed in Datacenter #2
+0.1: Broker: Creation of VM #342 failed in Datacenter #2
+0.1: Broker: Creation of VM #343 failed in Datacenter #2
+0.1: Broker: Creation of VM #344 failed in Datacenter #2
+0.1: Broker: Creation of VM #345 failed in Datacenter #2
+0.1: Broker: Creation of VM #346 failed in Datacenter #2
+0.1: Broker: Creation of VM #347 failed in Datacenter #2
+0.1: Broker: Creation of VM #348 failed in Datacenter #2
+0.1: Broker: Creation of VM #349 failed in Datacenter #2
+0.1: Broker: Creation of VM #350 failed in Datacenter #2
+0.1: Broker: Creation of VM #351 failed in Datacenter #2
+0.1: Broker: Creation of VM #352 failed in Datacenter #2
+0.1: Broker: Creation of VM #353 failed in Datacenter #2
+0.1: Broker: Creation of VM #354 failed in Datacenter #2
+0.1: Broker: Creation of VM #355 failed in Datacenter #2
+0.1: Broker: Creation of VM #356 failed in Datacenter #2
+0.1: Broker: Creation of VM #357 failed in Datacenter #2
+0.1: Broker: Creation of VM #358 failed in Datacenter #2
+0.1: Broker: Creation of VM #359 failed in Datacenter #2
+0.1: Broker: Creation of VM #360 failed in Datacenter #2
+0.1: Broker: Creation of VM #361 failed in Datacenter #2
+0.1: Broker: Creation of VM #362 failed in Datacenter #2
+0.1: Broker: Creation of VM #363 failed in Datacenter #2
+0.1: Broker: Creation of VM #364 failed in Datacenter #2
+0.1: Broker: Creation of VM #365 failed in Datacenter #2
+0.1: Broker: Creation of VM #366 failed in Datacenter #2
+0.1: Broker: Creation of VM #367 failed in Datacenter #2
+0.1: Broker: Creation of VM #368 failed in Datacenter #2
+0.1: Broker: Creation of VM #369 failed in Datacenter #2
+0.1: Broker: Creation of VM #370 failed in Datacenter #2
+0.1: Broker: Creation of VM #371 failed in Datacenter #2
+0.1: Broker: Creation of VM #372 failed in Datacenter #2
+0.1: Broker: Creation of VM #373 failed in Datacenter #2
+0.1: Broker: Creation of VM #374 failed in Datacenter #2
+0.1: Broker: Creation of VM #375 failed in Datacenter #2
+0.1: Broker: Creation of VM #376 failed in Datacenter #2
+0.1: Broker: Creation of VM #377 failed in Datacenter #2
+0.1: Broker: Creation of VM #378 failed in Datacenter #2
+0.1: Broker: Creation of VM #379 failed in Datacenter #2
+0.1: Broker: Creation of VM #380 failed in Datacenter #2
+0.1: Broker: Creation of VM #381 failed in Datacenter #2
+0.1: Broker: Creation of VM #382 failed in Datacenter #2
+0.1: Broker: Creation of VM #383 failed in Datacenter #2
+0.1: Broker: Creation of VM #384 failed in Datacenter #2
+0.1: Broker: Creation of VM #385 failed in Datacenter #2
+0.1: Broker: Creation of VM #386 failed in Datacenter #2
+0.1: Broker: Creation of VM #387 failed in Datacenter #2
+0.1: Broker: Creation of VM #388 failed in Datacenter #2
+0.1: Broker: Creation of VM #389 failed in Datacenter #2
+0.1: Broker: Creation of VM #390 failed in Datacenter #2
+0.1: Broker: Creation of VM #391 failed in Datacenter #2
+0.1: Broker: Creation of VM #392 failed in Datacenter #2
+0.1: Broker: Creation of VM #393 failed in Datacenter #2
+0.1: Broker: Creation of VM #394 failed in Datacenter #2
+0.1: Broker: Creation of VM #395 failed in Datacenter #2
+0.1: Broker: Creation of VM #396 failed in Datacenter #2
+0.1: Broker: Creation of VM #397 failed in Datacenter #2
+0.1: Broker: Creation of VM #398 failed in Datacenter #2
+0.1: Broker: Creation of VM #399 failed in Datacenter #2
+0.1: Broker: Creation of VM #400 failed in Datacenter #2
+0.1: Broker: Creation of VM #401 failed in Datacenter #2
+0.1: Broker: Creation of VM #402 failed in Datacenter #2
+0.1: Broker: Creation of VM #403 failed in Datacenter #2
+0.1: Broker: Creation of VM #404 failed in Datacenter #2
+0.1: Broker: Creation of VM #405 failed in Datacenter #2
+0.1: Broker: Creation of VM #406 failed in Datacenter #2
+0.1: Broker: Creation of VM #407 failed in Datacenter #2
+0.1: Broker: Creation of VM #408 failed in Datacenter #2
+0.1: Broker: Creation of VM #409 failed in Datacenter #2
+0.1: Broker: Creation of VM #410 failed in Datacenter #2
+0.1: Broker: Creation of VM #411 failed in Datacenter #2
+0.1: Broker: Creation of VM #412 failed in Datacenter #2
+0.1: Broker: Creation of VM #413 failed in Datacenter #2
+0.1: Broker: Creation of VM #414 failed in Datacenter #2
+0.1: Broker: Creation of VM #415 failed in Datacenter #2
+0.1: Broker: Creation of VM #416 failed in Datacenter #2
+0.1: Broker: Creation of VM #417 failed in Datacenter #2
+0.1: Broker: Creation of VM #418 failed in Datacenter #2
+0.1: Broker: Creation of VM #419 failed in Datacenter #2
+0.1: Broker: Creation of VM #420 failed in Datacenter #2
+0.1: Broker: Creation of VM #421 failed in Datacenter #2
+0.1: Broker: Creation of VM #422 failed in Datacenter #2
+0.1: Broker: Creation of VM #423 failed in Datacenter #2
+0.1: Broker: Creation of VM #424 failed in Datacenter #2
+0.1: Broker: Creation of VM #425 failed in Datacenter #2
+0.1: Broker: Creation of VM #426 failed in Datacenter #2
+0.1: Broker: Creation of VM #427 failed in Datacenter #2
+0.1: Broker: Creation of VM #428 failed in Datacenter #2
+0.1: Broker: Creation of VM #429 failed in Datacenter #2
+0.1: Broker: Creation of VM #430 failed in Datacenter #2
+0.1: Broker: Creation of VM #431 failed in Datacenter #2
+0.1: Broker: Creation of VM #432 failed in Datacenter #2
+0.1: Broker: Creation of VM #433 failed in Datacenter #2
+0.1: Broker: Creation of VM #434 failed in Datacenter #2
+0.1: Broker: Creation of VM #435 failed in Datacenter #2
+0.1: Broker: Creation of VM #436 failed in Datacenter #2
+0.1: Broker: Creation of VM #437 failed in Datacenter #2
+0.1: Broker: Creation of VM #438 failed in Datacenter #2
+0.1: Broker: Creation of VM #439 failed in Datacenter #2
+0.1: Broker: Creation of VM #440 failed in Datacenter #2
+0.1: Broker: Creation of VM #441 failed in Datacenter #2
+0.1: Broker: Creation of VM #442 failed in Datacenter #2
+0.1: Broker: Creation of VM #443 failed in Datacenter #2
+0.1: Broker: Creation of VM #444 failed in Datacenter #2
+0.1: Broker: Creation of VM #445 failed in Datacenter #2
+0.1: Broker: Creation of VM #446 failed in Datacenter #2
+0.1: Broker: Creation of VM #447 failed in Datacenter #2
+0.1: Broker: Creation of VM #448 failed in Datacenter #2
+0.1: Broker: Creation of VM #449 failed in Datacenter #2
+0.1: Broker: Creation of VM #450 failed in Datacenter #2
+0.1: Broker: Creation of VM #451 failed in Datacenter #2
+0.1: Broker: Creation of VM #452 failed in Datacenter #2
+0.1: Broker: Creation of VM #453 failed in Datacenter #2
+0.1: Broker: Creation of VM #454 failed in Datacenter #2
+0.1: Broker: Creation of VM #455 failed in Datacenter #2
+0.1: Broker: Creation of VM #456 failed in Datacenter #2
+0.1: Broker: Creation of VM #457 failed in Datacenter #2
+0.1: Broker: Creation of VM #458 failed in Datacenter #2
+0.1: Broker: Creation of VM #459 failed in Datacenter #2
+0.1: Broker: Creation of VM #460 failed in Datacenter #2
+0.1: Broker: Creation of VM #461 failed in Datacenter #2
+0.1: Broker: Creation of VM #462 failed in Datacenter #2
+0.1: Broker: Creation of VM #463 failed in Datacenter #2
+0.1: Broker: Creation of VM #464 failed in Datacenter #2
+0.1: Broker: Creation of VM #465 failed in Datacenter #2
+0.1: Broker: Creation of VM #466 failed in Datacenter #2
+0.1: Broker: Creation of VM #467 failed in Datacenter #2
+0.1: Broker: Creation of VM #468 failed in Datacenter #2
+0.1: Broker: Creation of VM #469 failed in Datacenter #2
+0.1: Broker: Creation of VM #470 failed in Datacenter #2
+0.1: Broker: Creation of VM #471 failed in Datacenter #2
+0.1: Broker: Creation of VM #472 failed in Datacenter #2
+0.1: Broker: Creation of VM #473 failed in Datacenter #2
+0.1: Broker: Creation of VM #474 failed in Datacenter #2
+0.1: Broker: Creation of VM #475 failed in Datacenter #2
+0.1: Broker: Creation of VM #476 failed in Datacenter #2
+0.1: Broker: Creation of VM #477 failed in Datacenter #2
+0.1: Broker: Creation of VM #478 failed in Datacenter #2
+0.1: Broker: Creation of VM #479 failed in Datacenter #2
+0.1: Broker: Creation of VM #480 failed in Datacenter #2
+0.1: Broker: Creation of VM #481 failed in Datacenter #2
+0.1: Broker: Creation of VM #482 failed in Datacenter #2
+0.1: Broker: Creation of VM #483 failed in Datacenter #2
+0.1: Broker: Creation of VM #484 failed in Datacenter #2
+0.1: Broker: Creation of VM #485 failed in Datacenter #2
+0.1: Broker: Creation of VM #486 failed in Datacenter #2
+0.1: Broker: Creation of VM #487 failed in Datacenter #2
+0.1: Broker: Creation of VM #488 failed in Datacenter #2
+0.1: Broker: Creation of VM #489 failed in Datacenter #2
+0.1: Broker: Creation of VM #490 failed in Datacenter #2
+0.1: Broker: Creation of VM #491 failed in Datacenter #2
+0.1: Broker: Creation of VM #492 failed in Datacenter #2
+0.1: Broker: Creation of VM #493 failed in Datacenter #2
+0.1: Broker: Creation of VM #494 failed in Datacenter #2
+0.1: Broker: Creation of VM #495 failed in Datacenter #2
+0.1: Broker: Creation of VM #496 failed in Datacenter #2
+0.1: Broker: Creation of VM #497 failed in Datacenter #2
+0.1: Broker: Creation of VM #498 failed in Datacenter #2
+0.1: Broker: Creation of VM #499 failed in Datacenter #2
+0.1: Broker: Creation of VM #500 failed in Datacenter #2
+0.1: Broker: Creation of VM #501 failed in Datacenter #2
+0.1: Broker: Creation of VM #502 failed in Datacenter #2
+0.1: Broker: Creation of VM #503 failed in Datacenter #2
+0.1: Broker: Creation of VM #504 failed in Datacenter #2
+0.1: Broker: Creation of VM #505 failed in Datacenter #2
+0.1: Broker: Creation of VM #506 failed in Datacenter #2
+0.1: Broker: Creation of VM #507 failed in Datacenter #2
+0.1: Broker: Creation of VM #508 failed in Datacenter #2
+0.1: Broker: Creation of VM #509 failed in Datacenter #2
+0.1: Broker: Creation of VM #510 failed in Datacenter #2
+0.1: Broker: Creation of VM #511 failed in Datacenter #2
+0.1: Broker: Creation of VM #512 failed in Datacenter #2
+0.1: Broker: Creation of VM #513 failed in Datacenter #2
+0.1: Broker: Creation of VM #514 failed in Datacenter #2
+0.1: Broker: Creation of VM #515 failed in Datacenter #2
+0.1: Broker: Creation of VM #516 failed in Datacenter #2
+0.1: Broker: Creation of VM #517 failed in Datacenter #2
+0.1: Broker: Creation of VM #518 failed in Datacenter #2
+0.1: Broker: Creation of VM #519 failed in Datacenter #2
+0.1: Broker: Creation of VM #520 failed in Datacenter #2
+0.1: Broker: Creation of VM #521 failed in Datacenter #2
+0.1: Broker: Creation of VM #522 failed in Datacenter #2
+0.1: Broker: Creation of VM #523 failed in Datacenter #2
+0.1: Broker: Creation of VM #524 failed in Datacenter #2
+0.1: Broker: Creation of VM #525 failed in Datacenter #2
+0.1: Broker: Creation of VM #526 failed in Datacenter #2
+0.1: Broker: Creation of VM #527 failed in Datacenter #2
+0.1: Broker: Creation of VM #528 failed in Datacenter #2
+0.1: Broker: Creation of VM #529 failed in Datacenter #2
+0.1: Broker: Creation of VM #530 failed in Datacenter #2
+0.1: Broker: Creation of VM #531 failed in Datacenter #2
+0.1: Broker: Creation of VM #532 failed in Datacenter #2
+0.1: Broker: Creation of VM #533 failed in Datacenter #2
+0.1: Broker: Creation of VM #534 failed in Datacenter #2
+0.1: Broker: Creation of VM #535 failed in Datacenter #2
+0.1: Broker: Creation of VM #536 failed in Datacenter #2
+0.1: Broker: Creation of VM #537 failed in Datacenter #2
+0.1: Broker: Creation of VM #538 failed in Datacenter #2
+0.1: Broker: Creation of VM #539 failed in Datacenter #2
+0.1: Broker: Creation of VM #540 failed in Datacenter #2
+0.1: Broker: Creation of VM #541 failed in Datacenter #2
+0.1: Broker: Creation of VM #542 failed in Datacenter #2
+0.1: Broker: Creation of VM #543 failed in Datacenter #2
+0.1: Broker: Creation of VM #544 failed in Datacenter #2
+0.1: Broker: Creation of VM #545 failed in Datacenter #2
+0.1: Broker: Creation of VM #546 failed in Datacenter #2
+0.1: Broker: Creation of VM #547 failed in Datacenter #2
+0.1: Broker: Creation of VM #548 failed in Datacenter #2
+0.1: Broker: Creation of VM #549 failed in Datacenter #2
+0.1: Broker: Creation of VM #550 failed in Datacenter #2
+0.1: Broker: Creation of VM #551 failed in Datacenter #2
+0.1: Broker: Creation of VM #552 failed in Datacenter #2
+0.1: Broker: Creation of VM #553 failed in Datacenter #2
+0.1: Broker: Creation of VM #554 failed in Datacenter #2
+0.1: Broker: Creation of VM #555 failed in Datacenter #2
+0.1: Broker: Creation of VM #556 failed in Datacenter #2
+0.1: Broker: Creation of VM #557 failed in Datacenter #2
+0.1: Broker: Creation of VM #558 failed in Datacenter #2
+0.1: Broker: Creation of VM #559 failed in Datacenter #2
+0.1: Broker: Creation of VM #560 failed in Datacenter #2
+0.1: Broker: Creation of VM #561 failed in Datacenter #2
+0.1: Broker: Creation of VM #562 failed in Datacenter #2
+0.1: Broker: Creation of VM #563 failed in Datacenter #2
+0.1: Broker: Creation of VM #564 failed in Datacenter #2
+0.1: Broker: Creation of VM #565 failed in Datacenter #2
+0.1: Broker: Creation of VM #566 failed in Datacenter #2
+0.1: Broker: Creation of VM #567 failed in Datacenter #2
+0.1: Broker: Creation of VM #568 failed in Datacenter #2
+0.1: Broker: Creation of VM #569 failed in Datacenter #2
+0.1: Broker: Creation of VM #570 failed in Datacenter #2
+0.1: Broker: Creation of VM #571 failed in Datacenter #2
+0.1: Broker: Creation of VM #572 failed in Datacenter #2
+0.1: Broker: Creation of VM #573 failed in Datacenter #2
+0.1: Broker: Creation of VM #574 failed in Datacenter #2
+0.1: Broker: Creation of VM #575 failed in Datacenter #2
+0.1: Broker: Creation of VM #576 failed in Datacenter #2
+0.1: Broker: Creation of VM #577 failed in Datacenter #2
+0.1: Broker: Creation of VM #578 failed in Datacenter #2
+0.1: Broker: Creation of VM #579 failed in Datacenter #2
+0.1: Broker: Creation of VM #580 failed in Datacenter #2
+0.1: Broker: Creation of VM #581 failed in Datacenter #2
+0.1: Broker: Creation of VM #582 failed in Datacenter #2
+0.1: Broker: Creation of VM #583 failed in Datacenter #2
+0.1: Broker: Creation of VM #584 failed in Datacenter #2
+0.1: Broker: Creation of VM #585 failed in Datacenter #2
+0.1: Broker: Creation of VM #586 failed in Datacenter #2
+0.1: Broker: Creation of VM #587 failed in Datacenter #2
+0.1: Broker: Creation of VM #588 failed in Datacenter #2
+0.1: Broker: Creation of VM #589 failed in Datacenter #2
+0.1: Broker: Creation of VM #590 failed in Datacenter #2
+0.1: Broker: Creation of VM #591 failed in Datacenter #2
+0.1: Broker: Creation of VM #592 failed in Datacenter #2
+0.1: Broker: Creation of VM #593 failed in Datacenter #2
+0.1: Broker: Creation of VM #594 failed in Datacenter #2
+0.1: Broker: Creation of VM #595 failed in Datacenter #2
+0.1: Broker: Creation of VM #596 failed in Datacenter #2
+0.1: Broker: Creation of VM #597 failed in Datacenter #2
+0.1: Broker: Creation of VM #598 failed in Datacenter #2
+0.1: Broker: Creation of VM #599 failed in Datacenter #2
+0.1: Broker: Creation of VM #600 failed in Datacenter #2
+0.1: Broker: Creation of VM #601 failed in Datacenter #2
+0.1: Broker: Creation of VM #602 failed in Datacenter #2
+0.1: Broker: Creation of VM #603 failed in Datacenter #2
+0.1: Broker: Creation of VM #604 failed in Datacenter #2
+0.1: Broker: Creation of VM #605 failed in Datacenter #2
+0.1: Broker: Creation of VM #606 failed in Datacenter #2
+0.1: Broker: Creation of VM #607 failed in Datacenter #2
+0.1: Broker: Creation of VM #608 failed in Datacenter #2
+0.1: Broker: Creation of VM #609 failed in Datacenter #2
+0.1: Broker: Creation of VM #610 failed in Datacenter #2
+0.1: Broker: Creation of VM #611 failed in Datacenter #2
+0.1: Broker: Creation of VM #612 failed in Datacenter #2
+0.1: Broker: Creation of VM #613 failed in Datacenter #2
+0.1: Broker: Creation of VM #614 failed in Datacenter #2
+0.1: Broker: Creation of VM #615 failed in Datacenter #2
+0.1: Broker: Creation of VM #616 failed in Datacenter #2
+0.1: Broker: Creation of VM #617 failed in Datacenter #2
+0.1: Broker: Creation of VM #618 failed in Datacenter #2
+0.1: Broker: Creation of VM #619 failed in Datacenter #2
+0.1: Broker: Creation of VM #620 failed in Datacenter #2
+0.1: Broker: Creation of VM #621 failed in Datacenter #2
+0.1: Broker: Creation of VM #622 failed in Datacenter #2
+0.1: Broker: Creation of VM #623 failed in Datacenter #2
+0.1: Broker: Creation of VM #624 failed in Datacenter #2
+0.1: Broker: Creation of VM #625 failed in Datacenter #2
+0.1: Broker: Creation of VM #626 failed in Datacenter #2
+0.1: Broker: Creation of VM #627 failed in Datacenter #2
+0.1: Broker: Creation of VM #628 failed in Datacenter #2
+0.1: Broker: Creation of VM #629 failed in Datacenter #2
+0.1: Broker: Creation of VM #630 failed in Datacenter #2
+0.1: Broker: Creation of VM #631 failed in Datacenter #2
+0.1: Broker: Creation of VM #632 failed in Datacenter #2
+0.1: Broker: Creation of VM #633 failed in Datacenter #2
+0.1: Broker: Creation of VM #634 failed in Datacenter #2
+0.1: Broker: Creation of VM #635 failed in Datacenter #2
+0.1: Broker: Creation of VM #636 failed in Datacenter #2
+0.1: Broker: Creation of VM #637 failed in Datacenter #2
+0.1: Broker: Creation of VM #638 failed in Datacenter #2
+0.1: Broker: Creation of VM #639 failed in Datacenter #2
+0.1: Broker: Creation of VM #640 failed in Datacenter #2
+0.1: Broker: Creation of VM #641 failed in Datacenter #2
+0.1: Broker: Creation of VM #642 failed in Datacenter #2
+0.1: Broker: Creation of VM #643 failed in Datacenter #2
+0.1: Broker: Creation of VM #644 failed in Datacenter #2
+0.1: Broker: Creation of VM #645 failed in Datacenter #2
+0.1: Broker: Creation of VM #646 failed in Datacenter #2
+0.1: Broker: Creation of VM #647 failed in Datacenter #2
+0.1: Broker: Creation of VM #648 failed in Datacenter #2
+0.1: Broker: Creation of VM #649 failed in Datacenter #2
+0.1: Broker: Creation of VM #650 failed in Datacenter #2
+0.1: Broker: Creation of VM #651 failed in Datacenter #2
+0.1: Broker: Creation of VM #652 failed in Datacenter #2
+0.1: Broker: Creation of VM #653 failed in Datacenter #2
+0.1: Broker: Creation of VM #654 failed in Datacenter #2
+0.1: Broker: Creation of VM #655 failed in Datacenter #2
+0.1: Broker: Creation of VM #656 failed in Datacenter #2
+0.1: Broker: Creation of VM #657 failed in Datacenter #2
+0.1: Broker: Creation of VM #658 failed in Datacenter #2
+0.1: Broker: Creation of VM #659 failed in Datacenter #2
+0.1: Broker: Creation of VM #660 failed in Datacenter #2
+0.1: Broker: Creation of VM #661 failed in Datacenter #2
+0.1: Broker: Creation of VM #662 failed in Datacenter #2
+0.1: Broker: Creation of VM #663 failed in Datacenter #2
+0.1: Broker: Creation of VM #664 failed in Datacenter #2
+0.1: Broker: Creation of VM #665 failed in Datacenter #2
+0.1: Broker: Creation of VM #666 failed in Datacenter #2
+0.1: Broker: Creation of VM #667 failed in Datacenter #2
+0.1: Broker: Creation of VM #668 failed in Datacenter #2
+0.1: Broker: Creation of VM #669 failed in Datacenter #2
+0.1: Broker: Creation of VM #670 failed in Datacenter #2
+0.1: Broker: Creation of VM #671 failed in Datacenter #2
+0.1: Broker: Creation of VM #672 failed in Datacenter #2
+0.1: Broker: Creation of VM #673 failed in Datacenter #2
+0.1: Broker: Creation of VM #674 failed in Datacenter #2
+0.1: Broker: Creation of VM #675 failed in Datacenter #2
+0.1: Broker: Creation of VM #676 failed in Datacenter #2
+0.1: Broker: Creation of VM #677 failed in Datacenter #2
+0.1: Broker: Creation of VM #678 failed in Datacenter #2
+0.1: Broker: Creation of VM #679 failed in Datacenter #2
+0.1: Broker: Creation of VM #680 failed in Datacenter #2
+0.1: Broker: Creation of VM #681 failed in Datacenter #2
+0.1: Broker: Creation of VM #682 failed in Datacenter #2
+0.1: Broker: Creation of VM #683 failed in Datacenter #2
+0.1: Broker: Creation of VM #684 failed in Datacenter #2
+0.1: Broker: Creation of VM #685 failed in Datacenter #2
+0.1: Broker: Creation of VM #686 failed in Datacenter #2
+0.1: Broker: Creation of VM #687 failed in Datacenter #2
+0.1: Broker: Creation of VM #688 failed in Datacenter #2
+0.1: Broker: Creation of VM #689 failed in Datacenter #2
+0.1: Broker: Creation of VM #690 failed in Datacenter #2
+0.1: Broker: Creation of VM #691 failed in Datacenter #2
+0.1: Broker: Creation of VM #692 failed in Datacenter #2
+0.1: Broker: Creation of VM #693 failed in Datacenter #2
+0.1: Broker: Creation of VM #694 failed in Datacenter #2
+0.1: Broker: Creation of VM #695 failed in Datacenter #2
+0.1: Broker: Creation of VM #696 failed in Datacenter #2
+0.1: Broker: Creation of VM #697 failed in Datacenter #2
+0.1: Broker: Creation of VM #698 failed in Datacenter #2
+0.1: Broker: Creation of VM #699 failed in Datacenter #2
+0.1: Broker: Creation of VM #700 failed in Datacenter #2
+0.1: Broker: Creation of VM #701 failed in Datacenter #2
+0.1: Broker: Creation of VM #702 failed in Datacenter #2
+0.1: Broker: Creation of VM #703 failed in Datacenter #2
+0.1: Broker: Creation of VM #704 failed in Datacenter #2
+0.1: Broker: Creation of VM #705 failed in Datacenter #2
+0.1: Broker: Creation of VM #706 failed in Datacenter #2
+0.1: Broker: Creation of VM #707 failed in Datacenter #2
+0.1: Broker: Creation of VM #708 failed in Datacenter #2
+0.1: Broker: Creation of VM #709 failed in Datacenter #2
+0.1: Broker: Creation of VM #710 failed in Datacenter #2
+0.1: Broker: Creation of VM #711 failed in Datacenter #2
+0.1: Broker: Creation of VM #712 failed in Datacenter #2
+0.1: Broker: Creation of VM #713 failed in Datacenter #2
+0.1: Broker: Creation of VM #714 failed in Datacenter #2
+0.1: Broker: Creation of VM #715 failed in Datacenter #2
+0.1: Broker: Creation of VM #716 failed in Datacenter #2
+0.1: Broker: Creation of VM #717 failed in Datacenter #2
+0.1: Broker: Creation of VM #718 failed in Datacenter #2
+0.1: Broker: Creation of VM #719 failed in Datacenter #2
+0.1: Broker: Creation of VM #720 failed in Datacenter #2
+0.1: Broker: Creation of VM #721 failed in Datacenter #2
+0.1: Broker: Creation of VM #722 failed in Datacenter #2
+0.1: Broker: Creation of VM #723 failed in Datacenter #2
+0.1: Broker: Creation of VM #724 failed in Datacenter #2
+0.1: Broker: Creation of VM #725 failed in Datacenter #2
+0.1: Broker: Creation of VM #726 failed in Datacenter #2
+0.1: Broker: Creation of VM #727 failed in Datacenter #2
+0.1: Broker: Creation of VM #728 failed in Datacenter #2
+0.1: Broker: Creation of VM #729 failed in Datacenter #2
+0.1: Broker: Creation of VM #730 failed in Datacenter #2
+0.1: Broker: Creation of VM #731 failed in Datacenter #2
+0.1: Broker: Creation of VM #732 failed in Datacenter #2
+0.1: Broker: Creation of VM #733 failed in Datacenter #2
+0.1: Broker: Creation of VM #734 failed in Datacenter #2
+0.1: Broker: Creation of VM #735 failed in Datacenter #2
+0.1: Broker: Creation of VM #736 failed in Datacenter #2
+0.1: Broker: Creation of VM #737 failed in Datacenter #2
+0.1: Broker: Creation of VM #738 failed in Datacenter #2
+0.1: Broker: Creation of VM #739 failed in Datacenter #2
+0.1: Broker: Creation of VM #740 failed in Datacenter #2
+0.1: Broker: Creation of VM #741 failed in Datacenter #2
+0.1: Broker: Creation of VM #742 failed in Datacenter #2
+0.1: Broker: Creation of VM #743 failed in Datacenter #2
+0.1: Broker: Creation of VM #744 failed in Datacenter #2
+0.1: Broker: Creation of VM #745 failed in Datacenter #2
+0.1: Broker: Creation of VM #746 failed in Datacenter #2
+0.1: Broker: Creation of VM #747 failed in Datacenter #2
+0.1: Broker: Creation of VM #748 failed in Datacenter #2
+0.1: Broker: Creation of VM #749 failed in Datacenter #2
+0.1: Broker: Creation of VM #750 failed in Datacenter #2
+0.1: Broker: Creation of VM #751 failed in Datacenter #2
+0.1: Broker: Creation of VM #752 failed in Datacenter #2
+0.1: Broker: Creation of VM #753 failed in Datacenter #2
+0.1: Broker: Creation of VM #754 failed in Datacenter #2
+0.1: Broker: Creation of VM #755 failed in Datacenter #2
+0.1: Broker: Creation of VM #756 failed in Datacenter #2
+0.1: Broker: Creation of VM #757 failed in Datacenter #2
+0.1: Broker: Creation of VM #758 failed in Datacenter #2
+0.1: Broker: Creation of VM #759 failed in Datacenter #2
+0.1: Broker: Creation of VM #760 failed in Datacenter #2
+0.1: Broker: Creation of VM #761 failed in Datacenter #2
+0.1: Broker: Creation of VM #762 failed in Datacenter #2
+0.1: Broker: Creation of VM #763 failed in Datacenter #2
+0.1: Broker: Creation of VM #764 failed in Datacenter #2
+0.1: Broker: Creation of VM #765 failed in Datacenter #2
+0.1: Broker: Creation of VM #766 failed in Datacenter #2
+0.1: Broker: Creation of VM #767 failed in Datacenter #2
+0.1: Broker: Creation of VM #768 failed in Datacenter #2
+0.1: Broker: Creation of VM #769 failed in Datacenter #2
+0.1: Broker: Creation of VM #770 failed in Datacenter #2
+0.1: Broker: Creation of VM #771 failed in Datacenter #2
+0.1: Broker: Creation of VM #772 failed in Datacenter #2
+0.1: Broker: Creation of VM #773 failed in Datacenter #2
+0.1: Broker: Creation of VM #774 failed in Datacenter #2
+0.1: Broker: Creation of VM #775 failed in Datacenter #2
+0.1: Broker: Creation of VM #776 failed in Datacenter #2
+0.1: Broker: Creation of VM #777 failed in Datacenter #2
+0.1: Broker: Creation of VM #778 failed in Datacenter #2
+0.1: Broker: Creation of VM #779 failed in Datacenter #2
+0.1: Broker: Creation of VM #780 failed in Datacenter #2
+0.1: Broker: Creation of VM #781 failed in Datacenter #2
+0.1: Broker: Creation of VM #782 failed in Datacenter #2
+0.1: Broker: Creation of VM #783 failed in Datacenter #2
+0.1: Broker: Creation of VM #784 failed in Datacenter #2
+0.1: Broker: Creation of VM #785 failed in Datacenter #2
+0.1: Broker: Creation of VM #786 failed in Datacenter #2
+0.1: Broker: Creation of VM #787 failed in Datacenter #2
+0.1: Broker: Creation of VM #788 failed in Datacenter #2
+0.1: Broker: Creation of VM #789 failed in Datacenter #2
+0.1: Broker: Creation of VM #790 failed in Datacenter #2
+0.1: Broker: Creation of VM #791 failed in Datacenter #2
+0.1: Broker: Creation of VM #792 failed in Datacenter #2
+0.1: Broker: Creation of VM #793 failed in Datacenter #2
+0.1: Broker: Creation of VM #794 failed in Datacenter #2
+0.1: Broker: Creation of VM #795 failed in Datacenter #2
+0.1: Broker: Creation of VM #796 failed in Datacenter #2
+0.1: Broker: Creation of VM #797 failed in Datacenter #2
+0.1: Broker: Creation of VM #798 failed in Datacenter #2
+0.1: Broker: Creation of VM #799 failed in Datacenter #2
+0.1: Broker: Creation of VM #800 failed in Datacenter #2
+0.1: Broker: Creation of VM #801 failed in Datacenter #2
+0.1: Broker: Creation of VM #802 failed in Datacenter #2
+0.1: Broker: Creation of VM #803 failed in Datacenter #2
+0.1: Broker: Creation of VM #804 failed in Datacenter #2
+0.1: Broker: Creation of VM #805 failed in Datacenter #2
+0.1: Broker: Creation of VM #806 failed in Datacenter #2
+0.1: Broker: Creation of VM #807 failed in Datacenter #2
+0.1: Broker: Creation of VM #808 failed in Datacenter #2
+0.1: Broker: Creation of VM #809 failed in Datacenter #2
+0.1: Broker: Creation of VM #810 failed in Datacenter #2
+0.1: Broker: Creation of VM #811 failed in Datacenter #2
+0.1: Broker: Creation of VM #812 failed in Datacenter #2
+0.1: Broker: Creation of VM #813 failed in Datacenter #2
+0.1: Broker: Creation of VM #814 failed in Datacenter #2
+0.1: Broker: Creation of VM #815 failed in Datacenter #2
+0.1: Broker: Creation of VM #816 failed in Datacenter #2
+0.1: Broker: Creation of VM #817 failed in Datacenter #2
+0.1: Broker: Creation of VM #818 failed in Datacenter #2
+0.1: Broker: Creation of VM #819 failed in Datacenter #2
+0.1: Broker: Creation of VM #820 failed in Datacenter #2
+0.1: Broker: Creation of VM #821 failed in Datacenter #2
+0.1: Broker: Creation of VM #822 failed in Datacenter #2
+0.1: Broker: Creation of VM #823 failed in Datacenter #2
+0.1: Broker: Creation of VM #824 failed in Datacenter #2
+0.1: Broker: Creation of VM #825 failed in Datacenter #2
+0.1: Broker: Creation of VM #826 failed in Datacenter #2
+0.1: Broker: Creation of VM #827 failed in Datacenter #2
+0.1: Broker: Creation of VM #828 failed in Datacenter #2
+0.1: Broker: Creation of VM #829 failed in Datacenter #2
+0.1: Broker: Creation of VM #830 failed in Datacenter #2
+0.1: Broker: Creation of VM #831 failed in Datacenter #2
+0.1: Broker: Creation of VM #832 failed in Datacenter #2
+0.1: Broker: Creation of VM #833 failed in Datacenter #2
+0.1: Broker: Creation of VM #834 failed in Datacenter #2
+0.1: Broker: Creation of VM #835 failed in Datacenter #2
+0.1: Broker: Creation of VM #836 failed in Datacenter #2
+0.1: Broker: Creation of VM #837 failed in Datacenter #2
+0.1: Broker: Creation of VM #838 failed in Datacenter #2
+0.1: Broker: Creation of VM #839 failed in Datacenter #2
+0.1: Broker: Creation of VM #840 failed in Datacenter #2
+0.1: Broker: Creation of VM #841 failed in Datacenter #2
+0.1: Broker: Creation of VM #842 failed in Datacenter #2
+0.1: Broker: Creation of VM #843 failed in Datacenter #2
+0.1: Broker: Creation of VM #844 failed in Datacenter #2
+0.1: Broker: Creation of VM #845 failed in Datacenter #2
+0.1: Broker: Creation of VM #846 failed in Datacenter #2
+0.1: Broker: Creation of VM #847 failed in Datacenter #2
+0.1: Broker: Creation of VM #848 failed in Datacenter #2
+0.1: Broker: Creation of VM #849 failed in Datacenter #2
+0.1: Broker: Creation of VM #850 failed in Datacenter #2
+0.1: Broker: Creation of VM #851 failed in Datacenter #2
+0.1: Broker: Creation of VM #852 failed in Datacenter #2
+0.1: Broker: Creation of VM #853 failed in Datacenter #2
+0.1: Broker: Creation of VM #854 failed in Datacenter #2
+0.1: Broker: Creation of VM #855 failed in Datacenter #2
+0.1: Broker: Creation of VM #856 failed in Datacenter #2
+0.1: Broker: Creation of VM #857 failed in Datacenter #2
+0.1: Broker: Creation of VM #858 failed in Datacenter #2
+0.1: Broker: Creation of VM #859 failed in Datacenter #2
+0.1: Broker: Creation of VM #860 failed in Datacenter #2
+0.1: Broker: Creation of VM #861 failed in Datacenter #2
+0.1: Broker: Creation of VM #862 failed in Datacenter #2
+0.1: Broker: Creation of VM #863 failed in Datacenter #2
+0.1: Broker: Creation of VM #864 failed in Datacenter #2
+0.1: Broker: Creation of VM #865 failed in Datacenter #2
+0.1: Broker: Creation of VM #866 failed in Datacenter #2
+0.1: Broker: Creation of VM #867 failed in Datacenter #2
+0.1: Broker: Creation of VM #868 failed in Datacenter #2
+0.1: Broker: Creation of VM #869 failed in Datacenter #2
+0.1: Broker: Creation of VM #870 failed in Datacenter #2
+0.1: Broker: Creation of VM #871 failed in Datacenter #2
+0.1: Broker: Creation of VM #872 failed in Datacenter #2
+0.1: Broker: Creation of VM #873 failed in Datacenter #2
+0.1: Broker: Creation of VM #874 failed in Datacenter #2
+0.1: Broker: Creation of VM #875 failed in Datacenter #2
+0.1: Broker: Creation of VM #876 failed in Datacenter #2
+0.1: Broker: Creation of VM #877 failed in Datacenter #2
+0.1: Broker: Creation of VM #878 failed in Datacenter #2
+0.1: Broker: Creation of VM #879 failed in Datacenter #2
+0.1: Broker: Creation of VM #880 failed in Datacenter #2
+0.1: Broker: Creation of VM #881 failed in Datacenter #2
+0.1: Broker: Creation of VM #882 failed in Datacenter #2
+0.1: Broker: Creation of VM #883 failed in Datacenter #2
+0.1: Broker: Creation of VM #884 failed in Datacenter #2
+0.1: Broker: Creation of VM #885 failed in Datacenter #2
+0.1: Broker: Creation of VM #886 failed in Datacenter #2
+0.1: Broker: Creation of VM #887 failed in Datacenter #2
+0.1: Broker: Creation of VM #888 failed in Datacenter #2
+0.1: Broker: Creation of VM #889 failed in Datacenter #2
+0.1: Broker: Creation of VM #890 failed in Datacenter #2
+0.1: Broker: Creation of VM #891 failed in Datacenter #2
+0.1: Broker: Creation of VM #892 failed in Datacenter #2
+0.1: Broker: Creation of VM #893 failed in Datacenter #2
+0.1: Broker: Creation of VM #894 failed in Datacenter #2
+0.1: Broker: Creation of VM #895 failed in Datacenter #2
+0.1: Broker: Creation of VM #896 failed in Datacenter #2
+0.1: Broker: Creation of VM #897 failed in Datacenter #2
+0.1: Broker: Creation of VM #898 failed in Datacenter #2
+0.1: Broker: Creation of VM #899 failed in Datacenter #2
+0.1: Broker: Creation of VM #900 failed in Datacenter #2
+0.1: Broker: Creation of VM #901 failed in Datacenter #2
+0.1: Broker: Creation of VM #902 failed in Datacenter #2
+0.1: Broker: Creation of VM #903 failed in Datacenter #2
+0.1: Broker: Creation of VM #904 failed in Datacenter #2
+0.1: Broker: Creation of VM #905 failed in Datacenter #2
+0.1: Broker: Creation of VM #906 failed in Datacenter #2
+0.1: Broker: Creation of VM #907 failed in Datacenter #2
+0.1: Broker: Creation of VM #908 failed in Datacenter #2
+0.1: Broker: Creation of VM #909 failed in Datacenter #2
+0.1: Broker: Creation of VM #910 failed in Datacenter #2
+0.1: Broker: Creation of VM #911 failed in Datacenter #2
+0.1: Broker: Creation of VM #912 failed in Datacenter #2
+0.1: Broker: Creation of VM #913 failed in Datacenter #2
+0.1: Broker: Creation of VM #914 failed in Datacenter #2
+0.1: Broker: Creation of VM #915 failed in Datacenter #2
+0.1: Broker: Creation of VM #916 failed in Datacenter #2
+0.1: Broker: Creation of VM #917 failed in Datacenter #2
+0.1: Broker: Creation of VM #918 failed in Datacenter #2
+0.1: Broker: Creation of VM #919 failed in Datacenter #2
+0.1: Broker: Creation of VM #920 failed in Datacenter #2
+0.1: Broker: Creation of VM #921 failed in Datacenter #2
+0.1: Broker: Creation of VM #922 failed in Datacenter #2
+0.1: Broker: Creation of VM #923 failed in Datacenter #2
+0.1: Broker: Creation of VM #924 failed in Datacenter #2
+0.1: Broker: Creation of VM #925 failed in Datacenter #2
+0.1: Broker: Creation of VM #926 failed in Datacenter #2
+0.1: Broker: Creation of VM #927 failed in Datacenter #2
+0.1: Broker: Creation of VM #928 failed in Datacenter #2
+0.1: Broker: Creation of VM #929 failed in Datacenter #2
+0.1: Broker: Creation of VM #930 failed in Datacenter #2
+0.1: Broker: Creation of VM #931 failed in Datacenter #2
+0.1: Broker: Creation of VM #932 failed in Datacenter #2
+0.1: Broker: Creation of VM #933 failed in Datacenter #2
+0.1: Broker: Creation of VM #934 failed in Datacenter #2
+0.1: Broker: Creation of VM #935 failed in Datacenter #2
+0.1: Broker: Creation of VM #936 failed in Datacenter #2
+0.1: Broker: Creation of VM #937 failed in Datacenter #2
+0.1: Broker: Creation of VM #938 failed in Datacenter #2
+0.1: Broker: Creation of VM #939 failed in Datacenter #2
+0.1: Broker: Creation of VM #940 failed in Datacenter #2
+0.1: Broker: Creation of VM #941 failed in Datacenter #2
+0.1: Broker: Creation of VM #942 failed in Datacenter #2
+0.1: Broker: Creation of VM #943 failed in Datacenter #2
+0.1: Broker: Creation of VM #944 failed in Datacenter #2
+0.1: Broker: Creation of VM #945 failed in Datacenter #2
+0.1: Broker: Creation of VM #946 failed in Datacenter #2
+0.1: Broker: Creation of VM #947 failed in Datacenter #2
+0.1: Broker: Creation of VM #948 failed in Datacenter #2
+0.1: Broker: Creation of VM #949 failed in Datacenter #2
+0.1: Broker: Creation of VM #950 failed in Datacenter #2
+0.1: Broker: Creation of VM #951 failed in Datacenter #2
+0.1: Broker: Creation of VM #952 failed in Datacenter #2
+0.1: Broker: Creation of VM #953 failed in Datacenter #2
+0.1: Broker: Creation of VM #954 failed in Datacenter #2
+0.1: Broker: Creation of VM #955 failed in Datacenter #2
+0.1: Broker: Creation of VM #956 failed in Datacenter #2
+0.1: Broker: Creation of VM #957 failed in Datacenter #2
+0.1: Broker: Creation of VM #958 failed in Datacenter #2
+0.1: Broker: Creation of VM #959 failed in Datacenter #2
+0.1: Broker: Creation of VM #960 failed in Datacenter #2
+0.1: Broker: Creation of VM #961 failed in Datacenter #2
+0.1: Broker: Creation of VM #962 failed in Datacenter #2
+0.1: Broker: Creation of VM #963 failed in Datacenter #2
+0.1: Broker: Creation of VM #964 failed in Datacenter #2
+0.1: Broker: Creation of VM #965 failed in Datacenter #2
+0.1: Broker: Creation of VM #966 failed in Datacenter #2
+0.1: Broker: Creation of VM #967 failed in Datacenter #2
+0.1: Broker: Creation of VM #968 failed in Datacenter #2
+0.1: Broker: Creation of VM #969 failed in Datacenter #2
+0.1: Broker: Creation of VM #970 failed in Datacenter #2
+0.1: Broker: Creation of VM #971 failed in Datacenter #2
+0.1: Broker: Creation of VM #972 failed in Datacenter #2
+0.1: Broker: Creation of VM #973 failed in Datacenter #2
+0.1: Broker: Creation of VM #974 failed in Datacenter #2
+0.1: Broker: Creation of VM #975 failed in Datacenter #2
+0.1: Broker: Creation of VM #976 failed in Datacenter #2
+0.1: Broker: Creation of VM #977 failed in Datacenter #2
+0.1: Broker: Creation of VM #978 failed in Datacenter #2
+0.1: Broker: Creation of VM #979 failed in Datacenter #2
+0.1: Broker: Creation of VM #980 failed in Datacenter #2
+0.1: Broker: Creation of VM #981 failed in Datacenter #2
+0.1: Broker: Creation of VM #982 failed in Datacenter #2
+0.1: Broker: Creation of VM #983 failed in Datacenter #2
+0.1: Broker: Creation of VM #984 failed in Datacenter #2
+0.1: Broker: Creation of VM #985 failed in Datacenter #2
+0.1: Broker: Creation of VM #986 failed in Datacenter #2
+0.1: Broker: Creation of VM #987 failed in Datacenter #2
+0.1: Broker: Creation of VM #988 failed in Datacenter #2
+0.1: Broker: Creation of VM #989 failed in Datacenter #2
+0.1: Broker: Creation of VM #990 failed in Datacenter #2
+0.1: Broker: Creation of VM #991 failed in Datacenter #2
+0.1: Broker: Creation of VM #992 failed in Datacenter #2
+0.1: Broker: Creation of VM #993 failed in Datacenter #2
+0.1: Broker: Creation of VM #994 failed in Datacenter #2
+0.1: Broker: Creation of VM #995 failed in Datacenter #2
+0.1: Broker: Creation of VM #996 failed in Datacenter #2
+0.1: Broker: Creation of VM #997 failed in Datacenter #2
+0.1: Broker: Creation of VM #998 failed in Datacenter #2
+0.1: Broker: Creation of VM #999 failed in Datacenter #2
+0.1: Broker: Creation of VM #1000 failed in Datacenter #2
+0.1: Broker: Creation of VM #1001 failed in Datacenter #2
+0.1: Broker: Creation of VM #1002 failed in Datacenter #2
+0.1: Broker: Creation of VM #1003 failed in Datacenter #2
+0.1: Broker: Creation of VM #1004 failed in Datacenter #2
+0.1: Broker: Creation of VM #1005 failed in Datacenter #2
+0.1: Broker: Creation of VM #1006 failed in Datacenter #2
+0.1: Broker: Creation of VM #1007 failed in Datacenter #2
+0.1: Broker: Creation of VM #1008 failed in Datacenter #2
+0.1: Broker: Creation of VM #1009 failed in Datacenter #2
+0.1: Broker: Creation of VM #1010 failed in Datacenter #2
+0.1: Broker: Creation of VM #1011 failed in Datacenter #2
+0.1: Broker: Creation of VM #1012 failed in Datacenter #2
+0.1: Broker: Creation of VM #1013 failed in Datacenter #2
+0.1: Broker: Creation of VM #1014 failed in Datacenter #2
+0.1: Broker: Creation of VM #1015 failed in Datacenter #2
+0.1: Broker: Creation of VM #1016 failed in Datacenter #2
+0.1: Broker: Creation of VM #1017 failed in Datacenter #2
+0.1: Broker: Creation of VM #1018 failed in Datacenter #2
+0.1: Broker: Creation of VM #1019 failed in Datacenter #2
+0.1: Broker: Creation of VM #1020 failed in Datacenter #2
+0.1: Broker: Creation of VM #1021 failed in Datacenter #2
+0.1: Broker: Creation of VM #1022 failed in Datacenter #2
+0.1: Broker: Creation of VM #1023 failed in Datacenter #2
+0.1: Broker: Creation of VM #1024 failed in Datacenter #2
+0.1: Broker: Creation of VM #1025 failed in Datacenter #2
+0.1: Broker: Creation of VM #1026 failed in Datacenter #2
+0.1: Broker: Creation of VM #1027 failed in Datacenter #2
+0.1: Broker: Creation of VM #1028 failed in Datacenter #2
+0.1: Broker: Creation of VM #1029 failed in Datacenter #2
+0.1: Broker: Creation of VM #1030 failed in Datacenter #2
+0.1: Broker: Creation of VM #1031 failed in Datacenter #2
+0.1: Broker: Creation of VM #1032 failed in Datacenter #2
+0.1: Broker: Creation of VM #1033 failed in Datacenter #2
+0.1: Broker: Creation of VM #1034 failed in Datacenter #2
+0.1: Broker: Creation of VM #1035 failed in Datacenter #2
+0.1: Broker: Creation of VM #1036 failed in Datacenter #2
+0.1: Broker: Creation of VM #1037 failed in Datacenter #2
+0.1: Broker: Creation of VM #1038 failed in Datacenter #2
+0.1: Broker: Creation of VM #1039 failed in Datacenter #2
+0.1: Broker: Creation of VM #1040 failed in Datacenter #2
+0.1: Broker: Creation of VM #1041 failed in Datacenter #2
+0.1: Broker: Creation of VM #1042 failed in Datacenter #2
+0.1: Broker: Creation of VM #1043 failed in Datacenter #2
+0.1: Broker: Creation of VM #1044 failed in Datacenter #2
+0.1: Broker: Creation of VM #1045 failed in Datacenter #2
+0.1: Broker: Creation of VM #1046 failed in Datacenter #2
+0.1: Broker: Creation of VM #1047 failed in Datacenter #2
+0.1: Broker: Creation of VM #1048 failed in Datacenter #2
+0.1: Broker: Creation of VM #1049 failed in Datacenter #2
+0.1: Broker: Creation of VM #1050 failed in Datacenter #2
+0.1: Broker: Creation of VM #1051 failed in Datacenter #2
+COPY No #1
+0.1: Broker: VM #1052 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #0
+0.1: Broker: VM #1053 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #0
+0.1: Broker: VM #1054 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #1
+0.1: Broker: VM #1055 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #1
+0.1: Broker: VM #1056 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #2
+0.1: Broker: VM #1057 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #2
+0.1: Broker: VM #1058 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #3
+0.1: Broker: VM #1059 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #3
+0.1: Broker: VM #1060 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #4
+0.1: Broker: VM #1061 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #4
+0.1: Broker: VM #1062 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #5
+0.1: Broker: VM #1063 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #5
+0.1: Broker: VM #1064 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #6
+0.1: Broker: VM #1065 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #6
+0.1: Broker: VM #1066 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #7
+0.1: Broker: VM #1067 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #7
+0.1: Broker: VM #1068 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #8
+0.1: Broker: VM #1069 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #8
+0.1: Broker: VM #1070 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #9
+0.1: Broker: VM #1071 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #9
+0.1: Broker: VM #1072 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #10
+0.1: Broker: VM #1073 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #10
+0.1: Broker: VM #1074 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #11
+0.1: Broker: VM #1075 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #11
+0.1: Broker: VM #1076 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #12
+0.1: Broker: VM #1077 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #12
+0.1: Broker: VM #1078 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #13
+0.1: Broker: VM #1079 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #13
+0.1: Broker: VM #1080 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #14
+0.1: Broker: VM #1081 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #14
+0.1: Broker: VM #1082 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #15
+0.1: Broker: VM #1083 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #15
+0.1: Broker: VM #1084 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #16
+0.1: Broker: VM #1085 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #16
+0.1: Broker: VM #1086 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #17
+0.1: Broker: VM #1087 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #17
+0.1: Broker: VM #1088 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #18
+0.1: Broker: VM #1089 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #18
+0.1: Broker: VM #1090 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #19
+0.1: Broker: VM #1091 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #19
+0.1: Broker: VM #1092 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #20
+0.1: Broker: VM #1093 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #20
+0.1: Broker: VM #1094 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #21
+0.1: Broker: VM #1095 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #21
+0.1: Broker: VM #1096 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #22
+0.1: Broker: VM #1097 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #22
+0.1: Broker: VM #1098 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #23
+0.1: Broker: VM #1099 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #23
+0.1: Broker: VM #1100 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #24
+0.1: Broker: VM #1101 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #24
+0.1: Broker: VM #1102 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #25
+0.1: Broker: VM #1103 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #25
+0.1: Broker: VM #1104 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #26
+0.1: Broker: VM #1105 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #26
+0.1: Broker: VM #1106 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #27
+0.1: Broker: VM #1107 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #27
+0.1: Broker: VM #1108 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #28
+0.1: Broker: VM #1109 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #28
+0.1: Broker: VM #1110 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #29
+0.1: Broker: VM #1111 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #29
+0.1: Broker: VM #1112 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #30
+0.1: Broker: VM #1113 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #30
+0.1: Broker: VM #1114 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #31
+0.1: Broker: VM #1115 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #31
+0.1: Broker: VM #1116 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #32
+0.1: Broker: VM #1117 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #32
+0.1: Broker: VM #1118 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #33
+0.1: Broker: VM #1119 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #33
+0.1: Broker: VM #1120 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #34
+0.1: Broker: VM #1121 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #34
+0.1: Broker: VM #1122 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #35
+0.1: Broker: VM #1123 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #35
+0.1: Broker: VM #1124 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #36
+0.1: Broker: VM #1125 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #36
+0.1: Broker: VM #1126 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #37
+0.1: Broker: VM #1127 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #37
+0.1: Broker: VM #1128 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #38
+0.1: Broker: VM #1129 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #38
+0.1: Broker: VM #1130 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #39
+0.1: Broker: VM #1131 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #39
+0.1: Broker: VM #1132 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #40
+0.1: Broker: VM #1133 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #40
+0.1: Broker: VM #1134 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #41
+0.1: Broker: VM #1135 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #41
+0.1: Broker: VM #1136 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #42
+0.1: Broker: VM #1137 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #42
+0.1: Broker: VM #1138 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #43
+0.1: Broker: VM #1139 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #43
+0.1: Broker: VM #1140 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #44
+0.1: Broker: VM #1141 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #44
+0.1: Broker: VM #1142 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #45
+0.1: Broker: VM #1143 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #45
+0.1: Broker: VM #1144 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #46
+0.1: Broker: VM #1145 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #46
+0.1: Broker: VM #1146 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #47
+0.1: Broker: VM #1147 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #47
+0.1: Broker: VM #1148 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #48
+0.1: Broker: VM #1149 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #48
+0.1: Broker: VM #1150 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #49
+0.1: Broker: VM #1151 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #49
+0.1: Broker: VM #1152 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #50
+0.1: Broker: VM #1153 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #50
+0.1: Broker: VM #1154 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #51
+0.1: Broker: VM #1155 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #51
+0.1: Broker: VM #1156 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #52
+0.1: Broker: VM #1157 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #52
+0.1: Broker: VM #1158 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #53
+0.1: Broker: VM #1159 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #53
+0.1: Broker: VM #1160 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #54
+0.1: Broker: VM #1161 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #54
+0.1: Broker: VM #1162 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #55
+0.1: Broker: VM #1163 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #55
+0.1: Broker: VM #1164 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #56
+0.1: Broker: VM #1165 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #56
+0.1: Broker: VM #1166 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #57
+0.1: Broker: VM #1167 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #57
+0.1: Broker: VM #1168 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #58
+0.1: Broker: VM #1169 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #58
+0.1: Broker: VM #1170 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #59
+0.1: Broker: VM #1171 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #59
+0.1: Broker: VM #1172 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #60
+0.1: Broker: VM #1173 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #60
+0.1: Broker: VM #1174 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #61
+0.1: Broker: VM #1175 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #61
+0.1: Broker: VM #1176 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #62
+0.1: Broker: VM #1177 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #62
+0.1: Broker: VM #1178 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #63
+0.1: Broker: VM #1179 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #63
+0.1: Broker: VM #1180 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #64
+0.1: Broker: VM #1181 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #64
+0.1: Broker: VM #1182 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #65
+0.1: Broker: VM #1183 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #65
+0.1: Broker: VM #1184 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #66
+0.1: Broker: VM #1185 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #66
+0.1: Broker: VM #1186 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #67
+0.1: Broker: VM #1187 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #67
+0.1: Broker: VM #1188 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #68
+0.1: Broker: VM #1189 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #68
+0.1: Broker: VM #1190 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #69
+0.1: Broker: VM #1191 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #69
+0.1: Broker: VM #1192 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #70
+0.1: Broker: VM #1193 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #70
+0.1: Broker: VM #1194 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #71
+0.1: Broker: VM #1195 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #71
+0.1: Broker: VM #1196 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #72
+0.1: Broker: VM #1197 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #72
+0.1: Broker: VM #1198 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #73
+0.1: Broker: VM #1199 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #73
+0.1: Broker: VM #1200 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #74
+0.1: Broker: VM #1201 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #74
+0.1: Broker: VM #1202 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #75
+0.1: Broker: VM #1203 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #75
+0.1: Broker: VM #1204 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #76
+0.1: Broker: VM #1205 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #76
+0.1: Broker: VM #1206 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #77
+0.1: Broker: VM #1207 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #77
+0.1: Broker: VM #1208 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #78
+0.1: Broker: VM #1209 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #78
+0.1: Broker: VM #1210 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #79
+0.1: Broker: VM #1211 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #79
+0.1: Broker: VM #1212 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #80
+0.1: Broker: VM #1213 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #80
+0.1: Broker: VM #1214 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #81
+0.1: Broker: VM #1215 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #81
+0.1: Broker: VM #1216 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #82
+0.1: Broker: VM #1217 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #82
+0.1: Broker: VM #1218 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #83
+0.1: Broker: VM #1219 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #83
+0.1: Broker: VM #1220 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #84
+0.1: Broker: VM #1221 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #84
+0.1: Broker: VM #1222 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #85
+0.1: Broker: VM #1223 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #85
+0.1: Broker: VM #1224 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #86
+0.1: Broker: VM #1225 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #86
+0.1: Broker: VM #1226 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #87
+0.1: Broker: VM #1227 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #87
+0.1: Broker: VM #1228 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #88
+0.1: Broker: VM #1229 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #88
+0.1: Broker: VM #1230 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #89
+0.1: Broker: VM #1231 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #89
+0.1: Broker: VM #1232 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #90
+0.1: Broker: VM #1233 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #90
+0.1: Broker: VM #1234 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #91
+0.1: Broker: VM #1235 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #91
+0.1: Broker: VM #1236 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #92
+0.1: Broker: VM #1237 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #92
+0.1: Broker: VM #1238 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #93
+0.1: Broker: VM #1239 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #93
+0.1: Broker: VM #1240 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #94
+0.1: Broker: VM #1241 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #94
+0.1: Broker: VM #1242 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #95
+0.1: Broker: VM #1243 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #95
+0.1: Broker: VM #1244 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #96
+0.1: Broker: VM #1245 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #96
+0.1: Broker: VM #1246 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #97
+0.1: Broker: VM #1247 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #97
+0.1: Broker: VM #1248 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #98
+0.1: Broker: VM #1249 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #98
+0.1: Broker: VM #1250 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #99
+0.1: Broker: VM #1251 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #99
+0.1: Broker: VM #1252 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #100
+0.1: Broker: VM #1253 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #100
+0.1: Broker: VM #1254 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #101
+0.1: Broker: VM #1255 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #101
+0.1: Broker: VM #1256 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #102
+0.1: Broker: VM #1257 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #102
+0.1: Broker: VM #1258 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #103
+0.1: Broker: VM #1259 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #103
+0.1: Broker: VM #1260 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #104
+0.1: Broker: VM #1261 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #104
+0.1: Broker: VM #1262 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #105
+0.1: Broker: VM #1263 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #105
+0.1: Broker: VM #1264 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #106
+0.1: Broker: VM #1265 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #106
+0.1: Broker: VM #1266 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #107
+0.1: Broker: VM #1267 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #107
+0.1: Broker: VM #1268 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #108
+0.1: Broker: VM #1269 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #108
+0.1: Broker: VM #1270 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #109
+0.1: Broker: VM #1271 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #109
+0.1: Broker: VM #1272 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #110
+0.1: Broker: VM #1273 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #110
+0.1: Broker: VM #1274 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #111
+0.1: Broker: VM #1275 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #111
+0.1: Broker: VM #1276 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #112
+0.1: Broker: VM #1277 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #112
+0.1: Broker: VM #1278 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #113
+0.1: Broker: VM #1279 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #113
+0.1: Broker: VM #1280 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #114
+0.1: Broker: VM #1281 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #114
+0.1: Broker: VM #1282 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #115
+0.1: Broker: VM #1283 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #115
+0.1: Broker: VM #1284 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #116
+0.1: Broker: VM #1285 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #116
+0.1: Broker: VM #1286 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #117
+0.1: Broker: VM #1287 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #117
+0.1: Broker: VM #1288 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #118
+0.1: Broker: VM #1289 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #118
+0.1: Broker: VM #1290 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #119
+0.1: Broker: VM #1291 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #119
+0.1: Broker: VM #1292 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #120
+0.1: Broker: VM #1293 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #120
+0.1: Broker: VM #1294 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #121
+0.1: Broker: VM #1295 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #121
+0.1: Broker: VM #1296 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #122
+0.1: Broker: VM #1297 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #122
+0.1: Broker: VM #1298 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #123
+0.1: Broker: VM #1299 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #123
+0.1: Broker: VM #1300 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #124
+0.1: Broker: VM #1301 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #124
+0.1: Broker: VM #1302 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #125
+0.1: Broker: VM #1303 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #125
+0.1: Broker: VM #1304 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #126
+0.1: Broker: VM #1305 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #126
+0.1: Broker: VM #1306 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #127
+0.1: Broker: VM #1307 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #127
+0.1: Broker: VM #1308 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #128
+0.1: Broker: VM #1309 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #128
+0.1: Broker: VM #1310 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #129
+0.1: Broker: VM #1311 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #129
+0.1: Broker: VM #1312 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #130
+0.1: Broker: VM #1313 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #130
+0.1: Broker: VM #1314 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #131
+0.1: Broker: VM #1315 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #131
+0.1: Broker: VM #1316 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #132
+0.1: Broker: VM #1317 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #132
+0.1: Broker: VM #1318 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #133
+0.1: Broker: VM #1319 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #133
+0.1: Broker: VM #1320 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #134
+0.1: Broker: VM #1321 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #134
+0.1: Broker: VM #1322 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #135
+0.1: Broker: VM #1323 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #135
+0.1: Broker: VM #1324 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #136
+0.1: Broker: VM #1325 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #136
+0.1: Broker: VM #1326 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #137
+0.1: Broker: VM #1327 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #137
+0.1: Broker: VM #1328 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #138
+0.1: Broker: VM #1329 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #138
+0.1: Broker: VM #1330 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #139
+0.1: Broker: VM #1331 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #139
+0.1: Broker: VM #1332 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #140
+0.1: Broker: VM #1333 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #140
+0.1: Broker: VM #1334 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #141
+0.1: Broker: VM #1335 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #141
+0.1: Broker: VM #1336 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #142
+0.1: Broker: VM #1337 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #142
+0.1: Broker: VM #1338 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #143
+0.1: Broker: VM #1339 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #143
+0.1: Broker: VM #1340 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #144
+0.1: Broker: VM #1341 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #144
+0.1: Broker: VM #1342 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #145
+0.1: Broker: VM #1343 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #145
+0.1: Broker: VM #1344 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #146
+0.1: Broker: VM #1345 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #146
+0.1: Broker: VM #1346 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #147
+0.1: Broker: VM #1347 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #147
+0.1: Broker: VM #1348 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #148
+0.1: Broker: VM #1349 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #148
+0.1: Broker: VM #1350 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #149
+0.1: Broker: VM #1351 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #149
+0.1: Broker: VM #1352 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #150
+0.1: Broker: VM #1353 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #150
+0.1: Broker: VM #1354 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #151
+0.1: Broker: VM #1355 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #151
+0.1: Broker: VM #1356 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #152
+0.1: Broker: VM #1357 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #152
+0.1: Broker: VM #1358 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #153
+0.1: Broker: VM #1359 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #153
+0.1: Broker: VM #1360 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #154
+0.1: Broker: VM #1361 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #154
+0.1: Broker: VM #1362 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #155
+0.1: Broker: VM #1363 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #155
+0.1: Broker: VM #1364 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #156
+0.1: Broker: VM #1365 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #156
+0.1: Broker: VM #1366 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #157
+0.1: Broker: VM #1367 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #157
+0.1: Broker: VM #1368 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #158
+0.1: Broker: VM #1369 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #158
+0.1: Broker: VM #1370 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #159
+0.1: Broker: VM #1371 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #159
+0.1: Broker: VM #1372 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #160
+0.1: Broker: VM #1373 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #160
+0.1: Broker: VM #1374 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #161
+0.1: Broker: VM #1375 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #161
+0.1: Broker: VM #1376 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #162
+0.1: Broker: VM #1377 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #162
+0.1: Broker: VM #1378 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #163
+0.1: Broker: VM #1379 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #163
+0.1: Broker: VM #1380 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #164
+0.1: Broker: VM #1381 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #164
+0.1: Broker: VM #1382 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #165
+0.1: Broker: VM #1383 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #165
+0.1: Broker: VM #1384 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #166
+0.1: Broker: VM #1385 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #166
+0.1: Broker: VM #1386 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #167
+0.1: Broker: VM #1387 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #167
+0.1: Broker: VM #1388 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #168
+0.1: Broker: VM #1389 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #168
+0.1: Broker: VM #1390 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #169
+0.1: Broker: VM #1391 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #169
+0.1: Broker: VM #1392 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #170
+0.1: Broker: VM #1393 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #170
+0.1: Broker: VM #1394 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #171
+0.1: Broker: VM #1395 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #171
+0.1: Broker: VM #1396 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #172
+0.1: Broker: VM #1397 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #172
+0.1: Broker: VM #1398 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #173
+0.1: Broker: VM #1399 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #173
+0.1: Broker: VM #1400 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #174
+0.1: Broker: VM #1401 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #174
+0.1: Broker: VM #1402 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #175
+0.1: Broker: VM #1403 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #175
+0.1: Broker: VM #1404 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #176
+0.1: Broker: VM #1405 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #176
+0.1: Broker: VM #1406 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #177
+0.1: Broker: VM #1407 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #177
+0.1: Broker: VM #1408 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #178
+0.1: Broker: VM #1409 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #178
+0.1: Broker: VM #1410 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #179
+0.1: Broker: VM #1411 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #179
+0.1: Broker: VM #1412 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #180
+0.1: Broker: VM #1413 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #180
+0.1: Broker: VM #1414 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #181
+0.1: Broker: VM #1415 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #181
+0.1: Broker: VM #1416 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #182
+0.1: Broker: VM #1417 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #182
+0.1: Broker: VM #1418 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #183
+0.1: Broker: VM #1419 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #183
+0.1: Broker: VM #1420 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #184
+0.1: Broker: VM #1421 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #184
+0.1: Broker: VM #1422 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #185
+0.1: Broker: VM #1423 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #185
+0.1: Broker: VM #1424 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #186
+0.1: Broker: VM #1425 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #186
+0.1: Broker: VM #1426 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #187
+0.1: Broker: VM #1427 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #187
+0.1: Broker: VM #1428 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #188
+0.1: Broker: VM #1429 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #188
+0.1: Broker: VM #1430 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #189
+0.1: Broker: VM #1431 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #189
+0.1: Broker: VM #1432 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #190
+0.1: Broker: VM #1433 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #190
+0.1: Broker: VM #1434 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #191
+0.1: Broker: VM #1435 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #191
+0.1: Broker: VM #1436 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #192
+0.1: Broker: VM #1437 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #192
+0.1: Broker: VM #1438 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #193
+0.1: Broker: VM #1439 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #193
+0.1: Broker: VM #1440 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #194
+0.1: Broker: VM #1441 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #194
+0.1: Broker: VM #1442 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #195
+0.1: Broker: VM #1443 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #195
+0.1: Broker: VM #1444 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #196
+0.1: Broker: VM #1445 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #196
+0.1: Broker: VM #1446 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #197
+0.1: Broker: VM #1447 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #197
+0.1: Broker: VM #1448 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #198
+0.1: Broker: VM #1449 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #198
+0.1: Broker: VM #1450 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #199
+0.1: Broker: VM #1451 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #199
+0.1: Broker: VM #1452 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #200
+0.1: Broker: VM #1453 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #200
+0.1: Broker: VM #1454 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #201
+0.1: Broker: VM #1455 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #201
+0.1: Broker: VM #1456 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #202
+0.1: Broker: VM #1457 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #202
+0.1: Broker: VM #1458 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #203
+0.1: Broker: VM #1459 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #203
+0.1: Broker: VM #1460 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #204
+0.1: Broker: VM #1461 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #204
+0.1: Broker: VM #1462 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #205
+0.1: Broker: VM #1463 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #205
+0.1: Broker: VM #1464 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #206
+0.1: Broker: VM #1465 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #206
+0.1: Broker: VM #1466 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #207
+0.1: Broker: VM #1467 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #207
+0.1: Broker: VM #1468 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #208
+0.1: Broker: VM #1469 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #208
+0.1: Broker: VM #1470 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #209
+0.1: Broker: VM #1471 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #209
+0.1: Broker: VM #1472 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #210
+0.1: Broker: VM #1473 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #210
+0.1: Broker: VM #1474 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #211
+0.1: Broker: VM #1475 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #211
+0.1: Broker: VM #1476 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #212
+0.1: Broker: VM #1477 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #212
+0.1: Broker: VM #1478 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #213
+0.1: Broker: VM #1479 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #213
+0.1: Broker: VM #1480 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #214
+0.1: Broker: VM #1481 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #214
+0.1: Broker: VM #1482 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #215
+0.1: Broker: VM #1483 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #215
+0.1: Broker: VM #1484 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #216
+0.1: Broker: VM #1485 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #216
+0.1: Broker: VM #1486 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #217
+0.1: Broker: VM #1487 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #217
+0.1: Broker: VM #1488 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #218
+0.1: Broker: VM #1489 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #218
+0.1: Broker: VM #1490 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #219
+0.1: Broker: VM #1491 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #219
+0.1: Broker: VM #1492 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #220
+0.1: Broker: VM #1493 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #220
+0.1: Broker: VM #1494 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #221
+0.1: Broker: VM #1495 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #221
+0.1: Broker: VM #1496 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #222
+0.1: Broker: VM #1497 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #222
+0.1: Broker: VM #1498 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #223
+0.1: Broker: VM #1499 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #223
+0.1: Broker: VM #1500 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #224
+0.1: Broker: VM #1501 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #224
+0.1: Broker: VM #1502 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #225
+0.1: Broker: VM #1503 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #225
+0.1: Broker: VM #1504 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #226
+0.1: Broker: VM #1505 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #226
+0.1: Broker: VM #1506 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #227
+0.1: Broker: VM #1507 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #227
+0.1: Broker: VM #1508 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #228
+0.1: Broker: VM #1509 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #228
+0.1: Broker: VM #1510 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #229
+0.1: Broker: VM #1511 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #229
+0.1: Broker: VM #1512 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #230
+0.1: Broker: VM #1513 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #230
+0.1: Broker: VM #1514 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #231
+0.1: Broker: VM #1515 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #231
+0.1: Broker: VM #1516 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #232
+0.1: Broker: VM #1517 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #232
+0.1: Broker: VM #1518 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #233
+0.1: Broker: VM #1519 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #233
+0.1: Broker: VM #1520 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #234
+0.1: Broker: VM #1521 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #234
+0.1: Broker: VM #1522 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #235
+0.1: Broker: VM #1523 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #235
+0.1: Broker: VM #1524 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #236
+0.1: Broker: VM #1525 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #236
+0.1: Broker: VM #1526 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #237
+0.1: Broker: VM #1527 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #237
+0.1: Broker: VM #1528 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #238
+0.1: Broker: VM #1529 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #238
+0.1: Broker: VM #1530 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #239
+0.1: Broker: VM #1531 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #239
+0.1: Broker: VM #1532 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #240
+0.1: Broker: VM #1533 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #240
+0.1: Broker: VM #1534 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #241
+0.1: Broker: VM #1535 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #241
+0.1: Broker: VM #1536 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #242
+0.1: Broker: VM #1537 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #242
+0.1: Broker: VM #1538 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #243
+0.1: Broker: VM #1539 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #243
+0.1: Broker: VM #1540 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #244
+0.1: Broker: VM #1541 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #244
+0.1: Broker: VM #1542 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #245
+0.1: Broker: VM #1543 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #245
+0.1: Broker: VM #1544 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #246
+0.1: Broker: VM #1545 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #246
+0.1: Broker: VM #1546 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #247
+0.1: Broker: VM #1547 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #247
+0.1: Broker: VM #1548 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #248
+0.1: Broker: VM #1549 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #248
+0.1: Broker: VM #1550 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #249
+0.1: Broker: VM #1551 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #249
+0.1: Broker: VM #1552 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #250
+0.1: Broker: VM #1553 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #250
+0.1: Broker: VM #1554 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #251
+0.1: Broker: VM #1555 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #251
+0.1: Broker: VM #1556 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #252
+0.1: Broker: VM #1557 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #252
+0.1: Broker: VM #1558 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #253
+0.1: Broker: VM #1559 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #253
+0.1: Broker: VM #1560 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #254
+0.1: Broker: VM #1561 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #254
+0.1: Broker: VM #1562 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #255
+0.1: Broker: VM #1563 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #255
+0.1: Broker: VM #1564 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #256
+0.1: Broker: VM #1565 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #256
+0.1: Broker: VM #1566 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #257
+0.1: Broker: VM #1567 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #257
+0.1: Broker: VM #1568 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #258
+0.1: Broker: VM #1569 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #258
+0.1: Broker: VM #1570 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #259
+0.1: Broker: VM #1571 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #259
+0.1: Broker: VM #1572 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #260
+0.1: Broker: VM #1573 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #260
+0.1: Broker: VM #1574 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #261
+0.1: Broker: VM #1575 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #261
+0.1: Broker: VM #1576 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #262
+0.1: Broker: VM #1577 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #262
+0.1: Broker: VM #1578 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #263
+0.1: Broker: VM #1579 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #263
+0.1: Broker: VM #1580 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #264
+0.1: Broker: VM #1581 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #264
+0.1: Broker: VM #1582 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #265
+0.1: Broker: VM #1583 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #265
+0.1: Broker: VM #1584 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #266
+0.1: Broker: VM #1585 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #266
+0.1: Broker: VM #1586 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #267
+0.1: Broker: VM #1587 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #267
+0.1: Broker: VM #1588 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #268
+0.1: Broker: VM #1589 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #268
+0.1: Broker: VM #1590 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #269
+0.1: Broker: VM #1591 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #269
+0.1: Broker: VM #1592 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #270
+0.1: Broker: VM #1593 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #270
+0.1: Broker: VM #1594 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #271
+0.1: Broker: VM #1595 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #271
+0.1: Broker: VM #1596 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #272
+0.1: Broker: VM #1597 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #272
+0.1: Broker: VM #1598 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #273
+0.1: Broker: VM #1599 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #273
+0.1: Broker: VM #1600 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #274
+0.1: Broker: VM #1601 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #274
+0.1: Broker: VM #1602 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #275
+0.1: Broker: VM #1603 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #275
+0.1: Broker: VM #1604 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #276
+0.1: Broker: VM #1605 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #276
+0.1: Broker: VM #1606 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #277
+0.1: Broker: VM #1607 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #277
+0.1: Broker: VM #1608 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #278
+0.1: Broker: VM #1609 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #278
+0.1: Broker: VM #1610 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #279
+0.1: Broker: VM #1611 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #279
+0.1: Broker: VM #1612 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #280
+0.1: Broker: VM #1613 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #280
+0.1: Broker: VM #1614 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #281
+0.1: Broker: VM #1615 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #281
+0.1: Broker: VM #1616 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #282
+0.1: Broker: VM #1617 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #282
+0.1: Broker: VM #1618 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #283
+0.1: Broker: VM #1619 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #283
+0.1: Broker: VM #1620 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #284
+0.1: Broker: VM #1621 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #284
+0.1: Broker: VM #1622 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #285
+0.1: Broker: VM #1623 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #285
+0.1: Broker: VM #1624 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #286
+0.1: Broker: VM #1625 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #286
+0.1: Broker: VM #1626 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #287
+0.1: Broker: VM #1627 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #287
+0.1: Broker: VM #1628 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #288
+0.1: Broker: VM #1629 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #288
+0.1: Broker: VM #1630 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #289
+0.1: Broker: VM #1631 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #289
+0.1: Broker: VM #1632 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #290
+0.1: Broker: VM #1633 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #290
+0.1: Broker: VM #1634 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #291
+0.1: Broker: VM #1635 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #291
+0.1: Broker: VM #1636 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #292
+0.1: Broker: VM #1637 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #292
+0.1: Broker: VM #1638 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #293
+0.1: Broker: VM #1639 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #293
+0.1: Broker: VM #1640 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #294
+0.1: Broker: VM #1641 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #294
+0.1: Broker: VM #1642 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #295
+0.1: Broker: VM #1643 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #295
+0.1: Broker: VM #1644 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #296
+0.1: Broker: VM #1645 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #296
+0.1: Broker: VM #1646 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #297
+0.1: Broker: VM #1647 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #297
+0.1: Broker: VM #1648 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #298
+0.1: Broker: VM #1649 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #298
+0.1: Broker: VM #1650 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #299
+0.1: Broker: VM #1651 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #299
+0.1: Broker: VM #1652 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #300
+0.1: Broker: VM #1653 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #300
+0.1: Broker: VM #1654 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #301
+0.1: Broker: VM #1655 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #301
+0.1: Broker: VM #1656 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #302
+0.1: Broker: VM #1657 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #302
+0.1: Broker: VM #1658 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #303
+0.1: Broker: VM #1659 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #303
+0.1: Broker: VM #1660 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #304
+0.1: Broker: VM #1661 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #304
+0.1: Broker: VM #1662 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #305
+0.1: Broker: VM #1663 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #305
+0.1: Broker: VM #1664 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #306
+0.1: Broker: VM #1665 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #306
+0.1: Broker: VM #1666 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #307
+0.1: Broker: VM #1667 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #307
+0.1: Broker: VM #1668 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #308
+0.1: Broker: VM #1669 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #308
+0.1: Broker: VM #1670 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #309
+0.1: Broker: VM #1671 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #309
+0.1: Broker: VM #1672 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #310
+0.1: Broker: VM #1673 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #310
+0.1: Broker: VM #1674 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #311
+0.1: Broker: VM #1675 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #311
+0.1: Broker: VM #1676 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #312
+0.1: Broker: VM #1677 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #312
+0.1: Broker: VM #1678 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #313
+0.1: Broker: VM #1679 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #313
+0.1: Broker: VM #1680 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #314
+0.1: Broker: VM #1681 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #314
+0.1: Broker: VM #1682 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #315
+0.1: Broker: VM #1683 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #315
+0.1: Broker: VM #1684 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #316
+0.1: Broker: VM #1685 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #316
+0.1: Broker: VM #1686 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #317
+0.1: Broker: VM #1687 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #317
+0.1: Broker: VM #1688 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #318
+0.1: Broker: VM #1689 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #318
+0.1: Broker: VM #1690 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #319
+0.1: Broker: VM #1691 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #319
+0.1: Broker: VM #1692 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #320
+0.1: Broker: VM #1693 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #320
+0.1: Broker: VM #1694 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #321
+0.1: Broker: VM #1695 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #321
+0.1: Broker: VM #1696 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #322
+0.1: Broker: VM #1697 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #322
+0.1: Broker: VM #1698 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #323
+0.1: Broker: VM #1699 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #323
+0.1: Broker: VM #1700 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #324
+0.1: Broker: VM #1701 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #324
+0.1: Broker: VM #1702 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #325
+0.1: Broker: VM #1703 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #325
+0.1: Broker: VM #1704 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #326
+0.1: Broker: VM #1705 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #326
+0.1: Broker: VM #1706 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #327
+0.1: Broker: VM #1707 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #327
+0.1: Broker: VM #1708 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #328
+0.1: Broker: VM #1709 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #328
+0.1: Broker: VM #1710 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #329
+0.1: Broker: VM #1711 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #329
+0.1: Broker: VM #1712 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #330
+0.1: Broker: VM #1713 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #330
+0.1: Broker: VM #1714 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #331
+0.1: Broker: VM #1715 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #331
+0.1: Broker: VM #1716 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #332
+0.1: Broker: VM #1717 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #332
+0.1: Broker: VM #1718 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #333
+0.1: Broker: VM #1719 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #333
+0.1: Broker: VM #1720 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #334
+0.1: Broker: VM #1721 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #334
+0.1: Broker: VM #1722 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #335
+0.1: Broker: VM #1723 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #335
+0.1: Broker: VM #1724 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #336
+0.1: Broker: VM #1725 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #336
+0.1: Broker: VM #1726 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #337
+0.1: Broker: VM #1727 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #337
+0.1: Broker: VM #1728 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #338
+0.1: Broker: VM #1729 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #338
+0.1: Broker: VM #1730 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #339
+0.1: Broker: VM #1731 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #339
+0.1: Broker: VM #1732 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #340
+0.1: Broker: VM #1733 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #340
+0.1: Broker: VM #1734 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #341
+0.1: Broker: VM #1735 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #341
+0.1: Broker: VM #1736 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #342
+0.1: Broker: VM #1737 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #342
+0.1: Broker: VM #1738 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #343
+0.1: Broker: VM #1739 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #343
+0.1: Broker: VM #1740 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #344
+0.1: Broker: VM #1741 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #344
+0.1: Broker: VM #1742 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #345
+0.1: Broker: VM #1743 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #345
+0.1: Broker: VM #1744 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #346
+0.1: Broker: VM #1745 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #346
+0.1: Broker: VM #1746 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #347
+0.1: Broker: VM #1747 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #347
+0.1: Broker: VM #1748 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #348
+0.1: Broker: VM #1749 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #348
+0.1: Broker: VM #1750 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #349
+0.1: Broker: VM #1751 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #349
+0.1: Broker: VM #1752 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #350
+0.1: Broker: VM #1753 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #350
+0.1: Broker: VM #1754 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #351
+0.1: Broker: VM #1755 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #351
+0.1: Broker: VM #1756 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #352
+0.1: Broker: VM #1757 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #352
+0.1: Broker: VM #1758 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #353
+0.1: Broker: VM #1759 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #353
+0.1: Broker: VM #1760 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #354
+0.1: Broker: VM #1761 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #354
+0.1: Broker: VM #1762 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #355
+0.1: Broker: VM #1763 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #355
+0.1: Broker: VM #1764 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #356
+0.1: Broker: VM #1765 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #356
+0.1: Broker: VM #1766 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #357
+0.1: Broker: VM #1767 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #357
+0.1: Broker: VM #1768 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #358
+0.1: Broker: VM #1769 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #358
+0.1: Broker: VM #1770 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #359
+0.1: Broker: VM #1771 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #359
+0.1: Broker: VM #1772 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #360
+0.1: Broker: VM #1773 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #360
+0.1: Broker: VM #1774 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #361
+0.1: Broker: VM #1775 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #361
+0.1: Broker: VM #1776 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #362
+0.1: Broker: VM #1777 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #362
+0.1: Broker: VM #1778 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #363
+0.1: Broker: VM #1779 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #363
+0.1: Broker: VM #1780 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #364
+0.1: Broker: VM #1781 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #364
+0.1: Broker: VM #1782 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #365
+0.1: Broker: VM #1783 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #365
+0.1: Broker: VM #1784 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #366
+0.1: Broker: VM #1785 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #366
+0.1: Broker: VM #1786 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #367
+0.1: Broker: VM #1787 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #367
+0.1: Broker: VM #1788 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #368
+0.1: Broker: VM #1789 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #368
+0.1: Broker: VM #1790 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #369
+0.1: Broker: VM #1791 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #369
+0.1: Broker: VM #1792 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #370
+0.1: Broker: VM #1793 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #370
+0.1: Broker: VM #1794 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #371
+0.1: Broker: VM #1795 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #371
+0.1: Broker: VM #1796 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #372
+0.1: Broker: VM #1797 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #372
+0.1: Broker: VM #1798 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #373
+0.1: Broker: VM #1799 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #373
+0.1: Broker: VM #1800 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #374
+0.1: Broker: VM #1801 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #374
+0.1: Broker: VM #1802 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #375
+0.1: Broker: VM #1803 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #375
+0.1: Broker: VM #1804 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #376
+0.1: Broker: VM #1805 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #376
+0.1: Broker: VM #1806 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #377
+0.1: Broker: VM #1807 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #377
+0.1: Broker: VM #1808 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #378
+0.1: Broker: VM #1809 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #378
+0.1: Broker: VM #1810 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #379
+0.1: Broker: VM #1811 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #379
+0.1: Broker: VM #1812 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #380
+0.1: Broker: VM #1813 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #380
+0.1: Broker: VM #1814 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #381
+0.1: Broker: VM #1815 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #381
+0.1: Broker: VM #1816 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #382
+0.1: Broker: VM #1817 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #382
+0.1: Broker: VM #1818 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #383
+0.1: Broker: VM #1819 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #383
+0.1: Broker: VM #1820 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #384
+0.1: Broker: VM #1821 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #384
+0.1: Broker: VM #1822 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #385
+0.1: Broker: VM #1823 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #385
+0.1: Broker: VM #1824 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #386
+0.1: Broker: VM #1825 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #386
+0.1: Broker: VM #1826 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #387
+0.1: Broker: VM #1827 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #387
+0.1: Broker: VM #1828 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #388
+0.1: Broker: VM #1829 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #388
+0.1: Broker: VM #1830 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #389
+0.1: Broker: VM #1831 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #389
+0.1: Broker: VM #1832 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #390
+0.1: Broker: VM #1833 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #390
+0.1: Broker: VM #1834 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #391
+0.1: Broker: VM #1835 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #391
+0.1: Broker: VM #1836 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #392
+0.1: Broker: VM #1837 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #392
+0.1: Broker: VM #1838 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #393
+0.1: Broker: VM #1839 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #393
+0.1: Broker: VM #1840 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #394
+0.1: Broker: VM #1841 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #394
+0.1: Broker: VM #1842 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #395
+0.1: Broker: VM #1843 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #395
+0.1: Broker: VM #1844 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #396
+0.1: Broker: VM #1845 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #396
+0.1: Broker: VM #1846 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #397
+0.1: Broker: VM #1847 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #397
+0.1: Broker: VM #1848 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #398
+0.1: Broker: VM #1849 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #398
+0.1: Broker: VM #1850 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #399
+0.1: Broker: VM #1851 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #399
+0.1: Broker: VM #1852 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #400
+0.1: Broker: VM #1853 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #400
+0.1: Broker: VM #1854 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #401
+0.1: Broker: VM #1855 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #401
+0.1: Broker: VM #1856 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #402
+0.1: Broker: VM #1857 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #402
+0.1: Broker: VM #1858 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #403
+0.1: Broker: VM #1859 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #403
+0.1: Broker: VM #1860 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #404
+0.1: Broker: VM #1861 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #404
+0.1: Broker: VM #1862 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #405
+0.1: Broker: VM #1863 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #405
+0.1: Broker: VM #1864 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #406
+0.1: Broker: VM #1865 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #406
+0.1: Broker: VM #1866 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #407
+0.1: Broker: VM #1867 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #407
+0.1: Broker: VM #1868 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #408
+0.1: Broker: VM #1869 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #408
+0.1: Broker: VM #1870 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #409
+0.1: Broker: VM #1871 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #409
+0.1: Broker: VM #1872 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #410
+0.1: Broker: VM #1873 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #410
+0.1: Broker: VM #1874 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #411
+0.1: Broker: VM #1875 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #411
+0.1: Broker: VM #1876 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #412
+0.1: Broker: VM #1877 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #412
+0.1: Broker: VM #1878 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #413
+0.1: Broker: VM #1879 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #413
+0.1: Broker: VM #1880 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #414
+0.1: Broker: VM #1881 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #414
+0.1: Broker: VM #1882 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #415
+0.1: Broker: VM #1883 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #415
+0.1: Broker: VM #1884 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #416
+0.1: Broker: VM #1885 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #416
+0.1: Broker: VM #1886 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #417
+0.1: Broker: VM #1887 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #417
+0.1: Broker: VM #1888 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #418
+0.1: Broker: VM #1889 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #418
+0.1: Broker: VM #1890 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #419
+0.1: Broker: VM #1891 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #419
+0.1: Broker: VM #1892 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #420
+0.1: Broker: VM #1893 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #420
+0.1: Broker: VM #1894 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #421
+0.1: Broker: VM #1895 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #421
+0.1: Broker: VM #1896 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #422
+0.1: Broker: VM #1897 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #422
+0.1: Broker: VM #1898 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #423
+0.1: Broker: VM #1899 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #423
+0.1: Broker: VM #1900 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #424
+0.1: Broker: VM #1901 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #424
+0.1: Broker: VM #1902 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #425
+0.1: Broker: VM #1903 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #425
+0.1: Broker: VM #1904 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #426
+0.1: Broker: VM #1905 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #426
+0.1: Broker: VM #1906 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #427
+0.1: Broker: VM #1907 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #427
+0.1: Broker: VM #1908 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #428
+0.1: Broker: VM #1909 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #428
+0.1: Broker: VM #1910 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #429
+0.1: Broker: VM #1911 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #429
+0.1: Broker: VM #1912 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #430
+0.1: Broker: VM #1913 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #430
+0.1: Broker: VM #1914 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #431
+0.1: Broker: VM #1915 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #431
+0.1: Broker: VM #1916 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #432
+0.1: Broker: VM #1917 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #432
+0.1: Broker: VM #1918 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #433
+0.1: Broker: VM #1919 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #433
+0.1: Broker: VM #1920 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #434
+0.1: Broker: VM #1921 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #434
+0.1: Broker: VM #1922 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #435
+0.1: Broker: VM #1923 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #435
+0.1: Broker: VM #1924 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #436
+0.1: Broker: VM #1925 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #436
+0.1: Broker: VM #1926 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #437
+0.1: Broker: VM #1927 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #437
+0.1: Broker: VM #1928 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #438
+0.1: Broker: VM #1929 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #438
+0.1: Broker: VM #1930 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #439
+0.1: Broker: VM #1931 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #439
+0.1: Broker: VM #1932 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #440
+0.1: Broker: VM #1933 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #440
+0.1: Broker: VM #1934 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #441
+0.1: Broker: VM #1935 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #441
+0.1: Broker: VM #1936 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #442
+0.1: Broker: VM #1937 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #442
+0.1: Broker: VM #1938 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #443
+0.1: Broker: VM #1939 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #443
+0.1: Broker: VM #1940 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #444
+0.1: Broker: VM #1941 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #444
+0.1: Broker: VM #1942 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #445
+0.1: Broker: VM #1943 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #445
+0.1: Broker: VM #1944 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #446
+0.1: Broker: VM #1945 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #446
+0.1: Broker: VM #1946 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #447
+0.1: Broker: VM #1947 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #447
+0.1: Broker: VM #1948 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #448
+0.1: Broker: VM #1949 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #448
+0.1: Broker: VM #1950 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #449
+0.1: Broker: VM #1951 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #449
+0.1: Broker: VM #1952 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #450
+0.1: Broker: VM #1953 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #450
+0.1: Broker: VM #1954 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #451
+0.1: Broker: VM #1955 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #451
+0.1: Broker: VM #1956 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #452
+0.1: Broker: VM #1957 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #452
+0.1: Broker: VM #1958 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #453
+0.1: Broker: VM #1959 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #453
+0.1: Broker: VM #1960 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #454
+0.1: Broker: VM #1961 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #454
+0.1: Broker: VM #1962 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #455
+0.1: Broker: VM #1963 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #455
+0.1: Broker: VM #1964 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #456
+0.1: Broker: VM #1965 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #456
+0.1: Broker: VM #1966 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #457
+0.1: Broker: VM #1967 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #457
+0.1: Broker: VM #1968 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #458
+0.1: Broker: VM #1969 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #458
+0.1: Broker: VM #1970 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #459
+0.1: Broker: VM #1971 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #459
+0.1: Broker: VM #1972 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #460
+0.1: Broker: VM #1973 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #460
+0.1: Broker: VM #1974 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #461
+0.1: Broker: VM #1975 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #461
+0.1: Broker: VM #1976 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #462
+0.1: Broker: VM #1977 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #462
+0.1: Broker: VM #1978 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #463
+0.1: Broker: VM #1979 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #463
+0.1: Broker: VM #1980 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #464
+0.1: Broker: VM #1981 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #464
+0.1: Broker: VM #1982 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #465
+0.1: Broker: VM #1983 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #465
+0.1: Broker: VM #1984 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #466
+0.1: Broker: VM #1985 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #466
+0.1: Broker: VM #1986 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #467
+0.1: Broker: VM #1987 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #467
+0.1: Broker: VM #1988 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #468
+0.1: Broker: VM #1989 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #468
+0.1: Broker: VM #1990 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #469
+0.1: Broker: VM #1991 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #469
+0.1: Broker: VM #1992 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #470
+0.1: Broker: VM #1993 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #470
+0.1: Broker: VM #1994 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #471
+0.1: Broker: VM #1995 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #471
+0.1: Broker: VM #1996 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #472
+0.1: Broker: VM #1997 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #472
+0.1: Broker: VM #1998 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #473
+0.1: Broker: VM #1999 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #473
+0.1: Broker: VM #2000 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #474
+0.1: Broker: VM #2001 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #474
+0.1: Broker: VM #2002 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #475
+0.1: Broker: VM #2003 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #475
+0.1: Broker: VM #2004 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #476
+0.1: Broker: VM #2005 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #476
+0.1: Broker: VM #2006 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #477
+0.1: Broker: VM #2007 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #477
+0.1: Broker: VM #2008 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #478
+0.1: Broker: VM #2009 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #478
+0.1: Broker: VM #2010 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #479
+0.1: Broker: VM #2011 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #479
+0.1: Broker: VM #2012 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #480
+0.1: Broker: VM #2013 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #480
+0.1: Broker: VM #2014 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #481
+0.1: Broker: VM #2015 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #481
+0.1: Broker: VM #2016 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #482
+0.1: Broker: VM #2017 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #482
+0.1: Broker: VM #2018 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #483
+0.1: Broker: VM #2019 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #483
+0.1: Broker: VM #2020 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #484
+0.1: Broker: VM #2021 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #484
+0.1: Broker: VM #2022 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #485
+0.1: Broker: VM #2023 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #485
+0.1: Broker: VM #2024 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #486
+0.1: Broker: VM #2025 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #486
+0.1: Broker: VM #2026 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #487
+0.1: Broker: VM #2027 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #487
+0.1: Broker: VM #2028 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #488
+0.1: Broker: VM #2029 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #488
+0.1: Broker: VM #2030 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #489
+0.1: Broker: VM #2031 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #489
+0.1: Broker: VM #2032 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #490
+0.1: Broker: VM #2033 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #490
+0.1: Broker: VM #2034 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #491
+0.1: Broker: VM #2035 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #491
+0.1: Broker: VM #2036 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #492
+0.1: Broker: VM #2037 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #492
+0.1: Broker: VM #2038 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #493
+0.1: Broker: VM #2039 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #493
+0.1: Broker: VM #2040 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #494
+0.1: Broker: VM #2041 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #494
+0.1: Broker: VM #2042 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #495
+0.1: Broker: VM #2043 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #495
+0.1: Broker: VM #2044 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #496
+0.1: Broker: VM #2045 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #496
+0.1: Broker: VM #2046 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #497
+0.1: Broker: VM #2047 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #497
+0.1: Broker: VM #2048 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #498
+0.1: Broker: VM #2049 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #498
+0.1: Broker: VM #2050 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #499
+0.1: Broker: VM #2051 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #499
+0.1: Broker: VM #2052 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #500
+0.1: Broker: VM #2053 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #500
+0.1: Broker: VM #2054 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #501
+0.1: Broker: VM #2055 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #501
+0.1: Broker: VM #2056 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #502
+0.1: Broker: VM #2057 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #502
+0.1: Broker: VM #2058 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #503
+0.1: Broker: VM #2059 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #503
+0.1: Broker: VM #2060 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #504
+0.1: Broker: VM #2061 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #504
+0.1: Broker: VM #2062 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #505
+0.1: Broker: VM #2063 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #505
+0.1: Broker: VM #2064 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #506
+0.1: Broker: VM #2065 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #506
+0.1: Broker: VM #2066 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #507
+0.1: Broker: VM #2067 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #507
+0.1: Broker: VM #2068 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #508
+0.1: Broker: VM #2069 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #508
+0.1: Broker: VM #2070 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #509
+0.1: Broker: VM #2071 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #509
+0.1: Broker: VM #2072 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #510
+0.1: Broker: VM #2073 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #510
+0.1: Broker: VM #2074 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #511
+0.1: Broker: VM #2075 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #511
+0.1: Broker: VM #2076 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #512
+0.1: Broker: VM #2077 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #512
+0.1: Broker: VM #2078 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #513
+0.1: Broker: VM #2079 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #513
+0.1: Broker: VM #2080 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #514
+0.1: Broker: VM #2081 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #514
+0.1: Broker: VM #2082 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #515
+0.1: Broker: VM #2083 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #515
+0.1: Broker: VM #2084 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #516
+0.1: Broker: VM #2085 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #516
+0.1: Broker: VM #2086 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #517
+0.1: Broker: VM #2087 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #517
+0.1: Broker: VM #2088 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #518
+0.1: Broker: VM #2089 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #518
+0.1: Broker: VM #2090 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #519
+0.1: Broker: VM #2091 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #519
+0.1: Broker: VM #2092 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #520
+0.1: Broker: VM #2093 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #520
+0.1: Broker: VM #2094 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #521
+0.1: Broker: VM #2095 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #521
+0.1: Broker: VM #2096 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #522
+0.1: Broker: VM #2097 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #522
+0.1: Broker: VM #2098 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #523
+0.1: Broker: VM #2099 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #523
+0.1: Broker: VM #2100 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #524
+0.1: Broker: VM #2101 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #524
+0.1: Broker: VM #2102 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #525
+0.1: Broker: VM #2103 has been created in Datacenter #3, Sector #0, Aisle #0, Rack #0, Host #525
+
+0.13: Data center's energy is 0.00 W*sec
+
+STARTING SIMULATION 
+
+300.10: Data center's energy is 0.00 W*sec
+
+STARTING SIMULATION 
+
+300.10: Data center's energy is 0.00 W*sec
+
+
+600.10: Data center's energy is 3770780.88 W*sec
+
+
+Experiment name: SimpleSectorAllocation
+Number of hosts: 800
+Number of VMs: 2104
+Total simulation time: 600.10 sec
+Energy consumption: 0.00 kWh
+Number of VM migrations: 0
+SLA: NaN%
+SLA perf degradation due to migration: 0.00%
+SLA time per active host: NaN%
+Overall SLA violation: 0.00%
+Average SLA violation: 0.00%
+Number of host shutdowns: 800
+Mean time before a host shutdown: 0.13 sec
+StDev time before a host shutdown: 0.00 sec
+Mean time before a VM migration: NaN sec
+StDev time before a VM migration: NaN sec
+
+Experiment name: SimpleSectorAllocation
+Number of hosts: 800
+Number of VMs: 2104
+Total simulation time: 600.10 sec
+Energy consumption: 1.05 kWh
+Number of VM migrations: 0
+SLA: 0.00000%
+SLA perf degradation due to migration: 0.00%
+SLA time per active host: 0.00%
+Overall SLA violation: 0.00%
+Average SLA violation: 0.00%
+Number of host shutdowns: 799
+Mean time before a host shutdown: 351.91 sec
+StDev time before a host shutdown: 113.47 sec
+Mean time before a VM migration: NaN sec
+StDev time before a VM migration: NaN sec
