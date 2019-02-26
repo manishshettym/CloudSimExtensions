@@ -24,6 +24,7 @@ import org.cloudbus.cloudsim.UtilizationModelFull;
 import org.cloudbus.cloudsim.Vm;
 import org.cloudbus.cloudsim.VmAllocationPolicy;
 import org.cloudbus.cloudsim.core.CloudSim;
+import org.cloudbus.cloudsim.examples.WorkloadHelper;
 import org.cloudbus.cloudsim.examples.power.planetlab.FzonesVmAllocationPolicy;
 import org.cloudbus.cloudsim.examples.power.planetlab.PlanetLabHelper;
 import org.cloudbus.cloudsim.power.EnhancedPowerDatacenter;
@@ -224,6 +225,7 @@ public class EnhancedRunner
 			{	
 				Log.printLine("ENTERED WORKLOAD CASE for file : ");
 				cloudletList = PlanetLabHelper.createCloudletListPlanetLab(brokerId, workFile);
+				//cloudletList = WorkloadHelper.createCloudletList(brokerId, workFile);
 				Log.printLine(cloudletList.size() + " cloudlets have been created");
 			}
 			

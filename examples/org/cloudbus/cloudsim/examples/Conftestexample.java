@@ -20,6 +20,7 @@ import org.cloudbus.cloudsim.Host;
 import org.cloudbus.cloudsim.Log;
 import org.cloudbus.cloudsim.Pe;
 import org.cloudbus.cloudsim.Storage;
+import org.cloudbus.cloudsim.Summary;
 import org.cloudbus.cloudsim.UtilizationModel;
 import org.cloudbus.cloudsim.UtilizationModelFull;
 import org.cloudbus.cloudsim.Vm;
@@ -99,12 +100,12 @@ public class Conftestexample {
 	public static void main(String[] args) {
 		Log.printLine("Starting CloudSimExample6...");
 		
-		int[]  data = new int[3];
+		int[]  data = new int[13];
 
 		try {
 			
 			//Read the conf file
-			File inputFolder = new File("/home/manish/cloudsim-3.0.3ext/examples/workload/planetlab/test/");
+			File inputFolder = new File("/home/manish/CloudSimExtension/examples/workload/planetlab/test/");
 			File[] files = inputFolder.listFiles();
 			
 			String fl = files[0].getAbsolutePath();
@@ -115,7 +116,9 @@ public class Conftestexample {
 			try {
 				reader = new BufferedReader(new InputStreamReader(new FileInputStream(fl)));
 
-				// read one line at the time
+				// read one line at the time0
+				
+				Summary.printLine("CONFIGURATION USED");
 				
 				int i=0;
 				int j=0;
@@ -126,19 +129,21 @@ public class Conftestexample {
 					if(i%2==1)
 					{
 							data[j]=Integer.parseInt(reader.readLine());
-							Log.printLine(data[j]);
+							Summary.printLine(data[j]);
 							i++;
 							j++;
 					}
 					
 					else
 					{
-						reader.readLine();
+						Summary.print(reader.readLine()+ ": ");
 						i++;
 					}
 				}
 
 				reader.close();
+				Summary.printLine();
+				
 				
 			} finally {
 				if (reader != null) {

@@ -5,7 +5,7 @@ Sector/DC
 Aisles/Sector
 1
 Racks/aisle
-1
+2
 Hosts/Rack
 800
 Application( if using workload , type 0 )
@@ -13,12 +13,12 @@ Application( if using workload , type 0 )
 ReplicationFactor
 2
 DCfailure
-1
+0
 Sectorfailure
 0
 Aislefailure
 0
 Rackfailure
-0
+1
 Hostfailure
 0

@@ -13,7 +13,7 @@ public class UtilizationModelPlanetLabInMemory implements UtilizationModel {
 	private double schedulingInterval;
 
 	/** The data (5 min * 288 = 24 hours). */
-	//I think it means data was collected every 5 mins 288 times in a day
+	//Think it means data was collected every 5 mins 288 times in a day
 	
 	private final double[] data; 
 	
@@ -31,8 +31,11 @@ public class UtilizationModelPlanetLabInMemory implements UtilizationModel {
 		setSchedulingInterval(schedulingInterval);
 		BufferedReader input = new BufferedReader(new FileReader(inputPath));
 		int n = data.length;
-		for (int i = 0; i < n - 1; i++) {
+		for (int i = 0; i < n - 1; i++) 
+		{
+			
 			data[i] = Integer.valueOf(input.readLine()) / 100.0;
+			// Log.printLine(data[i]);
 		}
 		data[n - 1] = data[n - 2];
 		input.close();

@@ -48,9 +48,13 @@ public class PlanetLabHelper {
 		
 		
 
-		for (int i = 0; i < files.length; i++) {
-			
+		for (int i = 0; i < files.length; i++) 
+		{
 			//if(i==10)break;
+			
+			/*Note : utilization planetlab in memory means
+			 * read a file from memory
+			 */
 			
 			Cloudlet cloudlet = null;
 			try {
@@ -62,7 +66,16 @@ public class PlanetLabHelper {
 						outputSize,
 						new UtilizationModelPlanetLabInMemory(
 								files[i].getAbsolutePath(),
-								Constants.SCHEDULING_INTERVAL), utilizationModelNull, utilizationModelNull);
+								Constants.SCHEDULING_INTERVAL),
+						utilizationModelNull,
+						utilizationModelNull
+						/*new UtilizationModelPlanetLabInMemory(
+								files[i].getAbsolutePath(),
+								Constants.SCHEDULING_INTERVAL),
+						new UtilizationModelPlanetLabInMemory(
+								files[i].getAbsolutePath(),
+								Constants.SCHEDULING_INTERVAL)*/
+								);
 			} catch (Exception e) {
 				e.printStackTrace();
 				System.exit(0);
